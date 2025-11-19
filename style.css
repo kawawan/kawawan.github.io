@@ -157,7 +157,7 @@ header nav {
 }
 
 .support-section p a {
-    margin: 5px; /* Add margin around each button */
+    margin: 5px 5px 10px 5px; /* Add more bottom margin for vertical spacing when wrapping */
 }
 
 footer {
