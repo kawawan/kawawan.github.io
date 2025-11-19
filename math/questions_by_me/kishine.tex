@@ -1,0 +1,2290 @@
+\documentclass[14pt,b5paper]{jsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[top=10truemm]{geometry}
+\usepackage{cases}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\usepackage{ascmac}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{定理}
+\newtheorem*{theorem*}{定理}
+\newtheorem{definition}[theorem]{定義}
+\newtheorem*{definition*}{定義}
+\newtheorem*{prob*}{問題}
+\newtheorem*{ex*}{例}
+\newtheorem*{prop*}{命題}
+\newtheorem*{ans*}{解答}
+\newtheorem*{rem*}{注意}
+\renewcommand{\proofname}{\bf 証明}
+\renewcommand{\thesection}{問\arabic{section}}
+\renewcommand{\thesubsection}{(\arabic{subsection})}
+\renewcommand{\thesubsubsection}{(\alph{subsubsection})}
+
+\begin{document}
+\section{}
+  次の式を因数分解しなさい。
+  \subsection{}
+    \[x^2 + y^2 -2xy - z^2\]
+  \subsection{}
+    \[x^2 -5x + 6\]
+  \subsection{}
+    \[12x^2+23x+10\]
+  \subsection{}
+    \[x^3+3x^2+x+3\]
+
+\section{}
+  次の方程式を解きなさい。
+  \subsection{}
+    \[3x^2 + 5x + 1 =0\]
+  \subsection{}
+    \[x^4-5x^2+4=0\]
+
+\section{}
+  次の文章の真偽を判定しなさい。
+  \subsection{}
+    $A,B$を空でない集合とする。
+    $a \in A$かつ$B \subset A$
+    であれば、$a \in B$である。
+  \subsection{}
+    $P,Q$を命題とする。$P \Rightarrow Q$が成立しているとき、
+    $Q$は$P$の十分条件という。
+  \subsection{}
+    $x$は整数で、$2x-3 > 0$かつ$x^2 < 4$が成立している。
+    この条件を満たすのは$x = 2$だけである。
+  \subsection{}
+    $A,B$を集合とする。このとき、$(A \cup B) \subset (A \cap B)$が成立する。
+
+\section{}
+  $xy$平面において、二つの点$(1,2),(-3,4)$を通る直線の式を求めなさい。
+\section{}
+  A,B,C君の三人が一回だけじゃんけんをする。あいこになる確率を求めなさい。
+\section{}
+  面積が$25$cm$^2$であるような正方形がある。この正方形の対角線の長さを求めなさい。
+
+\newpage
+\section{次の整数の約数の個数とその約数の総和を求めなさい}
+    \begin{enumerate}
+      \item 24
+      \item 32
+      \item 1080
+  \end{enumerate}
+
+\section{次の問いに答えなさい}
+  \subsection{}
+    $180$の正の約数のうち、$3$の倍数であるものの個数を求めなさい。
+  \subsection{下線部に適切な$p$の式を入れなさい}
+    $p$を素数とする。$p$の約数の総和を$A_p$とおく。
+    このとき、次の式が成立する。
+    \[A_p = \text{\underline{\qquad\qquad}}\]
+
+\section{次の式を因数分解しなさい}
+  \[xy + 1 + x + y + xy^2 + x^2 + x^2y + x^2y^2 + y^2\]
+
+\newpage
+問11は宿題
+\section{次の方程式、および不等式を解きなさい}
+  \subsection{}
+    \[||x-2| - 3| = 2\]\footnote{場合分けで解いてもよいですが、
+    たとえば$A=|x-2|$とおけば少し楽かもしれません。
+    なぜなら、そのようにすれば、問題の式は$|A - 3| = 2$となります。
+    $|A - 3| = 2$は「数直線において原点から点$(A-3)$までの距離が$2$である」
+    ということです。したがって、$A-3 = \pm2$となります。
+    移項をすると$A = 5$または$A = 1$となります。}
+  \subsection{}
+    \[||x-1|| < 2\]
+
+\section{奥が深いぞ絶対値}
+  【ここは説明です】$f,g$を何らかの式とします。
+  このとき「$f \leqq g$であることを証明しなさい」、という問題が出されたとします。
+  こういう問題の証明方法はいくつかあります。
+  基本的には$g - f$を計算して、その結果$0$以上になればよいです。
+  \subsection{例題}
+    $x>1$であるとき、$x^2>x$であることを証明しなさい。
+
+    [解答]
+
+    $x^2 - x > 0$となることを確かめればよいから、実際に計算をして確かめてみる。
+    \[x^2 - x = x(x - 1)\]
+    となるが、$x>1$だから$x(x - 1) > 0$となる。
+  \subsection{三角不等式の特別な形}
+    $x$は実数とする。
+    \[|x + 1| \leqq |x| + 1\]
+    であることを証明しなさい。\footnote{この問題の証明は難しい気がするので一人で太刀打ちできなさそうなら、本やネットで調べてみてください。}
+  \subsection{}
+    $x,y$は実数とする。
+    \[|xy| = |x||y|\]
+    であることを証明しなさい。\footnote{左辺は$|xy| = xy$の場合と$|xy| = -xy$になる場合があります。
+    前者はつまり、$xy \geqq 0$となっている場合です。
+    $xy \geqq 0$とはつまり掛け算が0もしくは正なので、
+    $x,y$の符号が同じということになります。後者はつまり、$xy < 0$となっている場合です。
+    $xy < 0$とはつまり掛け算が負なので、$x,y$の符号が異なる場合ということになります。
+    さて、この「$x,y$の符号が異なる」という場合について考えてみましょう。
+    この時は、先ほども見たように、$|xy| = -xy$となります。この時、右辺の$|x||y|$は本当に
+    $-xy$になるかどうかを確かめなければなりません。
+    $|x|$や$|y|$があるので、ここでも場合分けが必要になります。
+    たとえば「$|x| = x$である場合」を考えましょう。つまり、$x \geqq 0$である場合を考えます。
+    なんと、このとき自動的に$y < 0$となります。なぜなら、今は「$x,y$は異符号」という場合で考えていたからです。
+    したがって、$|y| = -y$となります。したがって、$|x||y| = x (-y) = -xy$となります。
+    よって、「$x,y$は異符号でありさらに$x \geqq 0$」ある場合は$|xy|=|x||y|$がちゃんと成立しています。
+    このような場合分けをほかのすべての場合において確認してください。}
+  \subsection{}
+    二つのグラフ、$y = |-x^2 + 2x -3 |$、と、$y = -x$は交点を持つか？
+    持つ場合はその交点の座標を求めなさい。\footnote{絶対値が付いている方は、絶対値の中身を平方完成してみよう。}
+
+\newpage
+\section{センター試験２０１９年改題}
+  $a,b$はともに正の実数とする。
+  $x$の2次関数
+  \[y = x^2 + (2a - b)x + a^2 + 1\]
+  のグラフを$G$とする。
+  \subsection{}
+    グラフ$G$の頂点の座標を求めなさい。
+  \subsection{}
+    グラフ$G$は点$(-1,6)$を通るとする。$b$を$a$を用いた式で表しなさい。
+  \subsection{}
+    横軸を$a$軸、縦軸を$b$軸として、(2)で求めた式のグラフを書きなさい。
+  \subsection{}
+    $b$の最大値を求めなさい。また、このときの$a$の値を求めなさい。
+
+\section{}
+  $a$は実数とする。
+  関数$f(x) = ax^2 + (1-2a)x$は次の二つの条件を満たしている。
+  \begin{enumerate}
+    \item $-3 \leqq x < 0$のとき、$f(x)\geqq -1$
+    \item $x \geqq 0$のとき、$f(x)\geqq 0$
+  \end{enumerate}
+  この二つが成り立つような$a$の範囲を求めたい。\footnote{各問題についての状況に合わせたお絵かきをしながら考えよう。}
+  \subsection{}
+    $a = 0$のとき、上記1.、2.の条件は満たされるかを確認しなさい。
+  \subsection{}
+    $a < 0$のとき、上記1.、2.の条件は満たされるかを確認しなさい。
+  \subsection{}
+    これ以降の問題は$a>0$として考えていく。
+    $f(x)$の左辺を$x$について因数分解しなさい。
+  \subsection{}
+    関数$f(x)$のグラフを$G$とする。グラフ$G$の頂点の座標を求めなさい。
+  \subsection{}
+    方程式$f(x) = 0$が重解をもつとき、$a$の値を求めなさい。
+  \subsection{}
+    方程式$f(x) = 0$が相異なる二つの解をもつときの$a$の範囲を求めなさい。
+  \subsection{}
+    2.の条件を満たす$a$の範囲を求めよ。
+  \subsection{}
+    グラフ$G$の軸が$-3$以上でかつ、$0$より小さいとき、$a$の値の範囲を求めなさい。
+  \subsection{}
+    $a$が(8)の範囲であるとき、1.の条件を満たす$a$の範囲を求めなさい。
+  \subsection{}
+    グラフ$G$の軸が$-3$より小さいとき、$a$の値の範囲を求めなさい。
+  \subsection{}
+    $a$が(10)の範囲であるとき、1.の条件を満たす$a$の範囲を求めなさい。
+  \subsection{}
+    1.2.をともに満たす$a$の条件を求めなさい。
+
+\newpage
+  9/13 問題
+  \section{}
+    A,B,C君の三人でじゃんけんをする。
+    \subsection{}
+      一回じゃんけんをする。このとき、あいこになる確率を求めなさい。
+    \subsection{}
+      二回じゃんけんをする。このとき、A君が二連勝する確率を求めなさい。
+    \subsection{}
+      二回じゃんけんをする。このとき、少なくとも誰か一人が二連勝する確率を求めなさい。
+
+  \section{}
+    関数$f(x)=-x^2 + 2ax - (a - \sqrt{3})(a + \sqrt{3})$を考える。
+     定義域は$0 \leqq x \leqq 3$とする。
+    $f(x)$の最大値を求めなさい。($a$の値によって場合分けすること)
+
+\newpage
+\section{}
+  $\lceil x \rceil$は$x$より大きい最小の整数とする。
+  たとえば、$\lceil 3.1 \rceil$は$4$で、$\lceil 2.9 \rceil$は$3$である。
+  これを踏まえて次の問いに答えなさい。
+  \subsection{}
+    $\dfrac{1}{3-\sqrt{7}}$の小数部分を$b$、
+    $a = \Bigl\lceil \dfrac{1}{3-\sqrt{7}} \Bigr\rceil$とする。
+    \subsubsection{}
+      $a$の値を求めなさい。
+    \subsubsection{}
+      $a^4 - b^4$の値をもとめなさい。\footnote{計算頑張ってください}
+
+\section{}
+  毎秒$30$mの速さ\footnote{一秒で30メートルも進むので結構全力ですね}で真上に球を投げ上げる。
+  $t$秒後、地面から測った球の高さを$h$mとする。
+  このとき、$h$は$t$を用いて次のように表すことができる。
+  \[h = 30t - 5t^2\]
+  という式で計算できる。
+  \subsection{}
+    球の高さが最も高くなるのは、投げ上げてから何秒後か。
+    また、そのときの球の高さを求めなさい。
+  \subsection{}
+    球の高さが$40$m以上であるのは、投げ上げてから何秒後から何秒後までか。
+
+\newpage
+\section{方べきの定理}
+  円$O$がある。二本の直線$L_1,L_2$がこの円と交わっている。
+  直線$L_1$と円$O$との交点は二つあるとする。
+  それぞれ、点$A$,点$B$とする。
+  直線$L_2$に関しても、円$O$との交点は二つあるとする。
+  それぞれ、点$C$,点$D$とする。
+  直線$L_1$と直線$L_2$の交点を点$E$とする。
+  点$E$は円$O$の内部にあるとする。
+  \subsection{}
+    $\triangle AEC$と$\triangle DEB$が相似であることを証明しなさい。
+  \subsection{}
+    \[AE \times BE = CE \times DE\]
+    であることを証明しなさい。なお、$AE$とは線分$AE$の長さを表している。
+
+\section{}
+  $\triangle ABC$の辺$BA$上に点$D$、辺$CA$上に点$E$がある。
+  $\triangle ABC$の面積を$S_1$、$\triangle ADE$の面積を$S_2$とおく。
+  \[S_2 = S_1 \times \frac{AD}{AB} \times \frac{AE}{AC}\]
+  であることを証明しなさい。
+
+\newpage
+\section{以下の問いに答えなさい。}
+  以下の問いにおいて、$\theta$は角度を表すとし、
+  断りがない限り$0^{\circ} < \theta < 90^{\circ}$であるとする。
+  \subsection{}
+    $\triangle ABC$は$\angle ABC = 60^{\circ}, \angle ACB = 90^{\circ}$の直角三角形である。
+    $\sin (\angle BAC)$の値を求めなさい。
+  \subsection{}
+    辺$AB$の長さは$4\sqrt{3}$とする。$\triangle ABC$の面積を求めなさい。
+  \subsection{}
+    $\triangle DEF$は$\angle DEF = \theta, \angle DFE = 90^{\circ}$の三角形である。
+    各辺の長さは$DE = f, EF = d, FD = e$であるとする。
+    $\sin \theta, \cos \theta, \tan \theta$
+    をそれぞれ$d,e,f$を用いて表しなさい。
+  \subsection{}
+    $\angle EFD$の大きさを$\theta$を用いて表しなさい。
+  \subsection{}
+    $\sin(\angle EFD), \cos(\angle EFD)$を$e,f,d$を用いて表せ。
+  \subsection{}
+    \begin{align*}
+      \sin(90^{\circ} - \theta) &= \cos \theta  \\
+      \cos(90^{\circ} - \theta) &= \sin \theta \\
+      \tan(90^{\circ} - \theta) &= \frac{1}{\tan \theta}
+    \end{align*}
+    であることを証明しなさい。(前問までに解いたことを利用すればよい。)
+
+\newpage
+\section{練習問題}
+  \subsection{}
+  連立不等式
+    \[
+      \begin{cases}
+        x^2 -8x + 7 \leqq 0\\
+        2x^2 -7x +1 > 0
+      \end{cases}
+    \]
+    を解きなさい。
+
+  \subsection{}
+    3 \verb|%|
+    の食塩水100gに9\verb|%|の食塩水を加えて7\verb|%|以上の
+    食塩水を作るには、9\verb|%|の食塩水を何g以上加える必要があるかもとめよ。
+
+  \subsection{}
+    $1 \leqq x \leqq 3$において、二次関数$y = x^2 -2ax + 3a$が常に
+    正となるような$a$の値の範囲を求めなさい。
+
+  \subsection{}
+    1000から9999までの四桁の自然数のうち、1000や1212のようにちょうど二種類
+    の数字から成り立っているものの個数を求めなさい。
+
+  \subsection{}
+    袋Aの中には赤玉と白玉がそれぞれ4つずつ入っている。
+    袋Bの中には赤玉が3つと白玉が2つ入っている。
+    以下の確率をそれぞれ求めなさい。
+    \begin{itemize}
+      \item 袋Bから2つの玉を取り出すとき、赤玉と白玉が一つずつになる確率。
+      \item 袋Aから3つの玉を取り出し、袋Bから2つの玉をとりだす。取り出した5つのうち赤玉が3つである確率。
+    \end{itemize}
+
+\newpage
+\section{}
+  $a$を実数とする。放物線$y=ax^2$と直線$y = x - a$の交点の個数を調べなさい。
+  \footnote{$a = 0$のときのみ別に場合分けして考える。}
+\section{}
+  放物線$y = x^2 + ax +2$が、二点A$(0,1)$、B$(2,3)$を結ぶ線分と異なる二点で
+  交わる。このとき、$a$の値の範囲を求めなさい。
+\section{}
+  SUUGAKU の七文字を一列に並べるとき、次の確率を求めなさい。
+  \begin{enumerate}
+    \item 同じ文字が一続きに並ぶ確率
+    \item 子音が隣り合わない確率
+  \end{enumerate}
+\section{}
+  一個のサイコロを投げて4以下の目が出るとコマを1つ進め、5以上の目が出ればコマを動かさない
+  というすごろくゲームをする。
+  いま、あと4つ進むと上がりになるところにコマがある。
+  次の確率を求めなさい。
+  \begin{enumerate}
+    \item サイコロを投げる回数が4回で上がりになる、すなわち最短で上がれる確率
+    \item サイコロを投げる回数がちょうど5回で上がりになる確率。
+    \item サイコロを投げる回数が6回以内で上がりとなる確率。
+  \end{enumerate}
+\section{}
+  $\triangle ABC$の三つの角の大きさをそれぞれ$A,B,C$とする。
+  次の等式が成り立つことを証明しなさい。\footnote{1.,2.は$A+B+C = 180^{\circ}$であることを利用する。3.の右辺は$\tan^2A = \frac{1}{\cos^2 A} - 1$であることを利用する。}
+  \begin{enumerate}
+    \item $\sin \frac{A+B}{2} = \cos \frac{C}{2}$
+    \item $\tan \frac{A+B}{2} \tan \frac{C}{2} = 1$
+    \item $\sin^2 A + \sin^2 B + \sin^2(90^{\circ} - A) + \sin^2(90^{\circ} - B) = 2(\tan^2 C) \times \frac{\cos^2C}{1 - \cos^2 C} $
+  \end{enumerate}
+
+\newpage
+\section{}
+  次の値を求めよ。
+  \begin{gather*}
+    \sin 45^{\circ} , \cos 90^{\circ}, \tan 135^{\circ}\\
+    -\cos 150^{\circ}, \sin 120^{\circ}, \sin 0^{\circ}
+  \end{gather*}
+
+\section{}
+  一次関数$y = \sqrt{3}(x + 1)$がある。このグラフと$x$軸、$y$軸との交点を
+  それぞれ点$A$、点$B$と置く。
+  原点を$O$とする。
+  \subsection{}
+    点$A$、点$B$の座標をそれぞれ求めよ。
+  \subsection{}
+   $\angle OAB$の大きさを求めよ。
+
+\section{}
+  $0^{\circ} < \theta < 180^{\circ}$とする。
+  \subsection{}
+    $\displaystyle{\sin \theta = \frac{1}{\sqrt{2}}}$のとき、$\theta$の値を求めよ。
+  \subsection{}
+    $\displaystyle{\cos \theta \ge \frac{1}{\sqrt{2}}}$のとき、$\theta$の値の範囲を求めよ。
+
+\newpage
+\section{}
+  下の図において$\angle BAC = 45^{\circ}, \angle BCA = 60^{\circ}$である。
+  $AB = 2\sqrt{2}$である。点$F$は辺$AB$の中点である。
+  $\angle FEA = 30^{\circ}$である。
+  このとき、$AC = 2 + \frac{2}{\sqrt{3}}$であることが分かっている。
+  以下の問いに答えなさい。
+
+  \definecolor{qqqqff}{rgb}{0.,0.,1.}
+  \begin{center}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=2.0cm,y=2.0cm]
+      \clip(-0.14472574311528344,-0.6907589805389707) rectangle (3.5832410916038357,2.4009681810547527);
+      \draw [line width=0.4pt] (0.,0.)-- (2.,2.);
+      \draw [line width=0.4pt] (2.,2.)-- (3.366025403784439,-0.3660254037844391);
+      \draw [line width=0.4pt] (3.366025403784439,-0.3660254037844391)-- (1.,1.);
+      \draw [line width=0.4pt] (0.,0.)-- (3.1547005383792515,0.);
+      \begin{scriptsize}
+        \draw [fill=qqqqff] (2.,2.) circle (0.5pt);
+        \draw[color=qqqqff] (1.848493857847872,2.1151573903929535) node {$B$};
+        \draw [fill=qqqqff] (1.,1.) circle (0.5pt);
+        \draw[color=qqqqff] (0.839457501250564,1.165768503151151) node {$F$};
+        \draw [fill=qqqqff] (0.,0.) circle (0.5pt);
+        \draw[color=qqqqff] (-0.08010765131348538,0.18158525878530338) node {$A$};
+        \draw [fill=qqqqff] (3.1547005383792515,0.) circle (0.5pt);
+        \draw[color=qqqqff] (3.2651212550411373,0.201467748570472) node {$C$};
+        \draw [fill=qqqqff] (2.7320508075688767,0.) circle (0.5pt);
+        \draw[color=qqqqff] (2.6089990921305724,-0.20115266957919292) node {$E$};
+        \draw [fill=qqqqff] (3.366025403784439,-0.3660254037844391) circle (0.5pt);
+        \draw[color=qqqqff] (3.2402681428096765,-0.44968379189380087) node {$D$};
+      \end{scriptsize}
+    \end{tikzpicture}
+  \end{center}
+
+  \subsection{}
+    $\angle ABC$の大きさと$\angle AFE$の大きさをそれぞれ求めよ。
+  \subsection{}
+      $\sin 75^{\circ}$の値を求めよ。有理化して答えること。
+  \subsection{}
+    $\sin \angle AFE$の値を求めよ。有理化して答えること。
+  \subsection{}
+    $AE$の長さを求めよ。
+  \subsection{}
+    $BC$の長さを求めよ。
+  \subsection{}
+    $CD = CE$、$DB =DF$であることをそれぞれ証明せよ。
+  \subsection{}
+    $CD$の長さを求めよ。
+  \subsection{}
+    $ED$の長さを求めよ。
+
+\newpage
+\section{以下の問いに答えなさい}
+  \subsection{因数分解せよ}
+    \begin{enumerate}
+      \item $(x^2 + 5x)^2 + 10(x^2 + 5x) + 24 $
+      \item $x^2 -xy + 2yz - 4z^2$
+    \end{enumerate}
+  \subsection{}
+    $y = x^2 - 2ax + 1$の$0 \leqq x \leqq 1$における最大値と最小値を求めよ。
+  \subsection{}
+    $n$を$7$で割ったあまりが$2$または$4$であるとき、$n^2 + n + 1$は$7$で割り切れることを証明しなさい。
+  \subsection{}
+    $1800$の正の約数の個数は何個あるか。また、それらの総和を求めなさい。
+  \subsection{}
+    実数$x,y$が$2x+y=3$を満たしながら変化するとき、$y^2 + x^2$の最小値を求めなさい。
+  \subsection{}
+    $\triangle ABC$において$b\cos A = a\cos B$であるとき、$\triangle ABC$はどのような三角形か答えなさい。
+  \subsection{}
+    $AB = AC$である二等辺三角形$ABC$を考える。辺$AB$の中点を$M$とし、
+    辺$AB$を延長した直線上に点$N$を$AN : BN = 2 : 1$となるように取る。
+    このとき、$\angle BCM = \angle BCN$になることを証明せよ。
+
+\newpage
+\section{以下の問いに答えよ}
+  \subsection{}
+    方程式
+    \[162x + 125y = 1\]
+    の解を全て求めなさい。
+  \subsection{}
+    $246$と$36$の最大公約数を求めなさい。また、最小公倍数も求めなさい。
+  \subsection{}
+    $1011_{(2)} + 10111_{(2)}$の値を10進数で求めなさい。
+  \subsection{}
+    16進数において使われる記号は
+    小さいものから順に
+    \[
+      0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+    \]である。
+    このとき、$a3_{(16)}$を10進数で表せ。
+  \subsection{}
+    10進数において$21$を4進数で表せ。
+  \subsection{}
+    $n$は自然数とする。$n^3 - n$は$6$で割り切れることを証明せよ。
+
+\newpage
+\section{以下の問いに答えよ}
+  \subsection{}
+    次の等式は$x$についての恒等式であるという。定数$a,b,c$の値を求めよ。
+    \[
+      \frac{3x+4}{x(x^2+2)} = \frac{a}{x} + \frac{bx + c}{x^2 + 2}
+    \]
+  \subsection{}
+    整式$P(x)$を$(x+3)$で割ると$-15$余り、
+    $(x-2)$で割ると$10$余るという。
+    $P(x)$を$(x+3)(x-2)$で割った時の余りを求めなさい。
+  \subsection{}
+    $(3x^2 + x -2)^5$を展開したときの$x^6$の係数を求めなさい。
+  \subsection{}
+  \[
+    \cfrac{1}{1+ \cfrac{1}{1 + \cfrac{1}{a + 1}}}
+  \]
+  を計算せよ。
+  \subsection{}
+    実数$a,b,c$が
+    \[
+      \frac{b+c}{a} = \frac{c+a}{b} = \frac{a+b}{c}
+    \]
+    を満たすとき、この式の値を求めよ。
+  \subsection{}
+    $n$を偶数とする。
+    \[
+      _nC_0 + \, _nC_1\times (-2) + \, _nC_2\times (-2)^2 + \cdots + \, _nC_{n-1}\times (-2)^{n-1} + \, _nC_n\times (-2)^n
+    \]
+    の値を求めよ。
+\newpage
+
+\section{}
+  放物線$l$は、放物線$y = -x^2$を$x$軸方向に$+2$、$y$軸方向に$+6$
+  平行移動させたものである。
+  放物線$l$の$x$の変域(定義域)は$a \leqq x \leqq a + p$である。
+  ただし、ここで$p > 0$である。
+  放物線$l$の式を$f(x) = -x^2 + bx + c$とする。
+  このとき、以下の問いに答えよ。
+  \subsection{}
+    $b,c$の値をそれぞれ求めなさい。
+  \subsection{}
+    $f(a),f(2),f(a+1),f(a + p)$をそれぞれ計算せよ。
+  \subsection{}
+    $p=2$とする。
+    $a$の値について場合分けをし、
+    この範囲における放物線$l$の最大値を求めよ。
+    また、最小値も求めよ。
+  \subsection{}
+    $a \leqq 2 \leqq a+p$のとき、すなわち
+    $\underline{\quad} - p \leqq a \leqq \underline{\quad}$の時を考える。
+    直線$s$は放物線$l$の頂点とただ一点で交わる。
+    直線$s$の式は$y = \underline{\qquad}$である。
+    したがって、直線$s$の傾きは$\underline{\quad}$である。
+    直線$r$は2点$(a,f(a)),(a+p,f(a+p))$を通る。
+    この二点の間の変化の割合を計算すると$\underline{\qquad\qquad}$である。
+    この直線の式を$y=g(x)$とおけば、$g(x) = (\underline{\qquad})x + \underline{\qquad\qquad}$である。
+
+    さて、放物線$l$の定義域を限りなく狭めてみよう。
+    つまり、$p$の値を限りなく$0$に近づけるのである。
+    ここでは話を簡単にするために$p = 0$とみなすことにしよう。
+    このとき、
+    $g(x) = \underline{\qquad\qquad}$となる。
+
+\newpage
+\section{}
+  $\triangle ABC$において$(b-c)\sin^2A = b\sin^2 B - c\sin^2C$が成立している。
+  \subsection{}
+    正弦定理を用いて
+    $\frac{\sin^2B}{b^2},\frac{\sin^2C}{c^2}$をそれぞれ$a,A$を用いて表せ。
+  \subsection{}
+    $(b - c)a^2 = b^3 - c^3$が成り立つことを示せ。仮定の式の両辺に$a^2$をかけて、
+    両辺を$\sin^2A$で割ればよい。
+  \subsection{}
+    (2)より、$\underline{\qquad\qquad\qquad}=0$が成立する。
+    空欄を因数分解した形で埋めよ。
+  \subsection{}
+    $\triangle ABC$としてあり得るはどのような三角形か。すべて答えよ。
+
+\section{}
+  1辺の長さが$1$の正三角形$ABC$を底面とする四面体$OABC$を考える。
+  ただし、$OA=OB=OC=a$であり、$a \geqq 1$とする。
+  頂点$O$から$\triangle ABC$におろした垂線の足を$H$とする。
+  \subsection{}
+    $AH=BH=CH$を証明せよ。三角形の合同を利用する。
+  \subsection{}
+    (1)より$H$は$\triangle$の外心になる。
+    すなわち、$H$は$\triangle ABC$の外接円の中心である。
+    このことに注意して$AH$の長さを求めよ。
+  \subsection{}
+    $\triangle OAH$に注目することにより、$OH$の長さを$a$を用いて表せ。
+  \subsection{}
+    四面体$OABC$が球$S$に内接しているとする。
+    この球の半径$r$を$a$を用いて表すことを考えよう。
+
+    さて、立体を考えるときの常套手段として、立体を特定の平面で切断して考えることが多い。
+    今回は線分$OA$を通り、$\triangle ABC$と垂直に交わる平面(この平面を$l$と名付ける)でこの球を切断する。
+    切断面は当然、円になる。この円を$X$と名付けよう。
+    四面体は球に内接しているという仮定があるから、線分$AH$は
+    円$X$の弦である。
+    また、線分$OH$は$\triangle ABC$と垂直に交わる線分である。
+    したがって、この線分は平面$l$上に存在する。
+
+    さて、線分$OH$上に$OP = AP$となるような$P$を取ることは可能であろう\footnote{具体的な場所を求めるのではなく、そのような点$P$は存在するということだけを確認したい}。この点$P$はいったん記憶の片隅に置いてほしい。
+    今の流れと同じことを別の切断面に関しても行うことにしよう。
+    線分$OB$を通り、$\triangle ABC$と垂直に交わる平面(この平面を$m$と名付ける)でこの球を切断する。
+    以下、同様の流れを経ることにより、結局、線分$OH$上に$OQ = BQ$となるような$Q$を取ることは可能であるということが分かる。
+    しかし、これらには「図形の対称性」があるので、実は$OP= OQ$であることが分かる。
+    つまり、$P = Q$、二つの点は同一のものである。
+    したがって
+    \[
+      OP = AP = BP
+    \]
+    となる点が線分$OH$上に存在するということが分かる。まったく同様にして考えると、結局は
+    \[
+    OP = AP = BP = CP
+    \]
+    となる点が線分$OH$上に存在するということが分かる。
+    四点$O,A,B,C$は球$S$に内接している点なので、点$P$はこの球の中心ということになる。
+    つまり、$OP,AP,BP,CP$たちはこの球の半径ということになる。
+    \subsubsection{}
+      $PH$を$r,a$を用いて表せ。
+    \subsubsection{}
+      $\triangle APH$に三平方の定理を適用し、$r$を$a$を用いて表せ。
+
+\newpage
+\section{}
+  $n$を自然数、$0 \leqq r \leqq n$とする。
+  \subsection{}
+    $\,_nC_r, \, \,_nP_r$の定義を階乗の記号を用いて書きなさい。
+  \subsection{}
+    $\,_nC_{r} = \,_nC_{n-r}$を証明せよ。
+  \subsection{}
+    この問題においては$4 \leqq n$とする。$_nC_0 < \,_nC_1 < \,_nC_2$
+    を証明せよ。
+  \subsection{}
+    $\displaystyle{\frac{_nC_r}{_nC_{r+1}}}$を計算せよ。
+  \subsection{}
+    $n$を偶数とする。$r \leqq \frac{n}{2}$とする。
+    \[_nC_{r} \leqq \,_nC_{r+1}\]
+    を証明せよ\footnote{難しいです。一緒にやりましょう。}。
+
+
+
+\section{}
+  A,B,Cの三人がそれぞれサイコロを1個振る。次の問いに答えよ。
+  \subsection{}
+    3人とも同じ目の出る確率を求めよ。
+  \subsection{}
+    3人とも互いに異なる目の出る確率を求めよ。
+
+\newpage
+\section{}
+  \subsection{}
+    $\frac{a}{b}=\frac{b}{c}$のとき、次が成立することを証明せよ。
+    \[(a+b+c)(a-b+c) = a^2+b^2+c^2\]
+  \subsection{}
+    $a \ge b, x \ge y$のとき、次の不等式を証明せよ。また、$=$が成立するのはどのようなときか。
+    \[(a+b)(x+y) \leq 2(ax + by)\]
+  \subsection{}
+    次の不等式をそれぞれ証明せよ。
+    \[\sqrt{a^2 + b^2} \leq |a| + |b| \leq \sqrt{2}\sqrt{a^2 + b^2}\]
+  \subsection{}
+    実数$a,b,c,d$が$a+b = c+d,a^2 + b^2 = c^2 + d^2$を満たしているとする。
+    このとき、$\begin{cases}
+      a=c\\b=d
+  \end{cases}$もしくは$\begin{cases}
+    a=d\\b=c
+  \end{cases}$であることを証明せよ。
+  \section{}
+    \subsection{}
+      $0\leq p \leq q$のとき、$\frac{p}{1+p} \leq \frac{q}{1+q}$であることを示せ。
+    \subsection{}
+      全ての実数$p,q$について
+      \[\frac{|p+q|}{1 + |p+q|} \leq \frac{|p|}{1+|p|} + \frac{|q|}{1+|q|}\]
+      であることを示せ。\footnote{三角不等式のようになっている}
+
+\newpage
+  \section{複素数について}
+    \subsection{導入}
+    教科書を読んだり、授業が進んでいると思うので知っていると思いますが簡単に説明をかいておきます。
+    今までではどんな数でも二乗すると、その計算結果は必ず$0$もしくは正の数でした。
+    負の数になることはありませんでした。
+
+    さて、数学という学問は「今までの概念や考え方をさらに拡げて新たな理論を展開する」ということをしばしばします。
+    今までの例でいえば、中学一年生で習った「負の数」や中学三年生で習った「無理数」がそれです。
+    \begin{center}
+      \begin{tabular}{|l|c|c|c|}\hline
+         & 拡張前 & → & 拡張後 \\\hline\hline
+        小学4年頃(?) & 自然数 & → & 正の有理数(分数) \\ \hline
+        中学一年 & 正の数 & → & 負の数 \\ \hline
+        中学三年 & 有理数 & → & 実数(有理数＋無理数) \\ \hline
+      \end{tabular}
+    \end{center}
+    数以外の概念の拡張も今まで習ってきました。例えば以下のようなものです。
+    \begin{enumerate}
+      \item[負の余り] 例えば「$7 \div 3 = 2 \quad\text{あまり} + 1$」です。しかしこれは$7 \div 3 = 3 \quad\text{あまり} -2$と捉えてもいいでしょう。($7 = 3 \times 2 + 1 = 3 \times 3 -2$)
+      すなわち、「今まであまりは正の整数だったが、負の整数の余りで考えてもよい」
+      というふうに、あまりの範囲を拡げたのです。
+      \item[三角比の$\theta$の角度] 去年勉強した$\sin \theta$や$\cos \theta$について、最初$\theta$の範囲は$0^{\circ} \leqq \theta \leqq 90^{\circ}$でした。
+      しかし、勉強を進めると$\theta$の範囲は
+      $0^{\circ} \leqq \theta \leqq 180^{\circ}$まで可能ということになりました。
+      つまり、$\theta$の範囲が拡がったのです。\footnote{実は高校範囲だと$\theta$の値はすべての実数を入れてOKということになります。}
+    \end{enumerate}
+
+    \subsection{単位虚数$i$と四則演算}
+    今回の「複素数」は「実数」の考え方を拡張したものになります。
+    具体的に言うと、「二乗すると$-1$になるような"数(のようなもの)"」を
+    新しく考えます。この新しい"数"のことを$i$で表すことにし、
+    虚数単位と呼びます。
+    \begin{screen}
+      \begin{definition}
+        $i$を虚数単位といい、
+        \[
+          i^2 = -1
+        \]
+        を満たす。
+      \end{definition}
+    \end{screen}
+
+    虚数単位$i$は実数の概念を拡張するために、新しく考えたものです。
+    したがって、今までの数と同様に足し算や掛け算のような計算が可能であってほしいです\footnote{実際、可能であることが証明されます(大学数学)}。
+    つまり、たとえば、
+    \[
+      2i + i, 1-i, \sqrt{3} + 3i
+    \]
+    のような数も考えられます。
+    ここで注意したいのは実数と$i$との四則演算はできません。
+    ここでいう「できません」の意味は、例えば「$2 + \sqrt{2}$がこれ以上
+    計算できない」と同じ意味です。
+    \begin{screen}
+      \begin{definition}
+        $1 + 2i$のように、二つの実数$a,b$を使って
+        \[
+          a + bi
+        \]
+        と表されるような数のことを複素数(complex number)という。
+        特に$b = 0$のとき、実数という。また、$a = 0$の場合を純虚数、もしくは単に虚数という。
+
+        また、複素数$a + bi$が与えられた時、$a$のことを実部、$b$のことを虚部という。
+      \end{definition}
+    \end{screen}
+    \begin{prob*}
+      次の複素数の実部と虚部は何か。
+      \[
+        2 + \sqrt{3}i
+      \]
+    \end{prob*}
+
+    複素数同士の足し算は実部、虚部をそれぞれ足し算する。
+    \begin{ex*}
+      $(2 + i) + (2 - 4i) = 4 - 3i$
+    \end{ex*}
+    複素数同士の掛け算は次にようにする。
+    \begin{ex*}
+      \begin{align*}
+        (2 + i) \times (2 - 4i) &= 4 - 8i + 2i -4i^2 \\
+        &= 4 -6i -4\times(-1)\\
+        &= 4 + 4 -6i\\
+        &= 8 -6i
+      \end{align*}
+    \end{ex*}
+    \begin{prob*}
+      次を計算せよ。
+      \begin{enumerate}
+        \item $(2+\sqrt{3} - (1 - \sqrt{12})i) - (\sqrt{27} - \sqrt{3}i)$
+        \item $(\sqrt{3} - \sqrt{12}i)(\sqrt{27} -2\sqrt{2}i)$
+      \end{enumerate}
+    \end{prob*}
+
+    \subsection{二次方程式を複素数の範囲で解く}
+    $i^2 = -1$であることから、次のような表記も使われます。
+    \begin{screen}
+      \begin{definition}
+        $i$を虚数単位とする。
+        \[
+          \sqrt{-1} = i
+        \]
+        と表すこともある。
+      \end{definition}
+    \end{screen}
+    この表記はある種、「平方根」の概念の拡張になります。
+    いままで、平方根の中身は正の数である必要がありました。
+    しかし、定義３のおかげにより、平方根の中身が負の数でも、虚数単位$i$を
+    使えばよいということになります。
+    したがって、次のような二次方程式を解くことも可能になります。
+    \begin{ex*}
+      二次方程式
+      \[
+        x^2 +2x + 2 = 0
+      \]
+      を解く。解の公式をつかうと、
+      \[
+        x = \frac{-2 \pm \sqrt{-4}}{2}
+      \]
+      となる(途中の細かい計算は省略しました)。
+      いままでだと、平方根の中が負の数なので、解なしということになっていました。
+      しかし、今では$\sqrt{-4} = \sqrt{4}i$なので、解は
+      \[
+        x = -1 \pm i
+      \]
+      になります。これが意味するところとしては、
+      この二次方程式の解を実数の範囲で探しても見つからないが、
+      複素数の範囲で探すと存在するということになります。
+    \end{ex*}
+    \begin{prob*}
+      二次方程式$x^2 + 3x = =1$の解を複素数の範囲で求めなさい。
+    \end{prob*}
+
+    同じような理由で、因数分解もさらにできるようになります。
+    \begin{ex*}
+      $x^2 + 1$を因数分解する。
+      $+1 = (-1) \times (-1) = i \times (-i) = - i^2$
+      なので、
+      \begin{align*}
+        x^2 + 1 &= x^2 - i^2\\
+        &= (x - i)(x + i)
+      \end{align*}
+      というふうに因数分解できる。
+    \end{ex*}
+    \begin{prob*}
+      $x^2 + 4$を因数分解せよ。
+    \end{prob*}
+
+    \subsection{複素数の共役}
+      複素数には共役(dual)という重要な考え方があります。
+      共役を日常的な言葉で説明するなら、
+      「対になるもの」「相方」「対称的なもの」
+      というふうに捉えてください。
+      \begin{screen}
+        \begin{definition}
+          複素数$z = a + bi$が与えられているとき、
+          \[
+            a - bi
+          \]
+          を$z$の複素共役といい、$\overline{z}$で表す。
+        \end{definition}
+      \end{screen}
+      \begin{prob*}
+        次の複素数の共役複素数を求めよ
+        \begin{enumerate}
+          \item $1 + i$
+          \item $-2i$
+          \item $12$
+        \end{enumerate}
+      \end{prob*}
+
+    \subsection{複素数の共役と分数}
+      分母が複素数になっている分数について。
+      「分数の有理化」と同じようにする。
+      \begin{ex*}
+        \[
+          \frac{1}{i}
+        \]
+        は次にように計算することで分母の虚数単位を処理することができる。
+        \begin{align*}
+          \frac{1}{i} &= \frac{1}{i} \times \frac{i}{i}\\
+          &= \frac{i}{i^2}\\
+          &= \frac{i}{-1}\\
+          &= -i
+        \end{align*}
+      \end{ex*}
+      \begin{ex*}
+        もう少し複雑な分数
+        \[
+          \frac{3}{2 + i}
+        \]
+        は次のように有理化する。つまり、分母の共役複素数を掛ける。
+        \begin{align*}
+          \frac{3}{2 + i} &= \frac{3}{2 + i} \times \frac{2 - i}{2 - i}\\
+          &=\frac{3(2 - i)}{(2 + i)(2 - i)}\\
+          &=\frac{3(2 - i)}{4 - i^2}\\
+          &=\frac{3(2 - i)}{4 + 1}\\
+          &=\frac{6 - 3i}{5}
+        \end{align*}
+      \end{ex*}
+
+    \subsection{複素数の共役と二次方程式の解}
+      いままでに、
+      \begin{itemize}
+        \item 解の公式を使えば解を求めることができる
+        \item 複素数の範囲までなら必ず解は二つ存在する(重複する場合は除く)
+      \end{itemize}
+      であることを確認しました。
+      しかし、二次方程式を解く際の本質は因数分解です。
+      例えば、
+      \[
+        x^2 + x + 1 =0
+      \]
+      という二次方程式は、解の公式を用いることにより、
+      \[
+        x = \frac{-1 \pm \sqrt{3}i}{2}
+      \]
+      と計算できます。
+      これは実質元々の$x^2 + x + 1 = 0$という方程式を
+      \[
+        \left(x -\frac{-1 + \sqrt{3}i}{2}\right)\left(x - \frac{-1 - \sqrt{3}i}{2}\right) = 0
+      \]
+      という形に変形したとも思えます。
+      なぜなら、この因数分解した式を見ていると、
+      \[
+        x = \frac{-1 + \sqrt{3}i}{2},　\quad \frac{-1 - \sqrt{3}i}{2}
+      \]
+      と求められるからです。
+      これは解が複素数でない二次方程式でも当然同じです。
+      例えば
+      \[
+        2x^2 -5x + 2 = 0
+      \]
+      を計算してみましょう。
+      この式の左辺は少し考えれば因数分解できる簡単な式ですが、あえて解の公式で解いてみます。
+      すると
+      \[
+        x = \frac{-(-5) \pm \sqrt{(-5)^2 - 4 \times 2 \times 2}}{2 \times 2}
+      \]
+      なので、計算をすると
+      \[
+        x = \frac{1}{2},\quad 2
+      \]
+      となります。
+      つまりこれは、もともとの式である$2x^2 -5x + 2 = 0$を
+      \[
+        \Bigl(x - \frac{1}{2}\Bigr)\Bigl(x -2\Bigr) = 0
+      \]
+      という形に変形したとも思えるのです。
+      ここで、文字をつかって一般的に話をしてみましょう。
+      二次方程式
+      \[
+        ax^2 + bx + c = 0
+      \]
+      があって、解の公式を用いて解くと解が
+      \[
+        x = \alpha, \beta
+      \]
+      であると分かったとします。
+      つまり、もともとの$ax^2 + bx + c = 0$という式を
+      \[
+        (x - \alpha)(x - \beta) = 0
+      \]
+      という形に変形したと思えます。
+      したがって、この左辺を展開すると
+      \[
+        x^2 - (\alpha + \beta)x + \alpha\beta = 0
+      \]
+      という形になります。
+      後の理論のためにここで両辺を$a$倍します。
+      \[
+        ax^2 - a(\alpha + \beta)x + a\alpha\beta = 0
+      \]
+      展開をしたので、この式の左辺はもともとの
+      $ax^2 + bx + c $と一致しているはずです。
+      同じ次数同士の係数は一致しているので次のような式が成り立ちます。
+      \[
+        \begin{cases}
+          - a(\alpha + \beta) = b\\
+          a\alpha\beta = c
+        \end{cases}
+      \]
+      したがって、
+      \[
+        \begin{cases}
+          \alpha + \beta = -\frac{b}{a}\\
+          \alpha\beta = \frac{c}{a}
+        \end{cases}
+      \]
+      となる。これを「解と係数の関係」という。
+      \begin{screen}
+        二次方程式$ax^2 + bx + c =0$が与えられているとき、
+        その解を$\alpha, \beta$とする。
+        このとき、次が成立する。
+        \[
+          \begin{cases}
+            \alpha + \beta = -\frac{b}{a}\\
+            \alpha\beta = \frac{c}{a}
+          \end{cases}
+        \]
+      \end{screen}
+      「解と係数の関係」は次のような複雑な場合に威力を発揮することが多いです。
+      \begin{ex*}
+        二次方程式
+        \[
+          10x^2 + x -10 =0
+        \]
+        の解を$\alpha, \beta$とする。このとき、解と係数の関係より
+        \begin{itemize}
+          \item $\alpha + \beta = -\frac{1}{10}$
+          \item $\alpha\beta = \frac{-10}{10} = -1$
+        \end{itemize}
+        と求めることができる。
+      \end{ex*}
+
+      さて、この「解と係数の関係」を利用してさらに二次方程式の解を深く見ていきましょう。
+      再び$x^2 + x + 1 = 0$を考えます。この解はさっきも求めたように、
+      \[
+        x = \frac{-1 + \sqrt{3}i}{2},　\quad \frac{-1 - \sqrt{3}i}{2}
+      \]
+      でした。
+      ここで注目したいのは、これらの解は互いに複素共役です。
+      この例から予測されることは、「(係数がすべて実数の二次方程式において)解の一つが虚数ならばもう片方も虚数でありしかも共役である」
+      ということです。
+      これは解と係数の関係より説明できます。
+      \begin{screen}
+        \begin{prop*}
+          $a,b,c$を実数、$a \neq 0$とする。
+          二次方程式
+          \[
+            ax^2 +bx +c = 0
+          \]
+          の解の一つ$\alpha$が虚数であることがわかっているならば、
+          もう一つの解は必ず$\overline{\alpha}$である。
+        \end{prop*}
+      \end{screen}
+      \footnotesize
+      \begin{proof}
+        二次方程式
+        \[
+          ax^2 +bx +c = 0
+        \]
+        の解$\alpha$が、仮定より虚数なので$\alpha = p + iq$とおく。
+        ただし、ここで$p,q$は実数であり$q \neq 0$である。
+        この二次方程式のもう一つの解を$\beta = s + ti$とする。
+        ここで$s,t$は実数である。
+        解と係数の関係より
+        \[
+          \alpha + \beta = -\frac{b}{a}
+        \]
+        であるが、この左辺は
+        \[
+          (p + s) +(q + t)i
+        \]
+        である。右辺が実数なので
+        \[
+          q + t = 0
+        \]
+        でなければならない。
+        したがって
+        \[
+          t = -q
+        \]
+        である。
+        一方、
+        \[
+          \alpha\beta = \frac{c}{a}
+        \]
+        であるが、今までの話から次のように計算できる。
+        \begin{align*}
+          (p + iq)(s + ti) = \frac{c}{a}\\
+          (ps - qt) + (pt + qs)i = \frac{c}{a}
+        \end{align*}
+        これより、
+        \[
+          pt + qs = 0
+        \]
+        でなければならないが、さきほど、$t =-q$と求めたので代入すると、
+        \[
+          p(-q) + qs = 0
+        \]
+        仮定より$q \neq 0$だから、両辺を$q$で割って
+        \[
+          -p + s =0
+        \]
+        したがって、
+        \[
+          s = p
+        \]
+        よって
+        \[
+          \beta = s + ti = p - qi = \overline{\alpha}
+        \]
+        となるので証明が終わる。
+      \end{proof}
+      \normalsize
+      \begin{prob*}
+        $b,c$は実数とする。
+        二次方程式$x^2 + bx + c =0$の解の一つは$1 + i$であったとする。
+        このとき、$b,c$を求めよ。
+      \end{prob*}
+
+\newpage
+\section{}
+  $x,y$は実数とする。複素数$z = x + iy$について次の問いに答えよ。
+  \subsection{}
+    $z^3$を計算せよ。
+  \subsection{}
+    $p,q$を実数とするとき、
+    \[p^3 -3pq^2\]
+    を因数分解しなさい。\footnote{ヒント：(2)で上側の式は因数分解できているはずです。すると、$p$は3通りに表せるので、それぞれ場合で場合分けをして$p$をもう一方の式に代入します}
+  \subsection{}
+    $p,q$を実数とする。連立方程式
+    \[\begin{cases}
+      p^3 -3pq^2 = 0\\
+      3p^2q - q^3 = 0
+    \end{cases}\]
+    を解きなさい。
+  \subsection{}
+    $z^3 = i$が成り立つような$z$を全て求めなさい。\footnote{ヒント：$z^3$の実部が$0$、虚部が$1$になるということです。}
+\section{}
+  $\displaystyle{\alpha = \frac{3 + \sqrt{7}i}{2}}$とする。
+  \subsection{}
+    $p,q$を実数とする。二次方程式
+    \[x^2 +px +q =0\]
+    は$x =\alpha$を解に持つ。このとき、$p,q$の値を求めよ。
+  \subsection{}
+    次の三次式を実数の範囲で因数分解せよ
+    \[x^3 -4x^2 + 7x -4\]
+  \subsection{}
+    $a,b,c$を整数とする。三次方程式$x^3 + ax^2 + bx + c =0$は
+    $x = \alpha$を解に持つ。
+    また、$0 \leq x \leq 1$の範囲にただ一つだけ実数解をもつ。
+    この実数解を$\beta$とおく。
+    \subsubsection{}
+      次の文章の$p,q,r,s$の値を求めよ。
+      \begin{itemize}
+        \item 仮定より、$x^3 + ax^2 + bx + c =0$の左辺は$(x - \beta)(x^2 + px + q)$と因数分解できる。
+        \item したがって、$x^2 + px + q = 0$が成り立つが、$x = \alpha$は元の三次方程式の解である。よって、$x^2 + px + q = 0$を解くと、$x = \alpha,\overline{\alpha}$である。したがって、(1)より、$p,q$の値が分かる。
+        \item $a,b,c$は整数だから$(x - \beta)(x^2 + px + q)$を展開したとき、各係数は整数でなければならない。したがって、$\beta = s$または$\beta = t$でなければならない。
+      \end{itemize}
+    \subsubsection{}
+      $\beta = s$または$\beta = t$のそれぞれで場合分けをして、整数$(a,b,c)$の組を全て求めよ。
+
+\newpage
+\section{}
+  以下の問いに答えよ。
+  \subsection{}
+    2点$A(-2,0), B(5,0)$を結ぶ線分$AB$を$3:4$に内分する点を$C$、
+    $3:4$に外分する点を$D$とする。線分$CD$の長さを求めよ。
+  \subsection{}
+    $\triangle ABC$において辺$AB, BC, CA$の中点の座標がそれぞれ$(0,2), (2,-2), (3,1)$
+    であるとき、三つの頂点$A,B,C$の座標を求めよ。
+  \subsection{}
+    3点$A(1,1), B(3,1), C(5,-3)$について、$\triangle ABC$の外心の座標を求めよ。(立命館大学・改)
+  \subsection{}
+    3点$A(4,1), B(-2,4), C(1,5)$がある。線分$AB$を$2:1$に内分する点を$P$、
+    $\triangle ABC$の重心を$G$とする。この時、直線$PG$の方程式を求めなさい。
+\newpage
+\section{}
+  \subsection{}
+    3点$A(1,1), B(3,1), C(5,-3)$について、$\triangle ABC$の外心の座標は前回求めたと思う。
+    では、この3点を通る円の方程式を求めてください。
+  \subsection{}
+    2直線
+    \begin{align*}
+      6x -y + 15 =0\\
+      9x -ky -5 =0
+    \end{align*}
+    が平行であるという。$k$の値を求めなさい
+  \subsection{}
+    以下の問いに答えよ
+    \subsubsection{}
+      方程式$x^2 + y^2 + 4x +6y -32 = 0$が表す円の中心の座標を求めなさい。
+    \subsubsection{}
+      直線$y = -2x + k$が上記の円と接するとき、$k$の値を全て求めなさい。
+
+\section{}
+  2次方程式$x^2 -7x +9 =0$の二つの解を$\alpha, \beta$とする。
+  $\sqrt{\alpha} + \sqrt{\beta}$の値を求めよ
+
+\section{}
+  4次方程式$x^4 +5x^3 - 4x^2 +5x +1 = 0$を解きなさい。\footnote{まず、両辺を$x^2$で割る。このとき、$x=0$が解ではないことを確認すること。そのあと、$\displaystyle{x + \frac{1}{x} = t}$と置く。典型的な工夫の仕方。模試や定期テストでもよく出る手法です。}
+
+\newpage
+\section{}
+  1の3乗根のうち、虚数であるものの1つを$\omega$であらわすとき、
+  \[
+    \omega^{2n} + \omega^n
+  \]
+  の値を求めよ。ただし、$n$は正の整数とする。\footnote{$n$を$3$で割った時の余りで場合分け}
+
+\section{}
+  $a,b,c > 0$のとき、
+  \[a^3 + b^3 + c^3 \ge 3abc\]
+  を証明せよ。\footnote{相加相乗平均を用いれば証明できます。しかし、通常通り(左辺)$-$(右辺)のやり方でも証明できます。調べればわかりますが、$a^3 + b^3 + c^3 - 3abc$は因数分解でき、$(a + b + c)(a^2 + b^2 + c^2 - ab -bc -ca)$という形になります。この右側のカッコの中身が$0$以上になることを何とか示すことができればよいです。ヒントとしては、右側のカッコ内の式全体を$\frac{1}{2}$でくくります}
+
+\section{}
+  問39、および問40をもう一度解きなさい。\footnote{参考になるページ：https://examist.jp/category/mathematics/expression-proof/　相加相乗平均の使い方には注意が必要と述べましたが、ここで詳しく語られています。少し難しいですがぜひ読んでほしいです。}
+
+\section{}
+  3辺の長さが$a,b,c$である直角三角形がある。
+  この直角三角形の外接円の半径は$\frac{3}{2}$であり、内接円の半径は$\frac{1}{2}$である。
+  $a \ge b \ge c$である。
+  $a,b,c$の値をそれぞれ求めよ。\footnote{$a$は図を描けばすぐわかります。$b,c$は同時に求められます。つまり$b,c$に関する方程式を二つ作り、連立方程式を解きます。三平方の定理を用いれば、式が一つできますね。もう一つは三角形の面積に着目して式を立てます。三角形の面積は(底辺)$\times$(高さ)$\div 2$で求められます。一方で、内接円というヒントからも三角形の面積が求められますね...？}
+
+\newpage
+\section{}
+  $\alpha$を実数とする。
+  二つの円$O_1\colon x^2 + y^2 = 1, O_2\colon x^2 + 2x +y^2 -4y -\alpha = 0$を考える。
+  \footnote{'08 慶応大学・改(元々の問題は(4)と(9)のみでした)}
+  \subsection{}
+    $O_1,O_2$の中心の座標を求めよ。
+  \subsection{}
+    $\alpha$の取りえる値の範囲を求めよ。
+  \subsection{}
+    $O_1,O_2$が接するとき、$\alpha$の値を全て求めよ。
+  \subsection{}
+    $O_1,O_2$が二点で交わるとき、$\alpha$の値の範囲を求めよ。
+  \subsection{}
+    $O_1,O_2$が交点をもたないとき、$\alpha$の値の範囲を求めよ。
+  \subsection{}
+    (3)における$\alpha$の値のうち、小さい方を$\alpha_1$、大きい方を$\alpha_2$とおく。
+    以下についてそれぞれ答えよ。
+    \begin{enumerate}
+      \item $\alpha = \alpha_1$のときの、接線の方程式
+      \item $\alpha = \alpha_2$のときの、接線の方程式
+    \end{enumerate}
+  \subsection{}
+    $O_1,O_2$が二点で交わるときを考える。二つの交点を通る直線を$l_1$、
+    $O_1,O_2$の中心を通る直線を$l_2$とする。$l_1,l_2$は垂直に交わることを証明せよ。\footnote{関数や方程式を使わず、図形の証明問題として解きます。}
+  \subsection{}
+    (7)と同様の状況を考える。直線$l_1$が満たす方程式を求めよ。\footnote{よくある問題です。チャート式には必ず乗っていると思います。教科書でも「発展」や「参考」のような部分に詳しく書かれていると思います。それを参考にしてください。私の手持ちの教科書には「参考」とされているページに解説されていました。}
+  \subsection{}
+    (7)と同様の状況を考える。二つの交点を通る線分の長さを求めよ。\footnote{$O_1$の中心と直線$l_1$の距離を求め、三平方の定理を使います。おそらく教科書に類題があるとおもうので参考にしてください。}
+  \subsection{}
+    新しい円$O_3 \colon x^2 + 2\beta x +y^2 -2 \beta y -\beta = 0$を考える。
+    \subsubsection{}
+      $O_3$の中心の座標と半径を$\beta$を用いて表しなさい。
+    \subsubsection{}
+      $\beta$の取りえる値の範囲を求めなさい。
+    \subsubsection{}
+      円$O_3$と円$O_1$が接するような$\beta$の値を求めなさい。
+    \subsubsection{}
+      円$O_3$の中心の軌跡を求めよ。
+
+\newpage
+\section{軌跡について}
+  学校で軌跡について習ったと思います。このプリントでは高校1年で習った集合の言葉を使って
+  厳密かつ簡潔な表現で軌跡について考えてみたいと思います。
+
+  いままでいろいろな図形を描いたり考えたりしました。
+  その中でも図形を「図形」としてとらえるのではなく、「ある条件を満たす点をすべて集めたもの」
+  としてとらえることがあったと思います。
+  例えば、「ある点$P$から$1$だけ離れている点をすべて集めたもの」は
+  「中心を点$P$とする半径$1$の円」という図形になります。
+  「二つの点$A,B$があり、$AC =BC$となるような点$C$をすべて集めたもの」は(実際に具体例を書いてみればわかりますが)
+  「線分$AB$の垂直二等分線」となります。
+
+  直線も同様に考えることができました。例えば「方程式$x-y-1=0$が表す直線$\mathbf{L}$」を考えてみます。
+  以前にも説明しましたが、これは次のように言い換えられます。
+  すなわち「$\mathbf{L}$とは方程式$x-y-1=0$を満たす$(x,y)$をすべて集めたもの」です。
+  ということは\underline{(i)集合の言葉を用いて}次のように書くことができます。
+  \[
+    \mathbf{L} = \{(x,y) \mid x-y-1=0\}
+  \]
+
+  このように、今からは「図形」を「ある条件を満たす点をすべて集めたもの」として考えていきましょう。
+  もっと数学的な言い方をすれば、\underline{(ii)「ある条件を満たす点全体の集合」}としてとらえていきます。
+  また、用語としてこのような集合のことを「軌跡」と呼びます。
+
+  例題を見ましょう。
+  \begin{ex*}
+    \underline{(iii)2点$A(0,2), B(4,0)$から等距離にある点の軌跡を求めよ。}
+  \end{ex*}
+  \begin{ans*}
+    「軌跡を求めよ」と問われているので、これは、『「2点$A(0,2), B(4,0)$から等距離にある点全体」
+    はどのような点の集合であるかを求めなさい』という問題です。
+    中学生で連立方程式の文章題を解いたときもそうでしたが、基本的に数学の問題を解くときは、
+    問題文で求めなさいと言われているものを文字におけば話が進みやすくなることが多いです。
+    いま問題で問われているのは「集合」なので、これを文字に置きます\footnote{ここで気を付けてほしいことは、今から高校1年で習った集合の記号や用語が数多く出てくるということです}。
+    すなわち、集合$\mathbf{F}$\footnote{$F$と$\mathbf{F}$のフォントの違いに注意してください}を
+    \[
+      \mathbf{F} = \{\text{点}P \mid AP = BP\}
+    \]
+    とおきます。何度も言いますが、今から考えるのはこの$\mathbf{F}$という集合がどのようなものであるのかということです。
+    たとえば、線分$AB$の中点を点$C$とするとき、$C \in \mathbf{F}$\footnote{$\in$という記号の意味は1年生の数学のノートや教科書で思い出しましょう}です。
+    もちろん、$\mathbf{F}$に属する要素は点$C$以外にも\footnote{「属する」「要素」も集合の用語です。意味は調べてください。}あります。
+    なので、とりあえずなんでもいいので$\mathbf{F}$から点を1つ取ってきましょう。
+    たった今$\mathbf{F}$から適当に選んできたその点を$Q$と名付けます。
+    点$Q$は$\mathbf{F}$からとったのだから、当然次の式を満たします。
+    \[
+      AQ = BQ
+    \]
+    ここで点$Q$の座標を$(s,t)$とおけば、上の式より次の式が成り立つことが分かります。
+    \[
+      (s - 0)^2 + (t - 2)^2 = (s - 4)^2 + (t - 0)^2
+    \]
+    \underline{(iv)計算は省略しますが}、この式を整理すると
+    \[
+      2s - t -3 = 0
+    \]
+    という方程式が得られます。
+    ここでよく考えてほしいのですが、いま点$Q$は集合$\mathbf{F}$から何でもいいから一つ選んで取った点でした\footnote{何でもいい　というのにも用語があり、「任意」といいます}。
+    「何でもいい」ということは、つまり$\mathbf{F}$に属している全ての点に対して、今やったような計算ができるということです。
+    ということは次のように考えることができます。
+    \begin{quote}
+      集合$\mathbf{F}$の点を任意に選んで、その座標を仮に$(x,y)$とおいたとき、
+      \begin{center}
+        $2x-y-3=0$
+      \end{center}
+      という式が成り立つのだから、集合$\mathbf{F}$は
+      \begin{center}
+        $\mathbf{F} = \{(x,y) \mid 2x-y-3=0\}$
+      \end{center}
+      と書き換えることができる。
+    \end{quote}
+    したがって、集合$\mathbf{F}$の正体がわかりました。
+    直線$\mathbf{L}$の例にならうと、集合$\mathbf{F}$は
+    「方程式$2x-y-3=0$が表す直線」であるということが分かります。
+    これを簡単にまとめていうと、
+    「求める軌跡は直線$2x-y-3=0$である」となります。(解答終)
+  \end{ans*}
+
+  \subsection{}
+    文章中の下線部についてそれぞれ以下の問いに答えよ。
+    \begin{description}
+      \item[(i)] 半径$1$で中心の座標が$(0,0)$であるような円を集合の言葉を用いて書きなさい。
+      \item[(ii)] 二つの直線$l_1,l_2$があり、交差している。交点を$P$とする。
+      また、点$P$より右側で$l_1$上の一点を点$A$、点$P$より右側で$l_2$上の一点を点$B$とする。
+      この二つの直線から等距離にある点全体の集合はどのような図形か言葉を用いて答えよ。
+      \item[(iii)] 2点$C(2,0),D(0,4)$から等距離にある点の軌跡を求めよ。
+      \item[(iv)] この計算を省略せずに書け。
+    \end{description}
+\section{}
+  2点$A(-6,0), B(2,0)$がある。
+  \subsection{}
+    $A,B$を$3:1$に内分する点を$P$、外分する点を$Q$とする。
+    $P,Q$の座標をそれぞれ求めよ。
+  \subsection{}
+    $AR : BR = 3 : 1$を満たす点$R$の軌跡を求めよ。
+  \subsection{}
+    点$A,B,P,Q$はそれぞれ点$R$の軌跡に含まれる点であるか判定せよ。
+
+\newpage
+  \section{}
+    $y \ge 0, x \ge 0, y \leq 1, x \leq 2$に囲まれた領域$A$を考える。
+    $(x,y)$がこの領域内の点を動くとき、次の式の最大値と最小値を求めよ。
+    \begin{enumerate}
+      \item $x + y$
+      \item $x - y$
+      \item $2x + 3y$
+      \item $2x - 3y$
+      \item $x^2 + y$
+    \end{enumerate}
+
+  \section{}
+    次の角度を弧度法で表しなさい。
+    \begin{itemize}
+      \item $30^{\circ}$
+      \item $45^{\circ}$
+      \item $120^{\circ}$
+      \item $180^{\circ}$
+      \item $270^{\circ}$
+      \item $1^{\circ}$
+      \item $360^{\circ}$
+    \end{itemize}
+
+\newpage
+\section{}
+  $0 \leq \theta < \frac{\pi}{2}$とする。
+  $xy$平面上に直線$L_1 : y = (\tan \theta)x $、
+  円$C_1:x^2 + y^2 = 1$がある。
+  直線$L_2 : y = (\tan\theta_0)x$が直線$L_1$と垂直に交わっている。
+  \subsection{}
+    $\theta_0$を$\theta$を用いて表せ。
+  \subsection{}
+    直線$L_2$と円$C_1$との交点を全て求めよ。
+
+\section{}
+  $0 \leq \theta < 2\pi$とする。以下の式を満たす$\theta$の範囲を求めよ。
+  \begin{enumerate}
+    \item $\cos\theta > \frac{1}{2}$
+    \item $0 \leq \tan\theta \leq \sqrt{3} $
+    \item $|\sin\theta| > \frac{1}{2}$
+  \end{enumerate}
+
+\newpage
+\section{}
+  関数$f$が全ての実数$x$に対して$f(-x) = f(x)$を満たしているとき、$f$は偶関数であるといい、
+  $f(-x) = -f(x)$を満たすとき、$f$は奇関数であるという。
+  これは整数の偶奇と似たような性質持っていて、いわば「関数の偶奇性」ともいえる。
+  \subsection{}
+    三角関数を含まない関数\footnote{関数の式に$\sin,\cos,\tan$を含まない関数}で、
+    偶関数になるものと奇関数になるものをそれぞれ例を書け。
+  \subsection{}
+    二つの関数$f,g$がある。関数$h(x) = f(x) \times g(x)$とする。
+    $k(x) = f(x) + g(x)$とする。
+    それぞれの場合について問題に答えよ。
+    \begin{enumerate}
+      \item $f,g$がともに偶関数であるとき、$h$は偶関数であることを証明せよ。
+      \item $f$が偶関数で$g$が奇関数であるとき、$h$は奇関数であることを証明せよ。
+      \item $f,g$がともに奇関数であるとき、$h$は偶関数であることを証明せよ。
+      \item $f,g$がともに偶関数であるとき、$k$は偶関数であることを証明せよ。
+      \item $f,g$がともに奇関数であるとき、$k$は奇関数であることを証明せよ。
+    \end{enumerate}
+  \subsection{}
+    $f$が偶関数かつ奇関数であることと、$f \equiv 0$であることが同値であることを示せ。
+
+\section{}
+  関数$f$が、ある実数$S$が存在し、すべての$x$に対して、
+  \[f(x + S) = f(x)\]
+  を満たしているとする。
+  このとき、$f$を周期関数といい、上記の式を満たす$S$のうち正の数で最小のものが存在するならば、それを$T$とおき、$T$を$f$の(基本)周期という。
+  たとえば$\sin x, \cos x$は周期$2\pi$の周期関数である。
+  高校数学ではほとんど目立たない周期関数だが、
+  応用の面でいうと「フーリエ級数展開」という数学の技術の基礎的な道具として出現する。
+  このフーリエ級数展開は
+  「大抵の関数は、$\cos, \sin$を何倍かしたものをたくさん合計したもので近似できる」
+  という内容のものである。
+  音響解析などで扱われる技術の数学的な土台となっている。
+  \subsection{}
+    以下の関数について、それぞれ周期関数である。周期を答えよ。
+    \begin{enumerate}
+      \item $f(x) = \tan x$
+      \item $f(x) = \sin(x + \frac{\pi}{3})$
+      \item $f(x) = \sin x + \cos x$
+      \item $f(x) = \sin 2x$
+    \end{enumerate}
+
+  \subsection{}
+    $f,g$をともに共通の定義域と値域を持つ周期$T$の周期関数とする。
+    $h(x) = f(x)g(x),\,\, k(x) = f(x) + g(x)$とする。
+    $h,k$はそれぞれ周期関数であることを証明せよ。\footnote{一方で、周期が異なる周期関数どうしの和は周期関数になるとは限らないことが知られています。$f(x) = \sin x + \sin\sqrt{2}x$などがその例です。\verb|http://blog.livedoor.jp/seven_triton/archives/51624657.html| を参照。}
+
+\newpage
+    今回は少し解答が書きにくいと感じるかもしれません。一つの解答例として問59の(2)-1. の解答を書きます。参考にしてください。
+    \begin{proof}
+      $h$が偶関数であることを確かめたいので、$h(-x)$を計算する。
+      \begin{align*}
+        h(-x) &= f(-x)\times g(-x)\\
+        \intertext{$f,g$はそれぞれ偶関数だから}
+        &= f(x) \times g(x)\\
+        &= h(x)
+      \end{align*}
+      従って$h$は偶関数。
+    \end{proof}
+
+    また、別の例として問60(2)において、$f(x) = \sin x, g(x) = \cos x$だったとして、$h,k$がそれぞれ周期関数になる証明を書きます。
+    \begin{proof}
+      $f(x) = \sin x, g(x) = \cos x$より、
+      \[h(x) = (\sin x) (\cos x), \quad k(x) = \sin x + \cos x \]
+      である。
+      $f,g$の周期は$2\pi$である。そこで、次を計算する。
+      \begin{align*}
+        h(x + 2\pi) &= \sin(x + 2\pi)\cos(x + 2\pi)\\
+        &= (\sin x)(\cos x)\\
+        &= h(x)
+      \end{align*}
+      また、
+      \begin{align*}
+        k(x + 2\pi) &= \sin(x + 2\pi) + \cos(x + 2\pi)\\
+        &= \sin x + \cos x\\
+        &= k(x)
+      \end{align*}
+      以上により、$h,k$はそれぞれ周期関数である。
+    \end{proof}
+    問60(2)はこれを一般の$f,g$に対して証明を書いてみてください。
+
+\newpage
+\section{}
+  $x$についての多項式$P(x) = x^3 + (a - 1)x^2 -(a + 2)x -6a + 8$
+  について考える。
+  \subsection{}
+    $P(x)$を$(x-3)$で割った時の余りを求めよ
+  \subsection{}
+    $P(x)$を因数分解せよ。
+  \subsection{}
+    方程式$P(x) = 0$の異なる解の個数が三つであるとき、$a$の値の範囲を求めよ。
+  \subsection{}
+    方程式$P(x) = 0$の異なる解の個数が二つであるとき、$a$の値の範囲を求めよ。
+  \subsection{}
+    方程式$P(x) = 0$の複素数解を持つとき、$a$の値の範囲を求めよ。
+  \subsection{}
+    これ以降の問題では、$a$は(5)で求めた範囲であるとする。
+    この時の方程式$P(x) = 0$の複素数解をそれぞれ$\alpha, \beta$とする。
+    2次方程式の解と係数の関係を用いて$\alpha + \beta, \,\, \alpha\beta$
+    の値を$a$を用いて表せ。
+  \subsection{}
+    $\alpha^2 + \beta^2$および$\alpha^2 \beta^2$の値を$a$を用いて表せ。
+  \subsection{}
+    二次方程式$4x^2 - kx + 5k = 0$の解が$\alpha^2 + \beta^2$および$\alpha^2 \beta^2$
+    であるという。
+    このとき、$a,k$の値をそれぞれ求めよ。ただし、$a$の範囲に注意すること。
+
+\newpage
+\section{}
+  2次方程式$ax^2 + bx + c = 0$がある。
+  ただし、$a,b,c > 0$で、実数解をもつとする。
+  この方程式の二つの解を$\alpha, \beta$とおき、$\alpha < \beta$であるとする\footnote{どっちが大きくても小さくても構わないので、今は$\alpha$が小さいということにした。}。
+  このとき、
+  \[
+    \frac{c}{b} < |\alpha|, |\beta| < \frac{b}{a}
+  \]
+  であることを証明したい。
+  この不等式は、$|\alpha|, |\beta|$ともに$\frac{c}{b}$より大きく、$\frac{b}{a}$より小さいことを意味している。
+  以下の問いに答えよ。
+  \subsection{}
+    $\alpha + \beta, \,\, \alpha\beta$を$a,b,c$を用いて表せ。
+  \subsection{}
+    $\alpha + \beta$が負の値であることを示せ。
+  \subsection{}
+    $\alpha, \beta$の符号はそれぞれ何か。
+  \subsection{}
+    $|\alpha| \ge |\beta|$を示せ。
+  \subsection{}
+    $|\alpha + \beta| = |\alpha| + |\beta|$であることを証明せよ。
+  \subsection{}
+    $|\alpha| , |\beta| < |\alpha| + |\beta|$であることより、
+    $|\alpha| , |\beta| < \frac{b}{a}$であることを証明せよ。
+  \subsection{}
+    2次方程式$ax^2 + bx + c = 0$は異なる二つの実数解をもつから判別式より
+    $b^2 - 4ac \ge 0$を満たしている。
+    この判別式の不等式より
+    \[\frac{c}{a} > \frac{c^2}{b^2}\]
+    が成立することを証明せよ。
+  \subsection{}
+    さて、これから$\frac{c}{b} < |\alpha|, |\beta|$を証明していくが、
+    $|\beta|$のほうが$|\alpha|$より小さいので、
+    \[|\beta| > \frac{c}{b}\]を示せば十分であることが分かる。
+    さて、この示したい不等式の両辺を二乗することにより、
+    \[|\alpha||\beta| > \frac{c^2}{b^2}\]
+    が成り立つことを証明せよ。
+  \subsection{}
+    $\frac{c}{b} < |\alpha|, |\beta|$を証明せよ。
+
+\newpage
+\section{絶対値が入った三角関数}
+  \subsection{準備}
+    以下の関数について、それぞれのグラフを書きなさい。
+    \begin{enumerate}
+      \item $y = 2|x|$
+      \item $y = |x^2 - 1|$
+    \end{enumerate}
+
+  \subsection{2次関数の練習問題}
+    (1)の2.の関数の定義域が$a \leq x \leq a + 1$であるとき、
+    $a$の値に関して場合分けをして、
+    最大値を最小値をそれぞれ求めなさい。
+
+  \subsection{}
+    三つの関数$f_1,f_2,f_3$を次のように定義する。
+    \begin{align*}
+      f_1(x) = \sin x,\quad f_2(x) = |\sin x|,\quad f_3(x) = \sin |x|
+    \end{align*}
+    このとき、$y = f_1(x),y = f_2(x),y = f_3(x)$のグラフをそれぞれ描け。
+
+  \subsection{}
+    以下の問いに答えよ
+    \begin{enumerate}
+      \item  $y = f_2(x) + f_3(x)$のグラフを描きなさい。
+      \item  関数$f_2(x) + f_3(x)$は周期関数か？
+            もし周期関数ならば周期を求めよ。
+      \item  関数$f_2(x) + f_3(x)$は「奇関数・偶関数・いずれでもない」のどれに当たるかを答えよ。もし、奇関数または偶関数である場合はその理由も書くこと。
+      \item 定義域が実数全体であるとき、$y = f_2(x) + f_3(x)$の最大値と最小値を求めなさい
+      \item 定義域が$-2\pi \leq x \leq 2\pi$であるとき、$f_2(x) + f_3(x) = 0$を満たす$x$の範囲を求めよ。
+      \item 定義域が$-2\pi \leq x \leq 2\pi$であるとき、$f_2(x) + f_3(x) = 1$を満たす$x$を全て求めよ。
+    \end{enumerate}
+
+  \subsection{}
+  以下の問いに答えよ
+  \begin{enumerate}
+    \item  $y = f_1(x) + f_2(x) + f_3(x)$のグラフを描きなさい。
+    \item  関数$f_1(x) + f_2(x) + f_3(x)$は周期関数か？
+          もし周期関数ならば周期を求めよ。
+    \item  関数$f_1(x) + f_2(x) + f_3(x)$は「奇関数・偶関数・いずれでもない」のどれに当たるかを答えよ。もし、奇関数または偶関数である場合はその理由も書くこと。
+    \item 定義域が実数全体であるとき、$y = f_1(x) + f_2(x) + f_3(x)$の最大値と最小値を求めなさい
+    \item 定義域が$x \ge 0$であるとき、$y = f_1(x) + f_2(x) + f_3(x)$の最大値と最小値を求めなさい
+    \item 定義域が$x \leq 0$であるとき、$y = f_1(x) + f_2(x) + f_3(x)$の最大値と最小値を求めなさい
+    \item 定義域が$-2\pi \leq x \leq 2\pi$であるとき、$y = f_1(x) + f_2(x) + f_3(x) = 1$を満たす$x$は何個あるか求めよ。
+  \end{enumerate}
+
+\section{加法定理}
+  $\alpha, \beta$は実数とする。
+  \[
+    \cos(\alpha - \beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta
+  \]
+  が成立することを証明せよ。
+
+\newpage
+\section{}
+  次の値を求めなさい。
+  \begin{enumerate}
+    \item $\cos 75^\circ$
+    \item $\sin 105^\circ$
+    \item $\tan 15^\circ$
+  \end{enumerate}
+
+\section{}
+  $\tan$の加法定理を証明せよ。\footnote{$\frac{\sin(\alpha+\beta)}{\cos(\alpha + \beta)}$を計算する。$\tan$の加法定理は覚えるより自分で導出できるようになったほうが早いと思います。}
+  \[
+    \tan(\alpha + \beta) = \frac{\tan\alpha + \tan\beta}{1 - \tan\alpha\tan\beta}
+  \]
+  \[
+    \tan(\alpha - \beta) = \frac{\tan\alpha - \tan\beta}{1 + \tan\alpha\tan\beta}
+  \]
+
+\section{}
+  $\tan$の加法定理を用いて$\tan \frac{\pi}{24}$の値を求めよ。\footnote{$\frac{\pi}{24} + \frac{\pi}{24} = \frac{\pi}{12}$である。また、$\frac{\pi}{12} = 15^\circ$である}
+
+\section{}
+  $y = \frac{1}{\sqrt{2}}(\cos\theta - \sin\theta)$のグラフを$2\pi \leq \theta \leq 2\pi$の範囲で描きなさい
+
+\newpage
+\section{}
+  $-\pi \leq \theta \leq \pi$とする。
+  \[
+    \begin{cases}
+      y = \sin2\theta\\
+      y = \sin\theta
+    \end{cases}
+  \]
+  の解を求めよ。\footnote{$\sin2\theta$を加法定理で分解して$\sin\theta$でくくる}
+
+\section{}
+  $y = \sin x + \cos x + \sin x \cos x$について以下の問いに答えよ。
+  \begin{enumerate}
+    \item $t = \sin x + \cos x$とおいて、$y$を$t$で表せ。
+    \footnote{$\sin x \cos x$を$t$を用いて表すために、$t$の両辺を二乗しよう。}
+    \item $0 \leq x < 2\pi$のとき、$y$の取りえる範囲を求めよ。
+  \end{enumerate}
+
+\section{三角関数は有理関数に変換できる}
+  $\tan \frac{\theta}{2} = t$とおく。
+  このとき以下の等式が成り立つことを証明せよ。
+  \footnote{この変換は「積分」で役に立ちますが、数学３なのです。悲しい}
+  \footnote{例えば、$\tan \theta = \tan \left(2\times\frac{\theta}{2}\right)$と思えばよい。}
+  \[
+    \tan \theta = \frac{2t}{1 - t^2},\quad \cos \theta = \frac{1-t^2}{1+t^2},\quad \sin \theta = \frac{2t}{1 + t^2}
+  \]
+
+\section{}
+  直線$y=2x$とのなす角が$45^\circ$であるような直線の傾きを求めよ。
+
+\newpage
+\section{}
+  次の関数の最大値最小値を求めよ。ただし、定義域は全て$0\leq x <2\pi$とする。
+  \begin{enumerate}
+    \item  $y = \sin x + \sin(x + \frac{\pi}{3}) + \sin(x + \frac{2}{3}\pi)$
+    \item $y = \cos^2 x + \sin x$
+    \item $y = \sin x + 2\cos(x -\frac{\pi}{6})$
+  \end{enumerate}
+
+\section{}
+  $a^{2x} = 5$であるとき、次の値を求めよ。
+  \begin{enumerate}
+    \item $\displaystyle{\frac{a^x - a^{-x}}{a^x + a^{-x}}}$
+    \item $\displaystyle{\frac{a^{3x} + a^{-3x}}{a^x + a^{-x}}}$
+  \end{enumerate}
+
+\section{}
+  次の計算をせよ。
+  \begin{enumerate}
+    \item  $(\frac{2}{3})^4\div 2^{-3}\times 3^5$
+    \item $(-^4\sqrt{49})^2$
+    \item $(2\times 3^2)^{\frac{3}{2}}\div 2^{-\frac{4}{3}}\div ^3\sqrt{3}$
+  \end{enumerate}
+
+\newpage
+\section{}
+  例えば、$2$を$3$乗するすることを$2^3$と表すのであった。
+  一般的に$2$を$x$乗することを$2^x$と書くのであった。
+  この$x$を指数という。いままでは、$2^x$の値を計算していた。
+  これからは、「指数」そのものを計算しよう。
+  \[
+    2^x = 8
+  \]
+  であるとき、$x = 3$である。
+  これは「$2$を$x$乗したとき、その値は$8$である。このとき$x$は$3$である」と解釈できる。
+  主語を$x$に変えて考え直すと、
+  「$x$は$2$を何乗かすると$8$になる指数」と思える。
+  この解釈を端的に数学の記号を用いて表したものが以下である。
+  \[
+    x = \log_2 8
+  \]
+  \subsection{}
+    以下の値を求めよ。
+    \[
+      \log_2 16, \quad \log_3 1,  \quad 5^{(\log_5 25)},\quad \log_{4}\frac{1}{4},\quad \log_{4}\frac{1}{2}
+    \]
+  \subsection{}
+    ある大きな数字$y$がある。$y$のケタ数を調べることを考える。
+    たとえば、$y = 30598$だったとする。
+    \[
+      10^4 \leq y < 10^5
+    \]
+    である。両辺に$10$を底として対数を取ると
+    \[
+      \log_{10}10^4 \leq \log_{10}y < \log_{10}10^5
+    \]
+    すなわち、
+    \[
+      4 \leq \log_{10}y < 5
+    \]
+    $y$は$5$ケタであることが分かる。
+    つまり、$10$を低とした対数を用いると何桁の数か判別できるのである。
+    教科書巻末の常用対数表を用いて次の数が何桁であるか求めよ。
+    \begin{enumerate}
+      \item $2^{2020}$
+      \item $\pi^{510}$
+      \item $3^{10^{5}}$
+    \end{enumerate}
+
+\newpage
+\section{}
+  \subsection{}
+    $0 \leq \theta \leq 2\pi$のとき、不等式
+    \[
+      \sin \theta > \sqrt{3}\cos\left(\theta - \frac{\pi}{3} \right)
+    \]
+    を解きなさい。
+    \footnote{まず、$\cos$に加法定理。その後、全て左辺に移項して整理。次に三角関数の合成をする。}
+
+  \subsection{}
+    \[
+        \sin\theta + \cos \theta = \frac{7}{5}
+    \]
+    であるとき、$\sin\theta\cos\theta$の値を求めなさい。
+    \footnote{両辺を2乗する。}
+
+\section{}
+  $xy$平面上に二点$P(2\cos\theta, 2\sin\theta),\quad$
+  $Q(2\cos\theta + \cos 2\theta, 2\sin\theta + \sin 2\theta)$
+  がある。
+  ただし、$0 \leq \theta \leq \frac{\pi}{2}$とする。
+  \begin{enumerate}
+    \item $OP,PQ$の長さをそれぞれ求めよ。
+    \item $OQ$の長さの最大値を求めよ。
+  \end{enumerate}
+
+
+\section{}
+  $f(\theta) = 3\sin^2\theta + 4\sin \theta\cos\theta - \cos^2 \theta$
+  を考える。
+  \begin{enumerate}
+    \item $f(0),f(\frac{\pi}{3})$の値を求めよ。
+    \item 二倍角の定理を用いて$\cos^2\theta$を$\cos2\theta$を用いて表せ
+    \item $f(\theta)$を$\cos2\theta,\sin2\theta$を用いて表せ
+    \item $0 \leq \theta \leq \pi$のとき、$f(\theta)$の最大値を求めよ
+  \end{enumerate}
+
+\newpage
+\section{}
+  \begin{enumerate}
+    \item $72^{\circ}$は何radであるか。
+    \item $1$radは何度であるか。
+  \end{enumerate}
+
+\section{}
+  関数
+  \[y = 2\cos\left(3x - \frac{4}{3}\pi\right) + 5\]
+  を描け。
+
+\section{}
+  $0 \leq \theta \leq 2\pi$であるとき、次の$\theta $に関する不等式を解け。
+  \[\sin^2 \left(\theta - \frac{\pi}{4}\right) + 2\sin \left(\theta - \frac{\pi}{4}\right) + 1 \leq \frac{9}{4}\]
+
+\section{}
+  $0 \leq \theta \leq 2\pi$であるとき、方程式
+  \[\sin^2 \left(\theta - \frac{\pi}{4}\right) + 2\sin \left(\theta + \frac{\pi}{4}\right) -2 = 0 \]
+  を考えよう。この方程式の左辺を$f(\theta)$とする。
+  \subsection{}
+    $t = \sin\theta + \cos \theta$とおく。$t$の取りえる値の範囲を求めよ。
+  \subsection{}
+    $f(\theta)$を$t$を用いて表せ。
+  \subsection{}
+    方程式$f(\theta) = 0$を満たす$\theta$を全て求めよ。
+
+\section{}
+  $(\frac{1}{4})^x - (\frac{1}{2})^x \leq 2$を解け。
+
+\newpage
+\section{}
+  \begin{enumerate}
+    \item $\log_2 6 + \log_2 3 - 1$を計算せよ。
+    \item 方程式$\log_2 6 + \log_2 x - 1 = 0$の解を求めよ。
+    \item 不等式$\log_2(x - 4) < 3$を解きなさい。
+    \item 方程式$\log_5 x = 2$を解きなさい。
+    \item 方程式$\log_5 x^2 = 4$を解きなさい。
+    \item 方程式$(\log_5 x)^2 = 9$を解きなさい。
+    \item $(\log_2 3)\times (\log_3 8)$の値を求めよ。
+  \end{enumerate}
+
+\newpage
+\section{極限}
+  微分というものを計算するためには、「極限」と呼ばれるものが必要になる。
+  ここでは、その意味を簡単に説明し、少し練習してみよう。
+
+  数学としてはかなり大雑把な言い方になるが、
+  「$x$を何かの値に限りなく近づけたとき、$f(x)$の値がどうなるか」調べるのが極限である。
+  \begin{ex*}
+    「$x$の値を$0$に限りなく近づけたとき、$x+1$の値がどうなるか」を考えてみよう。
+    この状況を数式では以下のように書く。
+    \[
+      \lim_{x \to 0} (x + 1)
+    \]
+    直観的に考えると、$x$は$0$に限りなく近づくのだから、$x + 1$
+    は$0 + 1$という式に限りなく近づくと予想できる。
+    つまり、$1$に限りなく近づいていくだろうと予想できるのである。
+    厳密な数学的にもこれは正しい。
+    これを数式で表すと次のようになる。
+    \[
+      \lim_{x \to 0} (x + 1) = 1
+    \]
+    これを$x$を$0$に近づけたとき、$x+1$は$1$に\textbf{収束する}という。
+  \end{ex*}
+  このことをふまえて、練習してみよう。
+  \begin{prob*}
+    \begin{enumerate}
+      \item $x$を$0$に近づけたときの$x - 2$の値を求めよ。すなわち、$\lim_{x \to 0}(x - 2)$はどうなるか
+      \item $x$ を$-2$に近づけたときの$x^2 -4x + 4$はどうなるか。すなわち、$\lim_{x \to -2}(x^2 - 4x + 4)$はどうなるか。
+    \end{enumerate}
+  \end{prob*}
+
+  極限を考えたとき、その\textbf{極限が発散する}場合もあり得る。
+  すなわち、ある一定の値に近づかないこともあり得る。
+  つまり、限りなく大きく(小さく)なり続けたり、有限だが値が変化し続けることが起こりえる。
+  \begin{ex*}
+    極限
+    \[
+      \lim_{x \to 0}\left( \frac{1}{x} \right)
+    \]
+    を考えよう。
+    分母が大きくなればなるほど分数としての値は小さくなり、
+    分母が小さくなればなるほど分数としての値は大きくなるのであった。
+    いま、$x$を限りなく$0$に近づけているので、$\frac{1}{x}$はどこまでも大きくなり続けるのである。
+    これを数式に表すと次のようになる。
+    \[
+      \lim_{x \to 0}\left( \frac{1}{x} \right) = +\infty
+    \]
+    $+\infty$という記号を使って「どこまでも大きくなり続ける」ことを表している。
+    この記号は「むげんだい」と読む。
+    ここで最も注意しなければならないことがある。それは、
+    \textbf{$+\infty$は「ある特定の数ではない」}ということである。
+  \end{ex*}
+  場合によっては、極限を考えると「どこまでも小さくなり続ける」ことがある。
+  マイナス方向の無限大もかんがえることができる。それを$-\infty$と表す。
+  $+,-$の符号は文脈から分かる場合は省略することもあるが、できる限り書いておいた方がよい。
+  \begin{prob*}
+    \begin{enumerate}
+      \item $\lim_{x \to -1} \left(\frac{1}{x + 1}\right)$はどうなるか
+      \item $\lim_{x \to 0} f(x) = -\infty$となるような、$f(x)$の例を一つ書きなさい。
+    \end{enumerate}
+  \end{prob*}
+
+  極限が$+\infty$もしくは$-\infty$になるとき、その極限は\textbf{正の(負の)無限大に発散する}という。
+
+  「$x$を限りなく大きくするとき」の極限を考えることもできる。
+  \begin{ex*}
+    極限
+    \[
+      \lim_{x \to \infty}(x - 3)
+    \]
+    を考える。$x$が限りなく大きくなるので、$x-3$も限りなく大きくなり続ける。
+    したがって、
+    \[
+      \lim_{x \to \infty}(x - 3) = +\infty
+    \]
+  \end{ex*}
+  \begin{prob*}
+    \begin{enumerate}
+      \item 極限$\lim_{x \to +\infty} \frac{1}{x}$はどうなるか
+      \item 極限$\lim_{x \to -\infty}x$はどうなるか
+      \item 極限$\lim_{x \to -\infty}x^2$はどうなるか
+    \end{enumerate}
+  \end{prob*}
+
+  極限が$\pm\infty$にならない場合でも発散する場合がある。
+  \begin{ex*}
+    極限
+    \[
+      \lim_{x \to \infty}\sin x
+    \]
+    を考えよう。
+    三角関数のグラフを考えればわかるように、$\sin x$は$-1$と$1$の間の値を行ったり来たりしている。
+    つまり、$x$を限りなく大きくしていっても一定の何かの値に近づくことはない。
+    この状況を数式に表すことはできない。
+    また、今のような状況は「$x$を限りなく大きくしたとき$\sin x$は\textbf{振動する}」という。
+  \end{ex*}
+  \begin{prob*}
+    以下の極限を調べよ。収束する場合はその値を求め、発散する場合は
+    「正の無限大に発散する」、「負の無限大に発散する」、「振動する」
+    のどれであるか答えよ。
+    \begin{enumerate}
+      \item $\lim_{x \to 1}\left(\frac{1}{x} - 1 \right)$
+      \item $\lim_{x \to \pi} \cos x$
+      \item $\lim_{x \to 0} 2^x$
+      \item $\lim_{x \to 2} (x^2 -4x + 4)$
+      \item $\lim_{x \to -3}\left(\frac{1}{x + 3} + 3\right)$
+      \item $\lim_{x \to -\infty}x^3$
+      \item $\lim_{x \to \infty} 2$
+      \item $\lim_{x \to \infty}\left(\sin x - \cos\left(\frac{\pi}{2} - x\right)\right)$
+      \item $\lim_{x \to \infty} (x^2 + 2x)$
+    \end{enumerate}
+  \end{prob*}
+
+  \textbf{不定形}と呼ばれるものがある。例えば次のようのもの。
+  \begin{ex*}
+    極限
+    \[
+      \lim_{x \to \infty}\frac{2x}{x^2}
+    \]
+    を考えよう。
+    そのまま考えたら、いわば、
+    \[
+      \frac{\infty}{\infty}
+    \]
+    のようになりそうである。しかし、$\infty$というのは上述したように
+    \textbf{ある特定の数ではない}から、「無限大どうし約分して$1$になる」
+    という計算は不可能である。
+    %余りにもナンセンスである。$0$で割り算をするくらい意味が不明である。
+    この状態は、分母も分子も限りなく大きくなり続けていることを表している。
+    だから、無限大に発散するのか、振動するのか、もしくは何か数学的なカラクリがはたらいて収束するのかが全く分からないのである。
+    こういったものを俗に\textbf{不定形}という。
+    極限を考えて不定形が出てきてしまっても、少しの式変形で不定形を避けられることがある。
+    今回は、$x$を限りなく大きくする前に、$\frac{2x}{x^2}$について少し考察すれば問題の解決への糸口が見える。
+    \[
+      \frac{2x}{x^2} = \frac{2}{x}
+    \]
+    であるから\footnote{通常なら$x$は未知数なのでこういった約分はご法度である。なぜなら、$0$で割り算をしていたという可能性が排除されていないから。しかし、今回は$x$は$0$になることはあり得ない。それは後ほど$x$を限りなく大きくするからである。また別の言い方をすれば$x = 0$の場合は考えないから、と言うこともできる。}、
+    \[
+      \lim_{x \to \infty}\frac{2x}{x^2} = \lim_{x \to \infty}\frac{2}{x}
+    \]
+    である。したがって、これは$0$に収束することが分かる。
+  \end{ex*}
+
+  このほかにも、'$\infty - \infty$'や'$\frac{0}{0}$'のような形が出てきてしまったら、それは不定形である。
+  なお、'$\infty + \infty$'や'$\infty \times \infty$'は不定形ではない。これらは$\infty$である。
+  \begin{prob*}
+    次の極限を調べよ
+    \begin{enumerate}
+      \item $\lim_{x \to \infty} (x^2 -6x +9)$
+      \item $\lim_{x \to 0} \frac{x}{x + x^2}$
+      \item $\lim_{x \to \infty}(-x^2 + 2x)$
+    \end{enumerate}
+  \end{prob*}
+
+\newpage
+\section{右極限と左極限}
+  \[
+    \lim_{x \to 1} x^2
+  \]
+  は$x$を限りなく$1$に近づけたときの$x^2$の値を表すのであった。
+  しかし、ここで「近づけ方」というのは二通りある。
+  すなわち、$1$より大きい側から近づける方法と、$1$より小さい側から近づける方法である。
+  前者を
+  \[
+    \lim_{x \to 1 + 0} x^2
+  \]
+  と表し、後者を
+  \[
+    \lim_{x \to 1 - 0}
+  \]
+  と表すことにする。
+  右極限と左極限は関数によっては一致しない場合もある。
+  極限が存在する(収束する)ということはこの右極限と左極限の言葉をもちいてより厳密に定義される。
+  $f(x)$を$x$に関する式とする。
+  \[
+    \lim_{x \to t + 0}f(x), \quad \lim_{x \to t - 0}f(x)
+  \]
+  がともに収束し、しかも、
+  \[
+    \lim_{x \to t + 0}f(x) = \lim_{x \to t - 0}f(x)
+  \]
+  が成立することを言う。
+  そしてその値を$\lim_{x \to t}f(x)$で表すのである。
+
+  \begin{prob*}
+    次の極限を調べよ。ただし、$[x]$は$x$を超えない最大の整数を表すとする。
+    例えば$[3.14] = 3, [3] = 3$である。
+    \begin{enumerate}
+      \item $\displaystyle{\lim_{x \to 0 + 0} \frac{1}{x}}$
+      \item $\displaystyle{\lim_{x \to 0 - 0} \frac{1}{x}}$
+      \item $\displaystyle{\lim_{x \to 1 + 0} [x]}$
+      \item $\displaystyle{\lim_{x \to 1 - 0} [x]}$
+      \item $\displaystyle{\lim_{x \to 0 + 0} |x|}$
+      \item $\displaystyle{\lim_{x \to 0 - 0} |x|}$
+    \end{enumerate}
+  \end{prob*}
+
+  \section{連続関数と微分不可能性}
+    この話は参考として読んでください。
+
+    ある関数$f(x)$があって、$y = f(x)$のグラフを書く。
+    そのグラフが途中で途切れていないようなとき$f(x)$は連続であるという\footnote{数学的に厳密な定義は大学レベルなので省略}。
+    高校数学までで扱う関数はほとんどの場合連続である。
+    しかし、今まで習ってきた関数でも連続でない関数はある。
+    例えば、$y = [x]$は連続ではない。
+    \begin{prob*}
+      $y = [x]$のグラフを描け。
+    \end{prob*}
+
+    また、関数$f(x)$の微分を勉強したが、微分の計算はいつでもできるとは限らない。
+    つまり、
+    \[
+      \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
+    \]
+    という極限が発散してしまうような関数も存在するのである。
+    これは$f(x)$が連続な関数であったとしても起こりえる！
+    \begin{ex*}
+      $f(x) = |x|$とする。
+      グラフを描けばわかるように、この関数は連続関数である。
+      \begin{prob*}
+        \[
+          \lim_{h \to 0 - 0}\frac{f(x + h) - f(x)}{f},\quad \lim_{h \to 0 + 0}\frac{f(x + h) - f(x)}{f}
+        \]
+        をそれぞれ求めよ。
+      \end{prob*}
+      この問題から分かるように、上記の右極限と左極限は一致しない。
+      したがって、
+      \[
+        \lim_{h \to 0}\frac{f(x + h) - f(x)}{f}
+      \]
+      は存在しない。したがって、関数$f(x)$は$x = 0$において\textbf{微分不可能}である。
+    \end{ex*}
+
+    一般に、
+    \begin{screen}
+      微分可能であれば連続である。
+      しかし、連続であってもかならずしも微分可能とは限らない。
+    \end{screen}
+    ということが分かっている。
+
+\section{}
+  \subsection{}
+    以下の関数$f(x)$の導関数を、導関数の定義に従って求めよ。
+    \begin{enumerate}
+      \item $f(x) = 2x$
+      \item $f(x) = 3x^2 + 1$
+      \item $f(x) = x^3 + x$
+      \item $f(x) = ax^2 + bx + c \quad$ここで$a,b,c$は定数ですべて$0$ではない。
+      \item $f(x) = (x + 2)^2$
+      \item $f(x) = 2$
+      \item $f(x) = \frac{1}{100}x^{100}$
+    \end{enumerate}
+  \subsection{}
+    (1)の1.から7.について、$(1,f(1))$を通る接線を求めよ。
+
+\newpage
+\section{微分とは次元を下げること}
+  次の関数をカッコ内の文字を変数として微分しなさい。
+  \footnote{1.は球の体積、2.は初速度$v$で鉛直方向に物体を落下させたとき、$t$秒後の落下距離、3.は縦横高さの長さがそれぞれ$a,b,c$の直方体の体積。
+  それぞれ、微分すると円の面積、時刻$t$という瞬間の速さ、直方体の底面の面積になることを確認せよ。（微分することにより3次元の図形から2次元の図形へと移り変わっている）}
+  \begin{enumerate}
+    \item $V = \frac{4}{3}\pi r^3$\quad$(r)$
+    \item $s= vt + \frac{1}{2}gt^2 \quad (t)$
+    \item $V = abc \quad (c)$
+  \end{enumerate}
+
+\section{}
+  関数
+  \[f(x) = \frac{1}{3}x^3 - \frac{5}{2}x^2 +6x -1\]
+  について考えよう。以下の問いに答えよ。
+  \begin{enumerate}
+    \item $f^\prime(x)$を求めよ
+    \item $f^\prime(x) = 0$となる$x$を全て求めよ。
+    \item 2.で求めた$x$をそれぞれ$x_1, x_2$とする。ただし、$x_1 < x_2$とする。このとき、
+    $d(x_1),f(x_2)$の値を求めよ。
+    \item この関数の増減表を書きなさい
+    \item 関数$y =f(x)$のグラフの概形を描きなさい
+  \end{enumerate}
+
+\section{}
+  次の関数のグラフの概形を描け。
+  \begin{enumerate}
+    \item $f(x) = x^3 -12x -1$
+    \item $f(x) =x^3 - 3x^2 +3x$
+    \item $f(x) =2x^3 - 3x^2$
+  \end{enumerate}
+
+\section{}
+  次の関数のグラフの概形を描け。
+  \[f(x) = \frac{1}{4}x^4 - \frac{4}{3}x^3 -\frac{5}{2}x^2 + 1\]
+
+\newpage
+\section{}
+  $2^{10} =1024 >1000$であることを利用して、$\log_{10} 2, 0.3$の大小を比較せよ。\footnote{'04大分大学}
+  (ヒント：$2^{10} > 1000$の両辺に対数を施す。対数の底は何すればいいかは自分で考えよう)
+
+\section{}
+  $\frac{1}{4}\leq x \leq 1$とする。関数$y = (\log_{\frac{1}{2}}x)^2 -\frac{1}{2}\log_{\frac{1}{2}}x^2 + 1$
+  を考えよう。\footnote{'05信州大学改}
+  \begin{enumerate}
+    \item $a$は実数全体を動くとする。
+    このとき、$f(a) = \log_{\frac{1}{2}} a$のグラフを書きなさい
+    \item $t = \log_{\frac{1}{2}} x$とおくとき、$t$の取りえる値の範囲を書きなさい
+    \item $y$を$t$を用いて表せ。
+    \item $y$の最大値と最小値を求めよ。また、その時の$x$の値を求めよ。
+  \end{enumerate}
+
+\section{}
+  $f(x) = x^3 + ax^2 + bx + c$とする。
+  曲線$y = f(x)$は点$P(-1,2)$を通る。また、点$P$における
+  この曲線の接線の式は$y = x + 3$である。
+  また、曲線$y=f(x)$上の点$Q(2,f(2))$における接線は点$P$を通る。
+  このとき、以下の問いに答えよ。\footnote{'05津田塾大学改}
+  \begin{enumerate}
+    \item $f(-1)$を$a,b,c$を用いて表せ
+    \item $f^\prime(x)$を求めよ。
+    \item $f^\prime(-1)$を$a,b$を用いて表せ。
+    \item $f(2),f^\prime(2)$を$a,b,c$を用いて表せ
+    \item 点$Q$を通る曲線$y =f(x)$の接線の式を$a,b,c$を用いて表せ
+    \item $a,b,c$の値を求めよ。
+  \end{enumerate}
+
+\newpage
+\section{}
+  3次関数$y = f(x)$は$x = -1$で極大値$12$をとり、
+  $x = 1$で極小値$4$を取る。
+  $f(x) = ax^3 + bx^2 + cx + d$と置くことにより、$f(x)$を求めよ。
+  \footnote{'08金沢医科大学}\footnote{ヒント：何気なく書かれているが、極値なので$f^{\prime}(-1) = 0$「など」が成り立つことに注意}
+
+\section{}
+  三次方程式$4x^3 -12x^2 + 9x -p =0$について考えたい。
+  ここで、$p$は実数である。
+  \begin{enumerate}
+    \item $f(x) = 4x^3 -12x^2 + 9x$の極値を求めて$y = f(x)$のグラフの概形を描け
+    \item 三次方程式$4x^3 -12x^2 + 9x -p =0$を解くことを、連立方程式\[\begin{cases}
+      y = f(x)\\
+      y = p
+      \end{cases}\]
+      を解くことと捉える。
+      そうすることにより、
+      三次方程式$4x^3 -12x^2 + 9x -p =0$ の実数解で、
+      $0$以上$1$以下であるものが
+      ただ一つだけであるための$p$の条件を求めよ。
+      \footnote{ヒント：連立方程式と捉えるということは、
+      二つのグラフの交点を求める問題と捉えることである。
+      すなわち、1.で$y = f(x)$のグラフを描いたが、
+      そのグラフに直線$y = p$を描いて考えるということである。
+      $y = p$を動かして$y = f(x)$との交点が$0 \leq x \leq 1$
+      の範囲内にある時の$p$の範囲を調べよう。}
+      \footnote{'06北海道大学}
+  \end{enumerate}
+
+\section{}
+  $f(x) = 2x^3 + x^2 -3$とおく。
+  \begin{enumerate}
+    \item $y = f(x)$のグラフの概形を描け
+    \item 曲線$y = f(x)$上の点$(t, 2t^3 + t^2 - 3)$について、この点を通る接線の式を$t$を用いて表せ
+    \item 原点を通り曲線$y = f(x)$と接するような直線の式を求めよ\footnote{2.で求めた直線に原点の座標を代入する}
+    \item 直線$y = mx$が曲線$y = f(x)$と相異なる3点で交わるような実数$m$の範囲を求めよ\footnote{'05大阪大学}
+  \end{enumerate}
+
+\newpage
+\section{積分の簡単な歴史について}
+  ほぼすべての高校において、微分と積分はセットで学習します。
+  積分とは微分と大きく関係する計算なのですが、
+  初めは全く関係が無いものとして(というか微分が生まれたのが積分よりもずっと最近)考えられていました。
+
+  積分はもともと古代から考え方としてはありました。
+  積分とはかなり大雑把に言ってしまうと「面積を求める計算」でした。
+  それを大きく発展させたのは
+  ニュートンとライプニッツ(倫理で出てくるでしょうか)の
+  二人だとされています。おおよそ17世紀の話です。
+  この二人は物理の研究をしている際、
+  「微分」という考え方を発明しました。
+  微分を開発した二人は、積分と微分には強いつながりがあるということを見抜きました。
+  それは今日、「微積分学の基本定理」として知られています。
+
+  \begin{screen}
+    歴史的な順番
+    \begin{center}
+      「積分」$\longrightarrow$「微分」
+    \end{center}
+    微分と積分の関係
+    \begin{center}
+      「積分」$\overset{\text{微積分学の基本定理}}{\longleftrightarrow}$「微分」
+    \end{center}
+  \end{screen}
+
+  微積分学はこれまで我々が学んできた数学の中でも最も最新の数学といえるでしょう。
+  したがって、私達は今、現代数学の扉を叩いているといっても過言ではありません。
+  現代数学を本当に学ぶためにはこのほかに「集合論」「線形代数学」
+  と呼ばれる分野を学ばなければいけません。
+  しかし、それらは大学範囲での数学です。
+  数学３では今から私たちが学習する「積分」および、私達が学習した
+  「微分」をもっと多くの関数に適用して考えると
+  どうなるかということを習います。
+  たとえば、$f(x) = \sin x$の微分はどうなるか、などです。
+  数学３は八割が微積分です。
+
+  問100としての問題は簡単な関数の不定積分をしてみよう。
+  \begin{prob*}
+    次の関数を不定積分せよ。(次の関数の原始関数を求めよ)
+    \begin{enumerate}
+      \item $x^2$
+      \item $\frac{1}{3}x^2$
+      \item $\frac{1}{5}x^3$
+    \end{enumerate}
+  \end{prob*}
+
+\newpage
+\section{}
+  次の定積分を求めよ
+  \begin{enumerate}
+    \item $\displaystyle{\int_1^2 (4x - 3)^2 dx}$
+    \item $\displaystyle{\int_1^3 (3x^2 -4x +1) dx - 2\int_1^2(x^2 -2x -1)dx}$
+    \item $\displaystyle{\int_{-1}^1 (x^3 + x) dx}$
+    \item $\displaystyle{\int_3^{-2}(x^2 - 2x) dx}$
+  \end{enumerate}
+
+\section{}
+  関数$f(x)$は次のような関数であるとする。
+  \[f(x) = \begin{cases}
+    x^2 \quad (\text{if}\quad x > 0)\\
+    -x^2 \quad (\text{if}\quad x \leq 0)
+  \end{cases}\]
+  定積分$\displaystyle{\int_{-2}^3 f(x) dx}$を求めよ。
+
+\section{}
+  定積分
+  \[
+    \int_{-3}^4 |x^2 - 5x + 6| dx
+  \]
+  を求めよ。
+
+\section{}
+  \begin{enumerate}
+    \item 関数$f(x) = |x^2 -2x| + |x+1| + |x-1|$とする。$y =f(x)$のグラフを描け
+    \item 定積分$\displaystyle{\int_{-2}^2 f(x) dx}$を求めよ
+  \end{enumerate}
+
+\newpage
+\section{}
+  \[
+    x^3 -x +a =0
+  \]
+  の異なる実数解の個数を$a$の値の場合分けによって求めよ。
+
+\section{}
+  関数$f(x) = x^3 -x^2 + ax +2$は極値がただひとつ存在する。
+  $a$を求めよ
+
+\section{}
+  次の式を満たす$f(x)$を求めよ。
+  \[
+    \int_{-1}^{x} f(t) dt = x^3 - x
+  \]
+
+\section{}
+  曲線$y = (x + 2)(x - 3), y = -2(x+1)(x-2)$によって囲まれる図形の面積を求めよ。
+
+\section{}
+  曲線$y = -2x^2 + 2$と直線$y = \frac{5}{3}x$と$x$軸と$0\leq x \leq1$によって囲まれてできる図形の面積を求めよ。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

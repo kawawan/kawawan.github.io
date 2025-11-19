@@ -1,0 +1,2908 @@
+\documentclass[14pt,b5paper]{jsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[top=10truemm]{geometry}
+\usepackage{cases}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\usepackage{ascmac}
+
+%表記
+\newcommand{\abs}[1]{\left|#1\right|} % absolute value | |
+\newcommand{\norm}[1]{\left\|#1\right\|} % norm || ||
+\newcommand{\bra}[1]{\left(#1\right)} % bracket ( )
+\newcommand{\sqbra}[1]{\left[#1\right]} % square bracket [ ]
+\newcommand{\cubra}[1]{\left\{#1\right\}} % curly bracket { }
+
+\theoremstyle{definition}
+\newtheorem{theorem}{定理}
+\newtheorem*{theorem*}{定理}
+\newtheorem{definition}[theorem]{定義}
+\newtheorem*{definition*}{定義}
+\newtheorem*{prob*}{問題}
+\newtheorem*{ex*}{例}
+\newtheorem*{prop*}{命題}
+\newtheorem*{ans*}{解答}
+\renewcommand{\proofname}{\bf 証明}
+\renewcommand{\thesection}{問\arabic{section}}
+\renewcommand{\thesubsection}{(\arabic{subsection})}
+\renewcommand{\thesubsubsection}{(\alph{subsubsection})}
+
+\title{問題解答}
+
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+
+\begin{document}
+\maketitle
+略解です。必要と思った場所には正式な回答を書く予定です。
+多くの場合、約分や展開、連立方程式や二次方程式といった
+細かい計算は大幅に省略しています
+問1から順に書いていく予定です。まだまだ書きかけです。
+
+\section{}%1
+\subsection{}
+  $(x-y-z)(x-y + z)$
+\subsection{}
+  $(x-2)(x-3)$
+\subsection{}
+  $(3x+2)(4x+5)$
+\subsection{}
+  $(x+3)(x^2 + 1)$
+
+\section{}
+  \subsection{}
+    $\displaystyle{x = \frac{-5\pm\sqrt{13}}{6}}$
+  \subsection{}
+    $(x^2 - 1)(x^2 - 4) = 0$より、$x = \pm1, \pm2$
+
+\section{}
+  \begin{enumerate}
+    \item[(1)] 偽
+    \item[(2)]  偽。必要条件である。$P$が成り立てば$Q$が成り立つということは、見方を変えれば$P$が成り立つためには最低限$Q$は成り立つ必要がある。その意味で必要条件である。
+    \item[(3)]  偽。このような整数$x$は存在しない
+    \item[(4)]  偽。包含関係の式が逆。
+  \end{enumerate}
+
+\section{}
+  $\displaystyle{y - 2 = \frac{2 -4}{1 - (-3)}(x-1)}$より
+  $\displaystyle{y = -\frac{1}{2}x + \frac{5}{2}}$
+
+\section{}
+  全部で27通りの手の出され方があって、あいこになるのは全員同じ手のが3通りと、
+  全員が違う手を出すのが$3! = 6$通りあるので、求める確率は$\frac{1}{3}$
+
+\section{}
+  $5\sqrt{2}$cm
+
+\section{}
+  \begin{enumerate}
+    \item[(1)] $24 = 2^3 \times 3$なので、約数の個数は$(3+1) \times (1+1) = 8$個あり、その総和は$(2^0 + 2^1 + 2^2 +2^3)(3^0 + 3^1) = 60$である。
+    \item[(2)] 約数の個数は$6$個であり、総和は$63$
+    \item[(3)] 約数の個数は$32$個であり、総和は$3600$
+  \end{enumerate}
+
+\section{}
+  \begin{enumerate}
+    \item[(1)] $180 = 2^2 3^2 5$である。素因数$3$が含まれている約数の個数を数え上げる。$3$が一つ含まれている約数は$3 \times 2 = 6$個であり、$3$が二つ含まれていえる約数も$6$個であるから、合わせて$12$個
+    \item[(2)] $1 + p$
+  \end{enumerate}
+
+\section{}
+  $x$の降べきの順に並び替えて因数分解する。
+  \begin{align*}
+    &xy + 1 + x + y + xy^2 + x^2 + x^2y + x^2y^2 + y^2\\
+    =& x^2 + yx^2 + y^2x^2 + yx + x + y^2x + y^2 + y + 1\\
+    =& (y^2 + y + 1)x^2 + (y^2 + y + 1)x + (y^2 + y + 1)\\
+    =& (y^2 + y + 1)(x^2 + x + 1)
+  \end{align*}
+
+\section{}
+  \subsection{}
+    中にある絶対値から外していく。
+    $x-2 \ge 0$のとき、つまり、$x \ge 2$の時を考える。
+    このとき、
+    \[
+      |x-2-3| =2
+    \]
+    となるから、
+    \[
+      |x-5| =2
+    \]
+    となる。ここの絶対値でも場合分けが必要になる。
+    $x-5 \ge 0$つまり、$x \ge 5$のとき、
+    \[
+      x - 5 =2
+    \]
+    となるから、$x =7$である。
+    いっぽう、$x-5 \leq 0$となるとき、つまり$2 \leq x \leq 5$となるとき、
+    \[
+      -x + 5 = 2
+    \]
+    となるから、
+    $x = 3$である。
+
+    一方、$x-2 < 0$のとき、つまり、$x < -2$のとき、
+    \[
+      |-x + 2 -3| = 2
+    \]
+    となるから、
+    \[
+      |-x -1| = 2
+    \]
+    となる。
+    ここでも同様に、もう一度絶対値を外すための場合分けが必要になる。
+    $-x -1 \ge 0$すなわち、$-1 \ge x$のとき、
+    \[
+      -x -1 =2
+    \]
+    となるから、
+    \[
+      x = -3
+    \]
+    である。
+    もう一つの$-x-1<0$のとき、つまり、$-1 < x$の場合についても考えなければならないが、
+    いま、$x < -2$という場合において考えているので、$-1 < x$というのは不適である。
+
+    以上により、解は$x=7,\pm3$
+
+  \subsection{}
+    $||x-1||$についてよく観察してみると、$|x-1|$は必ず$0$以上であるから、
+    外側の絶対値はそのまま外れる。つまり、
+    \[
+      ||x-1|| = |x-1|
+    \]
+    である。
+    よって、問題の式は
+    \[
+      |x - 1| < 2
+    \]
+    であるが、これは、
+    \[
+      -2 < x-1 < 2
+    \]
+    のことなので\footnote{絶対値は、原点からの距離を表すものだった。いまそれが2未満ということは、$x-1$は$-2$から$2$までの中に無いとおかしい}
+    、求める範囲は
+    \[
+      -1 < x < 3
+    \]
+    である。
+
+    \section{奥が深いぞ絶対値}
+      【ここは説明です】$f,g$を何らかの式とします。
+      このとき「$f \leqq g$であることを証明しなさい」、という問題が出されたとします。
+      こういう問題の証明方法はいくつかあります。
+      基本的には$g - f$を計算して、その結果$0$以上になればよいです。
+      \subsection{例題}
+        $x>1$であるとき、$x^2>x$であることを証明しなさい。
+
+        [解答]
+
+        $x^2 - x > 0$となることを確かめればよいから、実際に計算をして確かめてみる。
+        \[x^2 - x = x(x - 1)\]
+        となるが、$x>1$だから$x(x - 1) > 0$となる。
+      \subsection{三角不等式の特別な形}
+        $x$は実数とする。
+        \[|x + 1| \leqq |x| + 1\]
+        であることを証明しなさい。\footnote{この問題の証明は難しい気がするので一人で太刀打ちできなさそうなら、本やネットで調べてみてください。}
+      \subsection{}
+        $x,y$は実数とする。
+        \[|xy| = |x||y|\]
+        であることを証明しなさい。\footnote{左辺は$|xy| = xy$の場合と$|xy| = -xy$になる場合があります。
+        前者はつまり、$xy \geqq 0$となっている場合です。
+        $xy \geqq 0$とはつまり掛け算が0もしくは正なので、
+        $x,y$の符号が同じということになります。後者はつまり、$xy < 0$となっている場合です。
+        $xy < 0$とはつまり掛け算が負なので、$x,y$の符号が異なる場合ということになります。
+        さて、この「$x,y$の符号が異なる」という場合について考えてみましょう。
+        この時は、先ほども見たように、$|xy| = -xy$となります。この時、右辺の$|x||y|$は本当に
+        $-xy$になるかどうかを確かめなければなりません。
+        $|x|$や$|y|$があるので、ここでも場合分けが必要になります。
+        たとえば「$|x| = x$である場合」を考えましょう。つまり、$x \geqq 0$である場合を考えます。
+        なんと、このとき自動的に$y < 0$となります。なぜなら、今は「$x,y$は異符号」という場合で考えていたからです。
+        したがって、$|y| = -y$となります。したがって、$|x||y| = x (-y) = -xy$となります。
+        よって、「$x,y$は異符号でありさらに$x \geqq 0$」ある場合は$|xy|=|x||y|$がちゃんと成立しています。
+        このような場合分けをほかのすべての場合において確認してください。}
+      \subsection{}
+        二つのグラフ、$y = |-x^2 + 2x -3 |$、と、$y = -x$は交点を持つか？
+        持つ場合はその交点の座標を求めなさい。\footnote{絶対値が付いている方は、絶対値の中身を平方完成してみよう。}
+
+
+    \section{センター試験２０１９年改題}
+      $a,b$はともに正の実数とする。
+      $x$の2次関数
+      \[y = x^2 + (2a - b)x + a^2 + 1\]
+      のグラフを$G$とする。
+      \subsection{}
+        グラフ$G$の頂点の座標を求めなさい。
+      \subsection{}
+        グラフ$G$は点$(-1,6)$を通るとする。$b$を$a$を用いた式で表しなさい。
+      \subsection{}
+        横軸を$a$軸、縦軸を$b$軸として、(2)で求めた式のグラフを書きなさい。
+      \subsection{}
+        $b$の最大値を求めなさい。また、このときの$a$の値を求めなさい。
+
+    \section{}
+      $a$は実数とする。
+      関数$f(x) = ax^2 + (1-2a)x$は次の二つの条件を満たしている。
+      \begin{enumerate}
+        \item $-3 \leqq x < 0$のとき、$f(x)\geqq -1$
+        \item $x \geqq 0$のとき、$f(x)\geqq 0$
+      \end{enumerate}
+      この二つが成り立つような$a$の範囲を求めたい。\footnote{各問題についての状況に合わせたお絵かきをしながら考えよう。}
+      \subsection{}
+        $a = 0$のとき、上記1.、2.の条件は満たされるかを確認しなさい。
+      \subsection{}
+        $a < 0$のとき、上記1.、2.の条件は満たされるかを確認しなさい。
+      \subsection{}
+        これ以降の問題は$a>0$として考えていく。
+        $f(x)$の左辺を$x$について因数分解しなさい。
+      \subsection{}
+        関数$f(x)$のグラフを$G$とする。グラフ$G$の頂点の座標を求めなさい。
+      \subsection{}
+        方程式$f(x) = 0$が重解をもつとき、$a$の値を求めなさい。
+      \subsection{}
+        方程式$f(x) = 0$が相異なる二つの解をもつときの$a$の範囲を求めなさい。
+      \subsection{}
+        2.の条件を満たす$a$の範囲を求めよ。
+      \subsection{}
+        グラフ$G$の軸が$-3$以上でかつ、$0$より小さいとき、$a$の値の範囲を求めなさい。
+      \subsection{}
+        $a$が(8)の範囲であるとき、1.の条件を満たす$a$の範囲を求めなさい。
+      \subsection{}
+        グラフ$G$の軸が$-3$より小さいとき、$a$の値の範囲を求めなさい。
+      \subsection{}
+        $a$が(10)の範囲であるとき、1.の条件を満たす$a$の範囲を求めなさい。
+      \subsection{}
+        1.2.をともに満たす$a$の条件を求めなさい。
+
+
+      9/13 問題
+      \section{}
+        A,B,C君の三人でじゃんけんをする。
+        \subsection{}
+          一回じゃんけんをする。このとき、あいこになる確率を求めなさい。
+        \subsection{}
+          二回じゃんけんをする。このとき、A君が二連勝する確率を求めなさい。
+        \subsection{}
+          二回じゃんけんをする。このとき、少なくとも誰か一人が二連勝する確率を求めなさい。
+
+      \section{}
+        関数$f(x)=-x^2 + 2ax - (a - \sqrt{3})(a + \sqrt{3})$を考える。
+         定義域は$0 \leqq x \leqq 3$とする。
+        $f(x)$の最大値を求めなさい。($a$の値によって場合分けすること)
+
+
+    \section{}
+      $\lceil x \rceil$は$x$より大きい最小の整数とする。
+      たとえば、$\lceil 3.1 \rceil$は$4$で、$\lceil 2.9 \rceil$は$3$である。
+      これを踏まえて次の問いに答えなさい。
+      \subsection{}
+        $\dfrac{1}{3-\sqrt{7}}$の小数部分を$b$、
+        $a = \Bigl\lceil \dfrac{1}{3-\sqrt{7}} \Bigr\rceil$とする。
+        \subsubsection{}
+          $a$の値を求めなさい。
+        \subsubsection{}
+          $a^4 - b^4$の値をもとめなさい。\footnote{計算頑張ってください}
+
+    \section{}
+      毎秒$30$mの速さ\footnote{一秒で30メートルも進むので結構全力ですね}で真上に球を投げ上げる。
+      $t$秒後、地面から測った球の高さを$h$mとする。
+      このとき、$h$は$t$を用いて次のように表すことができる。
+      \[h = 30t - 5t^2\]
+      という式で計算できる。
+      \subsection{}
+        球の高さが最も高くなるのは、投げ上げてから何秒後か。
+        また、そのときの球の高さを求めなさい。
+      \subsection{}
+        球の高さが$40$m以上であるのは、投げ上げてから何秒後から何秒後までか。
+
+
+    \section{方べきの定理}
+      円$O$がある。二本の直線$L_1,L_2$がこの円と交わっている。
+      直線$L_1$と円$O$との交点は二つあるとする。
+      それぞれ、点$A$,点$B$とする。
+      直線$L_2$に関しても、円$O$との交点は二つあるとする。
+      それぞれ、点$C$,点$D$とする。
+      直線$L_1$と直線$L_2$の交点を点$E$とする。
+      点$E$は円$O$の内部にあるとする。
+      \subsection{}
+        $\triangle AEC$と$\triangle DEB$が相似であることを証明しなさい。
+      \subsection{}
+        \[AE \times BE = CE \times DE\]
+        であることを証明しなさい。なお、$AE$とは線分$AE$の長さを表している。
+
+    \section{}
+      $\triangle ABC$の辺$BA$上に点$D$、辺$CA$上に点$E$がある。
+      $\triangle ABC$の面積を$S_1$、$\triangle ADE$の面積を$S_2$とおく。
+      \[S_2 = S_1 \times \frac{AD}{AB} \times \frac{AE}{AC}\]
+      であることを証明しなさい。
+
+
+    \section{以下の問いに答えなさい。}
+      以下の問いにおいて、$\theta$は角度を表すとし、
+      断りがない限り$0^{\circ} < \theta < 90^{\circ}$であるとする。
+      \subsection{}
+        $\triangle ABC$は$\angle ABC = 60^{\circ}, \angle ACB = 90^{\circ}$の直角三角形である。
+        $\sin (\angle BAC)$の値を求めなさい。
+      \subsection{}
+        辺$AB$の長さは$4\sqrt{3}$とする。$\triangle ABC$の面積を求めなさい。
+      \subsection{}
+        $\triangle DEF$は$\angle DEF = \theta, \angle DFE = 90^{\circ}$の三角形である。
+        各辺の長さは$DE = f, EF = d, FD = e$であるとする。
+        $\sin \theta, \cos \theta, \tan \theta$
+        をそれぞれ$d,e,f$を用いて表しなさい。
+      \subsection{}
+        $\angle EFD$の大きさを$\theta$を用いて表しなさい。
+      \subsection{}
+        $\sin(\angle EFD), \cos(\angle EFD)$を$e,f,d$を用いて表せ。
+      \subsection{}
+        \begin{align*}
+          \sin(90^{\circ} - \theta) &= \cos \theta  \\
+          \cos(90^{\circ} - \theta) &= \sin \theta \\
+          \tan(90^{\circ} - \theta) &= \frac{1}{\tan \theta}
+        \end{align*}
+        であることを証明しなさい。(前問までに解いたことを利用すればよい。)
+
+
+    \section{練習問題}
+      \subsection{}
+      連立不等式
+        \[
+          \begin{cases}
+            x^2 -8x + 7 \leqq 0\\
+            2x^2 -7x +1 > 0
+          \end{cases}
+        \]
+        を解きなさい。
+
+      \subsection{}
+        3 \verb|%|
+        の食塩水100gに9\verb|%|の食塩水を加えて7\verb|%|以上の
+        食塩水を作るには、9\verb|%|の食塩水を何g以上加える必要があるかもとめよ。
+
+      \subsection{}
+        $1 \leqq x \leqq 3$において、二次関数$y = x^2 -2ax + 3a$が常に
+        正となるような$a$の値の範囲を求めなさい。
+
+      \subsection{}
+        1000から9999までの四桁の自然数のうち、1000や1212のようにちょうど二種類
+        の数字から成り立っているものの個数を求めなさい。
+
+      \subsection{}
+        袋Aの中には赤玉と白玉がそれぞれ4つずつ入っている。
+        袋Bの中には赤玉が3つと白玉が2つ入っている。
+        以下の確率をそれぞれ求めなさい。
+        \begin{itemize}
+          \item 袋Bから2つの玉を取り出すとき、赤玉と白玉が一つずつになる確率。
+          \item 袋Aから3つの玉を取り出し、袋Bから2つの玉をとりだす。取り出した5つのうち赤玉が3つである確率。
+        \end{itemize}
+
+
+    \section{}
+      $a$を実数とする。放物線$y=ax^2$と直線$y = x - a$の交点の個数を調べなさい。
+      \footnote{$a = 0$のときのみ別に場合分けして考える。}
+    \section{}
+      放物線$y = x^2 + ax +2$が、二点A$(0,1)$、B$(2,3)$を結ぶ線分と異なる二点で
+      交わる。このとき、$a$の値の範囲を求めなさい。
+    \section{}
+      SUUGAKU の七文字を一列に並べるとき、次の確率を求めなさい。
+      \begin{enumerate}
+        \item 同じ文字が一続きに並ぶ確率
+        \item 子音が隣り合わない確率
+      \end{enumerate}
+    \section{}
+      一個のサイコロを投げて4以下の目が出るとコマを1つ進め、5以上の目が出ればコマを動かさない
+      というすごろくゲームをする。
+      いま、あと4つ進むと上がりになるところにコマがある。
+      次の確率を求めなさい。
+      \begin{enumerate}
+        \item サイコロを投げる回数が4回で上がりになる、すなわち最短で上がれる確率
+        \item サイコロを投げる回数がちょうど5回で上がりになる確率。
+        \item サイコロを投げる回数が6回以内で上がりとなる確率。
+      \end{enumerate}
+    \section{}
+      $\triangle ABC$の三つの角の大きさをそれぞれ$A,B,C$とする。
+      次の等式が成り立つことを証明しなさい。\footnote{1.,2.は$A+B+C = 180^{\circ}$であることを利用する。3.の右辺は$\tan^2A = \frac{1}{\cos^2 A} - 1$であることを利用する。}
+      \begin{enumerate}
+        \item $\sin \frac{A+B}{2} = \cos \frac{C}{2}$
+        \item $\tan \frac{A+B}{2} \tan \frac{C}{2} = 1$
+        \item $\sin^2 A + \sin^2 B + \sin^2(90^{\circ} - A) + \sin^2(90^{\circ} - B) = 2(\tan^2 C) \times \frac{\cos^2C}{1 - \cos^2 C} $
+      \end{enumerate}
+
+
+    \section{}
+      次の値を求めよ。
+      \begin{gather*}
+        \sin 45^{\circ} , \cos 90^{\circ}, \tan 135^{\circ}\\
+        -\cos 150^{\circ}, \sin 120^{\circ}, \sin 0^{\circ}
+      \end{gather*}
+
+    \section{}
+      一次関数$y = \sqrt{3}(x + 1)$がある。このグラフと$x$軸、$y$軸との交点を
+      それぞれ点$A$、点$B$と置く。
+      原点を$O$とする。
+      \subsection{}
+        点$A$、点$B$の座標をそれぞれ求めよ。
+      \subsection{}
+       $\angle OAB$の大きさを求めよ。
+
+    \section{}
+      $0^{\circ} < \theta < 180^{\circ}$とする。
+      \subsection{}
+        $\displaystyle{\sin \theta = \frac{1}{\sqrt{2}}}$のとき、$\theta$の値を求めよ。
+      \subsection{}
+        $\displaystyle{\cos \theta \ge \frac{1}{\sqrt{2}}}$のとき、$\theta$の値の範囲を求めよ。
+
+
+    \section{}
+      下の図において$\angle BAC = 45^{\circ}, \angle BCA = 60^{\circ}$である。
+      $AB = 2\sqrt{2}$である。点$F$は辺$AB$の中点である。
+      $\angle FEA = 30^{\circ}$である。
+      このとき、$AC = 2 + \frac{2}{\sqrt{3}}$であることが分かっている。
+      以下の問いに答えなさい。
+
+      \definecolor{qqqqff}{rgb}{0.,0.,1.}
+      \begin{center}
+        \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=2.0cm,y=2.0cm]
+          \clip(-0.14472574311528344,-0.6907589805389707) rectangle (3.5832410916038357,2.4009681810547527);
+          \draw [line width=0.4pt] (0.,0.)-- (2.,2.);
+          \draw [line width=0.4pt] (2.,2.)-- (3.366025403784439,-0.3660254037844391);
+          \draw [line width=0.4pt] (3.366025403784439,-0.3660254037844391)-- (1.,1.);
+          \draw [line width=0.4pt] (0.,0.)-- (3.1547005383792515,0.);
+          \begin{scriptsize}
+            \draw [fill=qqqqff] (2.,2.) circle (0.5pt);
+            \draw[color=qqqqff] (1.848493857847872,2.1151573903929535) node {$B$};
+            \draw [fill=qqqqff] (1.,1.) circle (0.5pt);
+            \draw[color=qqqqff] (0.839457501250564,1.165768503151151) node {$F$};
+            \draw [fill=qqqqff] (0.,0.) circle (0.5pt);
+            \draw[color=qqqqff] (-0.08010765131348538,0.18158525878530338) node {$A$};
+            \draw [fill=qqqqff] (3.1547005383792515,0.) circle (0.5pt);
+            \draw[color=qqqqff] (3.2651212550411373,0.201467748570472) node {$C$};
+            \draw [fill=qqqqff] (2.7320508075688767,0.) circle (0.5pt);
+            \draw[color=qqqqff] (2.6089990921305724,-0.20115266957919292) node {$E$};
+            \draw [fill=qqqqff] (3.366025403784439,-0.3660254037844391) circle (0.5pt);
+            \draw[color=qqqqff] (3.2402681428096765,-0.44968379189380087) node {$D$};
+          \end{scriptsize}
+        \end{tikzpicture}
+      \end{center}
+
+      \subsection{}
+        $\angle ABC$の大きさと$\angle AFE$の大きさをそれぞれ求めよ。
+      \subsection{}
+          $\sin 75^{\circ}$の値を求めよ。有理化して答えること。
+      \subsection{}
+        $\sin \angle AFE$の値を求めよ。有理化して答えること。
+      \subsection{}
+        $AE$の長さを求めよ。
+      \subsection{}
+        $BC$の長さを求めよ。
+      \subsection{}
+        $CD = CE$、$DB =DF$であることをそれぞれ証明せよ。
+      \subsection{}
+        $CD$の長さを求めよ。
+      \subsection{}
+        $ED$の長さを求めよ。
+
+
+    \section{以下の問いに答えなさい}
+      \subsection{因数分解せよ}
+        \begin{enumerate}
+          \item $(x^2 + 5x)^2 + 10(x^2 + 5x) + 24 $
+          \item $x^2 -xy + 2yz - 4z^2$
+        \end{enumerate}
+      \subsection{}
+        $y = x^2 - 2ax + 1$の$0 \leqq x \leqq 1$における最大値と最小値を求めよ。
+      \subsection{}
+        $n$を$7$で割ったあまりが$2$または$4$であるとき、$n^2 + n + 1$は$7$で割り切れることを証明しなさい。
+      \subsection{}
+        $1800$の正の約数の個数は何個あるか。また、それらの総和を求めなさい。
+      \subsection{}
+        実数$x,y$が$2x+y=3$を満たしながら変化するとき、$y^2 + x^2$の最小値を求めなさい。
+      \subsection{}
+        $\triangle ABC$において$b\cos A = a\cos B$であるとき、$\triangle ABC$はどのような三角形か答えなさい。
+      \subsection{}
+        $AB = AC$である二等辺三角形$ABC$を考える。辺$AB$の中点を$M$とし、
+        辺$AB$を延長した直線上に点$N$を$AN : BN = 2 : 1$となるように取る。
+        このとき、$\angle BCM = \angle BCN$になることを証明せよ。
+
+
+    \section{以下の問いに答えよ}
+      \subsection{}
+        方程式
+        \[162x + 125y = 1\]
+        の解を全て求めなさい。
+      \subsection{}
+        $246$と$36$の最大公約数を求めなさい。また、最小公倍数も求めなさい。
+      \subsection{}
+        $1011_{(2)} + 10111_{(2)}$の値を10進数で求めなさい。
+      \subsection{}
+        16進数において使われる記号は
+        小さいものから順に
+        \[
+          0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+        \]である。
+        このとき、$a3_{(16)}$を10進数で表せ。
+      \subsection{}
+        10進数において$21$を4進数で表せ。
+      \subsection{}
+        $n$は自然数とする。$n^3 - n$は$6$で割り切れることを証明せよ。
+
+
+    \section{以下の問いに答えよ}
+      \subsection{}
+        次の等式は$x$についての恒等式であるという。定数$a,b,c$の値を求めよ。
+        \[
+          \frac{3x+4}{x(x^2+2)} = \frac{a}{x} + \frac{bx + c}{x^2 + 2}
+        \]
+      \subsection{}
+        整式$P(x)$を$(x+3)$で割ると$-15$余り、
+        $(x-2)$で割ると$10$余るという。
+        $P(x)$を$(x+3)(x-2)$で割った時の余りを求めなさい。
+      \subsection{}
+        $(3x^2 + x -2)^5$を展開したときの$x^6$の係数を求めなさい。
+      \subsection{}
+      \[
+        \cfrac{1}{1+ \cfrac{1}{1 + \cfrac{1}{a + 1}}}
+      \]
+      を計算せよ。
+      \subsection{}
+        実数$a,b,c$が
+        \[
+          \frac{b+c}{a} = \frac{c+a}{b} = \frac{a+b}{c}
+        \]
+        を満たすとき、この式の値を求めよ。
+      \subsection{}
+        $n$を偶数とする。
+        \[
+          _nC_0 + \, _nC_1\times (-2) + \, _nC_2\times (-2)^2 + \cdots + \, _nC_{n-1}\times (-2)^{n-1} + \, _nC_n\times (-2)^n
+        \]
+        の値を求めよ。
+
+
+    \section{}
+      放物線$l$は、放物線$y = -x^2$を$x$軸方向に$+2$、$y$軸方向に$+6$
+      平行移動させたものである。
+      放物線$l$の$x$の変域(定義域)は$a \leqq x \leqq a + p$である。
+      ただし、ここで$p > 0$である。
+      放物線$l$の式を$f(x) = -x^2 + bx + c$とする。
+      このとき、以下の問いに答えよ。
+      \subsection{}
+        $b,c$の値をそれぞれ求めなさい。
+      \subsection{}
+        $f(a),f(2),f(a+1),f(a + p)$をそれぞれ計算せよ。
+      \subsection{}
+        $p=2$とする。
+        $a$の値について場合分けをし、
+        この範囲における放物線$l$の最大値を求めよ。
+        また、最小値も求めよ。
+      \subsection{}
+        $a \leqq 2 \leqq a+p$のとき、すなわち
+        $\underline{\quad} - p \leqq a \leqq \underline{\quad}$の時を考える。
+        直線$s$は放物線$l$の頂点とただ一点で交わる。
+        直線$s$の式は$y = \underline{\qquad}$である。
+        したがって、直線$s$の傾きは$\underline{\quad}$である。
+        直線$r$は2点$(a,f(a)),(a+p,f(a+p))$を通る。
+        この二点の間の変化の割合を計算すると$\underline{\qquad\qquad}$である。
+        この直線の式を$y=g(x)$とおけば、$g(x) = (\underline{\qquad})x + \underline{\qquad\qquad}$である。
+
+        さて、放物線$l$の定義域を限りなく狭めてみよう。
+        つまり、$p$の値を限りなく$0$に近づけるのである。
+        ここでは話を簡単にするために$p = 0$とみなすことにしよう。
+        このとき、
+        $g(x) = \underline{\qquad\qquad}$となる。
+
+
+    \section{}
+      $\triangle ABC$において$(b-c)\sin^2A = b\sin^2 B - c\sin^2C$が成立している。
+      \subsection{}
+        正弦定理を用いて
+        $\frac{\sin^2B}{b^2},\frac{\sin^2C}{c^2}$をそれぞれ$a,A$を用いて表せ。
+      \subsection{}
+        $(b - c)a^2 = b^3 - c^3$が成り立つことを示せ。仮定の式の両辺に$a^2$をかけて、
+        両辺を$\sin^2A$で割ればよい。
+      \subsection{}
+        (2)より、$\underline{\qquad\qquad\qquad}=0$が成立する。
+        空欄を因数分解した形で埋めよ。
+      \subsection{}
+        $\triangle ABC$としてあり得るはどのような三角形か。すべて答えよ。
+
+    \section{}
+      1辺の長さが$1$の正三角形$ABC$を底面とする四面体$OABC$を考える。
+      ただし、$OA=OB=OC=a$であり、$a \geqq 1$とする。
+      頂点$O$から$\triangle ABC$におろした垂線の足を$H$とする。
+      \subsection{}
+        $AH=BH=CH$を証明せよ。三角形の合同を利用する。
+      \subsection{}
+        (1)より$H$は$\triangle$の外心になる。
+        すなわち、$H$は$\triangle ABC$の外接円の中心である。
+        このことに注意して$AH$の長さを求めよ。
+      \subsection{}
+        $\triangle OAH$に注目することにより、$OH$の長さを$a$を用いて表せ。
+      \subsection{}
+        四面体$OABC$が球$S$に内接しているとする。
+        この球の半径$r$を$a$を用いて表すことを考えよう。
+
+        さて、立体を考えるときの常套手段として、立体を特定の平面で切断して考えることが多い。
+        今回は線分$OA$を通り、$\triangle ABC$と垂直に交わる平面(この平面を$l$と名付ける)でこの球を切断する。
+        切断面は当然、円になる。この円を$X$と名付けよう。
+        四面体は球に内接しているという仮定があるから、線分$AH$は
+        円$X$の弦である。
+        また、線分$OH$は$\triangle ABC$と垂直に交わる線分である。
+        したがって、この線分は平面$l$上に存在する。
+
+        さて、線分$OH$上に$OP = AP$となるような$P$を取ることは可能であろう\footnote{具体的な場所を求めるのではなく、そのような点$P$は存在するということだけを確認したい}。この点$P$はいったん記憶の片隅に置いてほしい。
+        今の流れと同じことを別の切断面に関しても行うことにしよう。
+        線分$OB$を通り、$\triangle ABC$と垂直に交わる平面(この平面を$m$と名付ける)でこの球を切断する。
+        以下、同様の流れを経ることにより、結局、線分$OH$上に$OQ = BQ$となるような$Q$を取ることは可能であるということが分かる。
+        しかし、これらには「図形の対称性」があるので、実は$OP= OQ$であることが分かる。
+        つまり、$P = Q$、二つの点は同一のものである。
+        したがって
+        \[
+          OP = AP = BP
+        \]
+        となる点が線分$OH$上に存在するということが分かる。まったく同様にして考えると、結局は
+        \[
+        OP = AP = BP = CP
+        \]
+        となる点が線分$OH$上に存在するということが分かる。
+        四点$O,A,B,C$は球$S$に内接している点なので、点$P$はこの球の中心ということになる。
+        つまり、$OP,AP,BP,CP$たちはこの球の半径ということになる。
+        \subsubsection{}
+          $PH$を$r,a$を用いて表せ。
+        \subsubsection{}
+          $\triangle APH$に三平方の定理を適用し、$r$を$a$を用いて表せ。
+
+
+    \section{}
+      $n$を自然数、$0 \leqq r \leqq n$とする。
+      \subsection{}
+        $\,_nC_r, \, \,_nP_r$の定義を階乗の記号を用いて書きなさい。
+      \subsection{}
+        $\,_nC_{r} = \,_nC_{n-r}$を証明せよ。
+      \subsection{}
+        この問題においては$4 \leqq n$とする。$_nC_0 < \,_nC_1 < \,_nC_2$
+        を証明せよ。
+      \subsection{}
+        $\displaystyle{\frac{_nC_r}{_nC_{r+1}}}$を計算せよ。
+      \subsection{}
+        $n$を偶数とする。$r \leqq \frac{n}{2}$とする。
+        \[_nC_{r} \leqq \,_nC_{r+1}\]
+        を証明せよ\footnote{難しいです。一緒にやりましょう。}。
+
+
+
+    \section{}
+      A,B,Cの三人がそれぞれサイコロを1個振る。次の問いに答えよ。
+      \subsection{}
+        3人とも同じ目の出る確率を求めよ。
+      \subsection{}
+        3人とも互いに異なる目の出る確率を求めよ。
+
+
+    \section{}
+      \subsection{}
+        $\frac{a}{b}=\frac{b}{c}$のとき、次が成立することを証明せよ。
+        \[(a+b+c)(a-b+c) = a^2+b^2+c^2\]
+      \subsection{}
+        $a \ge b, x \ge y$のとき、次の不等式を証明せよ。また、$=$が成立するのはどのようなときか。
+        \[(a+b)(x+y) \leq 2(ax + by)\]
+      \subsection{}
+        次の不等式をそれぞれ証明せよ。
+        \[\sqrt{a^2 + b^2} \leq |a| + |b| \leq \sqrt{2}\sqrt{a^2 + b^2}\]
+      \subsection{}
+        実数$a,b,c,d$が$a+b = c+d,a^2 + b^2 = c^2 + d^2$を満たしているとする。
+        このとき、$\begin{cases}
+          a=c\\b=d
+      \end{cases}$もしくは$\begin{cases}
+        a=d\\b=c
+      \end{cases}$であることを証明せよ。
+      \section{}
+        \subsection{}
+          $0\leq p \leq q$のとき、$\frac{p}{1+p} \leq \frac{q}{1+q}$であることを示せ。
+        \subsection{}
+          全ての実数$p,q$について
+          \[\frac{|p+q|}{1 + |p+q|} \leq \frac{|p|}{1+|p|} + \frac{|q|}{1+|q|}\]
+          であることを示せ。\footnote{三角不等式のようになっている}
+
+
+      \section{複素数について}
+        \subsection{導入}
+        教科書を読んだり、授業が進んでいると思うので知っていると思いますが簡単に説明をかいておきます。
+        今までではどんな数でも二乗すると、その計算結果は必ず$0$もしくは正の数でした。
+        負の数になることはありませんでした。
+
+        さて、数学という学問は「今までの概念や考え方をさらに拡げて新たな理論を展開する」ということをしばしばします。
+        今までの例でいえば、中学一年生で習った「負の数」や中学三年生で習った「無理数」がそれです。
+        \begin{center}
+          \begin{tabular}{|l|c|c|c|}\hline
+             & 拡張前 & → & 拡張後 \\\hline\hline
+            小学4年頃(?) & 自然数 & → & 正の有理数(分数) \\ \hline
+            中学一年 & 正の数 & → & 負の数 \\ \hline
+            中学三年 & 有理数 & → & 実数(有理数＋無理数) \\ \hline
+          \end{tabular}
+        \end{center}
+        数以外の概念の拡張も今まで習ってきました。例えば以下のようなものです。
+        \begin{enumerate}
+          \item[負の余り] 例えば「$7 \div 3 = 2 \quad\text{あまり} + 1$」です。しかしこれは$7 \div 3 = 3 \quad\text{あまり} -2$と捉えてもいいでしょう。($7 = 3 \times 2 + 1 = 3 \times 3 -2$)
+          すなわち、「今まであまりは正の整数だったが、負の整数の余りで考えてもよい」
+          というふうに、あまりの範囲を拡げたのです。
+          \item[三角比の$\theta$の角度] 去年勉強した$\sin \theta$や$\cos \theta$について、最初$\theta$の範囲は$0^{\circ} \leqq \theta \leqq 90^{\circ}$でした。
+          しかし、勉強を進めると$\theta$の範囲は
+          $0^{\circ} \leqq \theta \leqq 180^{\circ}$まで可能ということになりました。
+          つまり、$\theta$の範囲が拡がったのです。\footnote{実は高校範囲だと$\theta$の値はすべての実数を入れてOKということになります。}
+        \end{enumerate}
+
+        \subsection{単位虚数$i$と四則演算}
+        今回の「複素数」は「実数」の考え方を拡張したものになります。
+        具体的に言うと、「二乗すると$-1$になるような"数(のようなもの)"」を
+        新しく考えます。この新しい"数"のことを$i$で表すことにし、
+        虚数単位と呼びます。
+        \begin{screen}
+          \begin{definition}
+            $i$を虚数単位といい、
+            \[
+              i^2 = -1
+            \]
+            を満たす。
+          \end{definition}
+        \end{screen}
+
+        虚数単位$i$は実数の概念を拡張するために、新しく考えたものです。
+        したがって、今までの数と同様に足し算や掛け算のような計算が可能であってほしいです\footnote{実際、可能であることが証明されます(大学数学)}。
+        つまり、たとえば、
+        \[
+          2i + i, 1-i, \sqrt{3} + 3i
+        \]
+        のような数も考えられます。
+        ここで注意したいのは実数と$i$との四則演算はできません。
+        ここでいう「できません」の意味は、例えば「$2 + \sqrt{2}$がこれ以上
+        計算できない」と同じ意味です。
+        \begin{screen}
+          \begin{definition}
+            $1 + 2i$のように、二つの実数$a,b$を使って
+            \[
+              a + bi
+            \]
+            と表されるような数のことを複素数(complex number)という。
+            特に$b = 0$のとき、実数という。また、$a = 0$の場合を純虚数、もしくは単に虚数という。
+
+            また、複素数$a + bi$が与えられた時、$a$のことを実部、$b$のことを虚部という。
+          \end{definition}
+        \end{screen}
+        \begin{prob*}
+          次の複素数の実部と虚部は何か。
+          \[
+            2 + \sqrt{3}i
+          \]
+        \end{prob*}
+
+        複素数同士の足し算は実部、虚部をそれぞれ足し算する。
+        \begin{ex*}
+          $(2 + i) + (2 - 4i) = 4 - 3i$
+        \end{ex*}
+        複素数同士の掛け算は次にようにする。
+        \begin{ex*}
+          \begin{align*}
+            (2 + i) \times (2 - 4i) &= 4 - 8i + 2i -4i^2 \\
+            &= 4 -6i -4\times(-1)\\
+            &= 4 + 4 -6i\\
+            &= 8 -6i
+          \end{align*}
+        \end{ex*}
+        \begin{prob*}
+          次を計算せよ。
+          \begin{enumerate}
+            \item $(2+\sqrt{3} - (1 - \sqrt{12})i) - (\sqrt{27} - \sqrt{3}i)$
+            \item $(\sqrt{3} - \sqrt{12}i)(\sqrt{27} -2\sqrt{2}i)$
+          \end{enumerate}
+        \end{prob*}
+
+        \subsection{二次方程式を複素数の範囲で解く}
+        $i^2 = -1$であることから、次のような表記も使われます。
+        \begin{screen}
+          \begin{definition}
+            $i$を虚数単位とする。
+            \[
+              \sqrt{-1} = i
+            \]
+            と表すこともある。
+          \end{definition}
+        \end{screen}
+        この表記はある種、「平方根」の概念の拡張になります。
+        いままで、平方根の中身は正の数である必要がありました。
+        しかし、定義３のおかげにより、平方根の中身が負の数でも、虚数単位$i$を
+        使えばよいということになります。
+        したがって、次のような二次方程式を解くことも可能になります。
+        \begin{ex*}
+          二次方程式
+          \[
+            x^2 +2x + 2 = 0
+          \]
+          を解く。解の公式をつかうと、
+          \[
+            x = \frac{-2 \pm \sqrt{-4}}{2}
+          \]
+          となる(途中の細かい計算は省略しました)。
+          いままでだと、平方根の中が負の数なので、解なしということになっていました。
+          しかし、今では$\sqrt{-4} = \sqrt{4}i$なので、解は
+          \[
+            x = -1 \pm i
+          \]
+          になります。これが意味するところとしては、
+          この二次方程式の解を実数の範囲で探しても見つからないが、
+          複素数の範囲で探すと存在するということになります。
+        \end{ex*}
+        \begin{prob*}
+          二次方程式$x^2 + 3x = =1$の解を複素数の範囲で求めなさい。
+        \end{prob*}
+
+        同じような理由で、因数分解もさらにできるようになります。
+        \begin{ex*}
+          $x^2 + 1$を因数分解する。
+          $+1 = (-1) \times (-1) = i \times (-i) = - i^2$
+          なので、
+          \begin{align*}
+            x^2 + 1 &= x^2 - i^2\\
+            &= (x - i)(x + i)
+          \end{align*}
+          というふうに因数分解できる。
+        \end{ex*}
+        \begin{prob*}
+          $x^2 + 4$を因数分解せよ。
+        \end{prob*}
+
+        \subsection{複素数の共役}
+          複素数には共役(dual)という重要な考え方があります。
+          共役を日常的な言葉で説明するなら、
+          「対になるもの」「相方」「対称的なもの」
+          というふうに捉えてください。
+          \begin{screen}
+            \begin{definition}
+              複素数$z = a + bi$が与えられているとき、
+              \[
+                a - bi
+              \]
+              を$z$の複素共役といい、$\overline{z}$で表す。
+            \end{definition}
+          \end{screen}
+          \begin{prob*}
+            次の複素数の共役複素数を求めよ
+            \begin{enumerate}
+              \item $1 + i$
+              \item $-2i$
+              \item $12$
+            \end{enumerate}
+          \end{prob*}
+
+        \subsection{複素数の共役と分数}
+          分母が複素数になっている分数について。
+          「分数の有理化」と同じようにする。
+          \begin{ex*}
+            \[
+              \frac{1}{i}
+            \]
+            は次にように計算することで分母の虚数単位を処理することができる。
+            \begin{align*}
+              \frac{1}{i} &= \frac{1}{i} \times \frac{i}{i}\\
+              &= \frac{i}{i^2}\\
+              &= \frac{i}{-1}\\
+              &= -i
+            \end{align*}
+          \end{ex*}
+          \begin{ex*}
+            もう少し複雑な分数
+            \[
+              \frac{3}{2 + i}
+            \]
+            は次のように有理化する。つまり、分母の共役複素数を掛ける。
+            \begin{align*}
+              \frac{3}{2 + i} &= \frac{3}{2 + i} \times \frac{2 - i}{2 - i}\\
+              &=\frac{3(2 - i)}{(2 + i)(2 - i)}\\
+              &=\frac{3(2 - i)}{4 - i^2}\\
+              &=\frac{3(2 - i)}{4 + 1}\\
+              &=\frac{6 - 3i}{5}
+            \end{align*}
+          \end{ex*}
+
+        \subsection{複素数の共役と二次方程式の解}
+          いままでに、
+          \begin{itemize}
+            \item 解の公式を使えば解を求めることができる
+            \item 複素数の範囲までなら必ず解は二つ存在する(重複する場合は除く)
+          \end{itemize}
+          であることを確認しました。
+          しかし、二次方程式を解く際の本質は因数分解です。
+          例えば、
+          \[
+            x^2 + x + 1 =0
+          \]
+          という二次方程式は、解の公式を用いることにより、
+          \[
+            x = \frac{-1 \pm \sqrt{3}i}{2}
+          \]
+          と計算できます。
+          これは実質元々の$x^2 + x + 1 = 0$という方程式を
+          \[
+            \left(x -\frac{-1 + \sqrt{3}i}{2}\right)\left(x - \frac{-1 - \sqrt{3}i}{2}\right) = 0
+          \]
+          という形に変形したとも思えます。
+          なぜなら、この因数分解した式を見ていると、
+          \[
+            x = \frac{-1 + \sqrt{3}i}{2},　\quad \frac{-1 - \sqrt{3}i}{2}
+          \]
+          と求められるからです。
+          これは解が複素数でない二次方程式でも当然同じです。
+          例えば
+          \[
+            2x^2 -5x + 2 = 0
+          \]
+          を計算してみましょう。
+          この式の左辺は少し考えれば因数分解できる簡単な式ですが、あえて解の公式で解いてみます。
+          すると
+          \[
+            x = \frac{-(-5) \pm \sqrt{(-5)^2 - 4 \times 2 \times 2}}{2 \times 2}
+          \]
+          なので、計算をすると
+          \[
+            x = \frac{1}{2},\quad 2
+          \]
+          となります。
+          つまりこれは、もともとの式である$2x^2 -5x + 2 = 0$を
+          \[
+            \Bigl(x - \frac{1}{2}\Bigr)\Bigl(x -2\Bigr) = 0
+          \]
+          という形に変形したとも思えるのです。
+          ここで、文字をつかって一般的に話をしてみましょう。
+          二次方程式
+          \[
+            ax^2 + bx + c = 0
+          \]
+          があって、解の公式を用いて解くと解が
+          \[
+            x = \alpha, \beta
+          \]
+          であると分かったとします。
+          つまり、もともとの$ax^2 + bx + c = 0$という式を
+          \[
+            (x - \alpha)(x - \beta) = 0
+          \]
+          という形に変形したと思えます。
+          したがって、この左辺を展開すると
+          \[
+            x^2 - (\alpha + \beta)x + \alpha\beta = 0
+          \]
+          という形になります。
+          後の理論のためにここで両辺を$a$倍します。
+          \[
+            ax^2 - a(\alpha + \beta)x + a\alpha\beta = 0
+          \]
+          展開をしたので、この式の左辺はもともとの
+          $ax^2 + bx + c $と一致しているはずです。
+          同じ次数同士の係数は一致しているので次のような式が成り立ちます。
+          \[
+            \begin{cases}
+              - a(\alpha + \beta) = b\\
+              a\alpha\beta = c
+            \end{cases}
+          \]
+          したがって、
+          \[
+            \begin{cases}
+              \alpha + \beta = -\frac{b}{a}\\
+              \alpha\beta = \frac{c}{a}
+            \end{cases}
+          \]
+          となる。これを「解と係数の関係」という。
+          \begin{screen}
+            二次方程式$ax^2 + bx + c =0$が与えられているとき、
+            その解を$\alpha, \beta$とする。
+            このとき、次が成立する。
+            \[
+              \begin{cases}
+                \alpha + \beta = -\frac{b}{a}\\
+                \alpha\beta = \frac{c}{a}
+              \end{cases}
+            \]
+          \end{screen}
+          「解と係数の関係」は次のような複雑な場合に威力を発揮することが多いです。
+          \begin{ex*}
+            二次方程式
+            \[
+              10x^2 + x -10 =0
+            \]
+            の解を$\alpha, \beta$とする。このとき、解と係数の関係より
+            \begin{itemize}
+              \item $\alpha + \beta = -\frac{1}{10}$
+              \item $\alpha\beta = \frac{-10}{10} = -1$
+            \end{itemize}
+            と求めることができる。
+          \end{ex*}
+
+          さて、この「解と係数の関係」を利用してさらに二次方程式の解を深く見ていきましょう。
+          再び$x^2 + x + 1 = 0$を考えます。この解はさっきも求めたように、
+          \[
+            x = \frac{-1 + \sqrt{3}i}{2},　\quad \frac{-1 - \sqrt{3}i}{2}
+          \]
+          でした。
+          ここで注目したいのは、これらの解は互いに複素共役です。
+          この例から予測されることは、「(係数がすべて実数の二次方程式において)解の一つが虚数ならばもう片方も虚数でありしかも共役である」
+          ということです。
+          これは解と係数の関係より説明できます。
+          \begin{screen}
+            \begin{prop*}
+              $a,b,c$を実数、$a \neq 0$とする。
+              二次方程式
+              \[
+                ax^2 +bx +c = 0
+              \]
+              の解の一つ$\alpha$が虚数であることがわかっているならば、
+              もう一つの解は必ず$\overline{\alpha}$である。
+            \end{prop*}
+          \end{screen}
+          \footnotesize
+          \begin{proof}
+            二次方程式
+            \[
+              ax^2 +bx +c = 0
+            \]
+            の解$\alpha$が、仮定より虚数なので$\alpha = p + iq$とおく。
+            ただし、ここで$p,q$は実数であり$q \neq 0$である。
+            この二次方程式のもう一つの解を$\beta = s + ti$とする。
+            ここで$s,t$は実数である。
+            解と係数の関係より
+            \[
+              \alpha + \beta = -\frac{b}{a}
+            \]
+            であるが、この左辺は
+            \[
+              (p + s) +(q + t)i
+            \]
+            である。右辺が実数なので
+            \[
+              q + t = 0
+            \]
+            でなければならない。
+            したがって
+            \[
+              t = -q
+            \]
+            である。
+            一方、
+            \[
+              \alpha\beta = \frac{c}{a}
+            \]
+            であるが、今までの話から次のように計算できる。
+            \begin{align*}
+              (p + iq)(s + ti) = \frac{c}{a}\\
+              (ps - qt) + (pt + qs)i = \frac{c}{a}
+            \end{align*}
+            これより、
+            \[
+              pt + qs = 0
+            \]
+            でなければならないが、さきほど、$t =-q$と求めたので代入すると、
+            \[
+              p(-q) + qs = 0
+            \]
+            仮定より$q \neq 0$だから、両辺を$q$で割って
+            \[
+              -p + s =0
+            \]
+            したがって、
+            \[
+              s = p
+            \]
+            よって
+            \[
+              \beta = s + ti = p - qi = \overline{\alpha}
+            \]
+            となるので証明が終わる。
+          \end{proof}
+          \normalsize
+          \begin{prob*}
+            $b,c$は実数とする。
+            二次方程式$x^2 + bx + c =0$の解の一つは$1 + i$であったとする。
+            このとき、$b,c$を求めよ。
+          \end{prob*}
+
+
+    \section{}
+      $x,y$は実数とする。複素数$z = x + iy$について次の問いに答えよ。
+      \subsection{}
+        $z^3$を計算せよ。
+      \subsection{}
+        $p,q$を実数とするとき、
+        \[p^3 -3pq^2\]
+        を因数分解しなさい。\footnote{ヒント：(2)で上側の式は因数分解できているはずです。すると、$p$は3通りに表せるので、それぞれ場合で場合分けをして$p$をもう一方の式に代入します}
+      \subsection{}
+        $p,q$を実数とする。連立方程式
+        \[\begin{cases}
+          p^3 -3pq^2 = 0\\
+          3p^2q - q^3 = 0
+        \end{cases}\]
+        を解きなさい。
+      \subsection{}
+        $z^3 = i$が成り立つような$z$を全て求めなさい。\footnote{ヒント：$z^3$の実部が$0$、虚部が$1$になるということです。}
+    \section{}
+      $\displaystyle{\alpha = \frac{3 + \sqrt{7}i}{2}}$とする。
+      \subsection{}
+        $p,q$を実数とする。二次方程式
+        \[x^2 +px +q =0\]
+        は$x =\alpha$を解に持つ。このとき、$p,q$の値を求めよ。
+      \subsection{}
+        次の三次式を実数の範囲で因数分解せよ
+        \[x^3 -4x^2 + 7x -4\]
+      \subsection{}
+        $a,b,c$を整数とする。三次方程式$x^3 + ax^2 + bx + c =0$は
+        $x = \alpha$を解に持つ。
+        また、$0 \leq x \leq 1$の範囲にただ一つだけ実数解をもつ。
+        この実数解を$\beta$とおく。
+        \subsubsection{}
+          次の文章の$p,q,r,s$の値を求めよ。
+          \begin{itemize}
+            \item 仮定より、$x^3 + ax^2 + bx + c =0$の左辺は$(x - \beta)(x^2 + px + q)$と因数分解できる。
+            \item したがって、$x^2 + px + q = 0$が成り立つが、$x = \alpha$は元の三次方程式の解である。よって、$x^2 + px + q = 0$を解くと、$x = \alpha,\overline{\alpha}$である。したがって、(1)より、$p,q$の値が分かる。
+            \item $a,b,c$は整数だから$(x - \beta)(x^2 + px + q)$を展開したとき、各係数は整数でなければならない。したがって、$\beta = s$または$\beta = t$でなければならない。
+          \end{itemize}
+        \subsubsection{}
+          $\beta = s$または$\beta = t$のそれぞれで場合分けをして、整数$(a,b,c)$の組を全て求めよ。
+
+
+    \section{}
+      以下の問いに答えよ。
+      \subsection{}
+        2点$A(-2,0), B(5,0)$を結ぶ線分$AB$を$3:4$に内分する点を$C$、
+        $3:4$に外分する点を$D$とする。線分$CD$の長さを求めよ。
+      \subsection{}
+        $\triangle ABC$において辺$AB, BC, CA$の中点の座標がそれぞれ$(0,2), (2,-2), (3,1)$
+        であるとき、三つの頂点$A,B,C$の座標を求めよ。
+      \subsection{}
+        3点$A(1,1), B(3,1), C(5,-3)$について、$\triangle ABC$の外心の座標を求めよ。(立命館大学・改)
+      \subsection{}
+        3点$A(4,1), B(-2,4), C(1,5)$がある。線分$AB$を$2:1$に内分する点を$P$、
+        $\triangle ABC$の重心を$G$とする。この時、直線$PG$の方程式を求めなさい。
+
+    \section{}
+      \subsection{}
+        3点$A(1,1), B(3,1), C(5,-3)$について、$\triangle ABC$の外心の座標は前回求めたと思う。
+        では、この3点を通る円の方程式を求めてください。
+      \subsection{}
+        2直線
+        \begin{align*}
+          6x -y + 15 =0\\
+          9x -ky -5 =0
+        \end{align*}
+        が平行であるという。$k$の値を求めなさい
+      \subsection{}
+        以下の問いに答えよ
+        \subsubsection{}
+          方程式$x^2 + y^2 + 4x +6y -32 = 0$が表す円の中心の座標を求めなさい。
+        \subsubsection{}
+          直線$y = -2x + k$が上記の円と接するとき、$k$の値を全て求めなさい。
+
+    \section{}
+      2次方程式$x^2 -7x +9 =0$の二つの解を$\alpha, \beta$とする。
+      $\sqrt{\alpha} + \sqrt{\beta}$の値を求めよ
+
+    \section{}
+      4次方程式$x^4 +5x^3 - 4x^2 +5x +1 = 0$を解きなさい。\footnote{まず、両辺を$x^2$で割る。このとき、$x=0$が解ではないことを確認すること。そのあと、$\displaystyle{x + \frac{1}{x} = t}$と置く。典型的な工夫の仕方。模試や定期テストでもよく出る手法です。}
+
+
+    \section{}
+      1の3乗根のうち、虚数であるものの1つを$\omega$であらわすとき、
+      \[
+        \omega^{2n} + \omega^n
+      \]
+      の値を求めよ。ただし、$n$は正の整数とする。\footnote{$n$を$3$で割った時の余りで場合分け}
+
+    \section{}
+      $a,b,c > 0$のとき、
+      \[a^3 + b^3 + c^3 \ge 3abc\]
+      を証明せよ。\footnote{相加相乗平均を用いれば証明できます。しかし、通常通り(左辺)$-$(右辺)のやり方でも証明できます。調べればわかりますが、$a^3 + b^3 + c^3 - 3abc$は因数分解でき、$(a + b + c)(a^2 + b^2 + c^2 - ab -bc -ca)$という形になります。この右側のカッコの中身が$0$以上になることを何とか示すことができればよいです。ヒントとしては、右側のカッコ内の式全体を$\frac{1}{2}$でくくります}
+
+    \section{}
+      問39、および問40をもう一度解きなさい。\footnote{参考になるページ：https://examist.jp/category/mathematics/expression-proof/　相加相乗平均の使い方には注意が必要と述べましたが、ここで詳しく語られています。少し難しいですがぜひ読んでほしいです。}
+
+    \section{}
+      3辺の長さが$a,b,c$である直角三角形がある。
+      この直角三角形の外接円の半径は$\frac{3}{2}$であり、内接円の半径は$\frac{1}{2}$である。
+      $a \ge b \ge c$である。
+      $a,b,c$の値をそれぞれ求めよ。\footnote{$a$は図を描けばすぐわかります。$b,c$は同時に求められます。つまり$b,c$に関する方程式を二つ作り、連立方程式を解きます。三平方の定理を用いれば、式が一つできますね。もう一つは三角形の面積に着目して式を立てます。三角形の面積は(底辺)$\times$(高さ)$\div 2$で求められます。一方で、内接円というヒントからも三角形の面積が求められますね...？}
+
+
+    \section{}
+      $\alpha$を実数とする。
+      二つの円$O_1\colon x^2 + y^2 = 1, O_2\colon x^2 + 2x +y^2 -4y -\alpha = 0$を考える。
+      \footnote{'08 慶応大学・改(元々の問題は(4)と(9)のみでした)}
+      \subsection{}
+        $O_1,O_2$の中心の座標を求めよ。
+      \subsection{}
+        $\alpha$の取りえる値の範囲を求めよ。
+      \subsection{}
+        $O_1,O_2$が接するとき、$\alpha$の値を全て求めよ。
+      \subsection{}
+        $O_1,O_2$が二点で交わるとき、$\alpha$の値の範囲を求めよ。
+      \subsection{}
+        $O_1,O_2$が交点をもたないとき、$\alpha$の値の範囲を求めよ。
+      \subsection{}
+        (3)における$\alpha$の値のうち、小さい方を$\alpha_1$、大きい方を$\alpha_2$とおく。
+        以下についてそれぞれ答えよ。
+        \begin{enumerate}
+          \item $\alpha = \alpha_1$のときの、接線の方程式
+          \item $\alpha = \alpha_2$のときの、接線の方程式
+        \end{enumerate}
+      \subsection{}
+        $O_1,O_2$が二点で交わるときを考える。二つの交点を通る直線を$l_1$、
+        $O_1,O_2$の中心を通る直線を$l_2$とする。$l_1,l_2$は垂直に交わることを証明せよ。\footnote{関数や方程式を使わず、図形の証明問題として解きます。}
+      \subsection{}
+        (7)と同様の状況を考える。直線$l_1$が満たす方程式を求めよ。\footnote{よくある問題です。チャート式には必ず乗っていると思います。教科書でも「発展」や「参考」のような部分に詳しく書かれていると思います。それを参考にしてください。私の手持ちの教科書には「参考」とされているページに解説されていました。}
+      \subsection{}
+        (7)と同様の状況を考える。二つの交点を通る線分の長さを求めよ。\footnote{$O_1$の中心と直線$l_1$の距離を求め、三平方の定理を使います。おそらく教科書に類題があるとおもうので参考にしてください。}
+      \subsection{}
+        新しい円$O_3 \colon x^2 + 2\beta x +y^2 -2 \beta y -\beta = 0$を考える。
+        \subsubsection{}
+          $O_3$の中心の座標と半径を$\beta$を用いて表しなさい。
+        \subsubsection{}
+          $\beta$の取りえる値の範囲を求めなさい。
+        \subsubsection{}
+          円$O_3$と円$O_1$が接するような$\beta$の値を求めなさい。
+        \subsubsection{}
+          円$O_3$の中心の軌跡を求めよ。
+
+
+    \section{軌跡について}
+      学校で軌跡について習ったと思います。このプリントでは高校1年で習った集合の言葉を使って
+      厳密かつ簡潔な表現で軌跡について考えてみたいと思います。
+
+      いままでいろいろな図形を描いたり考えたりしました。
+      その中でも図形を「図形」としてとらえるのではなく、「ある条件を満たす点をすべて集めたもの」
+      としてとらえることがあったと思います。
+      例えば、「ある点$P$から$1$だけ離れている点をすべて集めたもの」は
+      「中心を点$P$とする半径$1$の円」という図形になります。
+      「二つの点$A,B$があり、$AC =BC$となるような点$C$をすべて集めたもの」は(実際に具体例を書いてみればわかりますが)
+      「線分$AB$の垂直二等分線」となります。
+
+      直線も同様に考えることができました。例えば「方程式$x-y-1=0$が表す直線$\mathbf{L}$」を考えてみます。
+      以前にも説明しましたが、これは次のように言い換えられます。
+      すなわち「$\mathbf{L}$とは方程式$x-y-1=0$を満たす$(x,y)$をすべて集めたもの」です。
+      ということは\underline{(i)集合の言葉を用いて}次のように書くことができます。
+      \[
+        \mathbf{L} = \{(x,y) \mid x-y-1=0\}
+      \]
+
+      このように、今からは「図形」を「ある条件を満たす点をすべて集めたもの」として考えていきましょう。
+      もっと数学的な言い方をすれば、\underline{(ii)「ある条件を満たす点全体の集合」}としてとらえていきます。
+      また、用語としてこのような集合のことを「軌跡」と呼びます。
+
+      例題を見ましょう。
+      \begin{ex*}
+        \underline{(iii)2点$A(0,2), B(4,0)$から等距離にある点の軌跡を求めよ。}
+      \end{ex*}
+      \begin{ans*}
+        「軌跡を求めよ」と問われているので、これは、『「2点$A(0,2), B(4,0)$から等距離にある点全体」
+        はどのような点の集合であるかを求めなさい』という問題です。
+        中学生で連立方程式の文章題を解いたときもそうでしたが、基本的に数学の問題を解くときは、
+        問題文で求めなさいと言われているものを文字におけば話が進みやすくなることが多いです。
+        いま問題で問われているのは「集合」なので、これを文字に置きます\footnote{ここで気を付けてほしいことは、今から高校1年で習った集合の記号や用語が数多く出てくるということです}。
+        すなわち、集合$\mathbf{F}$\footnote{$F$と$\mathbf{F}$のフォントの違いに注意してください}を
+        \[
+          \mathbf{F} = \{\text{点}P \mid AP = BP\}
+        \]
+        とおきます。何度も言いますが、今から考えるのはこの$\mathbf{F}$という集合がどのようなものであるのかということです。
+        たとえば、線分$AB$の中点を点$C$とするとき、$C \in \mathbf{F}$\footnote{$\in$という記号の意味は1年生の数学のノートや教科書で思い出しましょう}です。
+        もちろん、$\mathbf{F}$に属する要素は点$C$以外にも\footnote{「属する」「要素」も集合の用語です。意味は調べてください。}あります。
+        なので、とりあえずなんでもいいので$\mathbf{F}$から点を1つ取ってきましょう。
+        たった今$\mathbf{F}$から適当に選んできたその点を$Q$と名付けます。
+        点$Q$は$\mathbf{F}$からとったのだから、当然次の式を満たします。
+        \[
+          AQ = BQ
+        \]
+        ここで点$Q$の座標を$(s,t)$とおけば、上の式より次の式が成り立つことが分かります。
+        \[
+          (s - 0)^2 + (t - 2)^2 = (s - 4)^2 + (t - 0)^2
+        \]
+        \underline{(iv)計算は省略しますが}、この式を整理すると
+        \[
+          2s - t -3 = 0
+        \]
+        という方程式が得られます。
+        ここでよく考えてほしいのですが、いま点$Q$は集合$\mathbf{F}$から何でもいいから一つ選んで取った点でした\footnote{何でもいい　というのにも用語があり、「任意」といいます}。
+        「何でもいい」ということは、つまり$\mathbf{F}$に属している全ての点に対して、今やったような計算ができるということです。
+        ということは次のように考えることができます。
+        \begin{quote}
+          集合$\mathbf{F}$の点を任意に選んで、その座標を仮に$(x,y)$とおいたとき、
+          \begin{center}
+            $2x-y-3=0$
+          \end{center}
+          という式が成り立つのだから、集合$\mathbf{F}$は
+          \begin{center}
+            $\mathbf{F} = \{(x,y) \mid 2x-y-3=0\}$
+          \end{center}
+          と書き換えることができる。
+        \end{quote}
+        したがって、集合$\mathbf{F}$の正体がわかりました。
+        直線$\mathbf{L}$の例にならうと、集合$\mathbf{F}$は
+        「方程式$2x-y-3=0$が表す直線」であるということが分かります。
+        これを簡単にまとめていうと、
+        「求める軌跡は直線$2x-y-3=0$である」となります。(解答終)
+      \end{ans*}
+
+      \subsection{}
+        文章中の下線部についてそれぞれ以下の問いに答えよ。
+        \begin{description}
+          \item[(i)] 半径$1$で中心の座標が$(0,0)$であるような円を集合の言葉を用いて書きなさい。
+          \item[(ii)] 二つの直線$l_1,l_2$があり、交差している。交点を$P$とする。
+          また、点$P$より右側で$l_1$上の一点を点$A$、点$P$より右側で$l_2$上の一点を点$B$とする。
+          この二つの直線から等距離にある点全体の集合はどのような図形か言葉を用いて答えよ。
+          \item[(iii)] 2点$C(2,0),D(0,4)$から等距離にある点の軌跡を求めよ。
+          \item[(iv)] この計算を省略せずに書け。
+        \end{description}
+    \section{}
+      2点$A(-6,0), B(2,0)$がある。
+      \subsection{}
+        $A,B$を$3:1$に内分する点を$P$、外分する点を$Q$とする。
+        $P,Q$の座標をそれぞれ求めよ。
+      \subsection{}
+        $AR : BR = 3 : 1$を満たす点$R$の軌跡を求めよ。
+      \subsection{}
+        点$A,B,P,Q$はそれぞれ点$R$の軌跡に含まれる点であるか判定せよ。
+
+
+      \section{}
+        $y \ge 0, x \ge 0, y \leq 1, x \leq 2$に囲まれた領域$A$を考える。
+        $(x,y)$がこの領域内の点を動くとき、次の式の最大値と最小値を求めよ。
+        \begin{enumerate}
+          \item $x + y$
+          \item $x - y$
+          \item $2x + 3y$
+          \item $2x - 3y$
+          \item $x^2 + y$
+        \end{enumerate}
+
+      \section{}
+        次の角度を弧度法で表しなさい。
+        \begin{itemize}
+          \item $30^{\circ}$
+          \item $45^{\circ}$
+          \item $120^{\circ}$
+          \item $180^{\circ}$
+          \item $270^{\circ}$
+          \item $1^{\circ}$
+          \item $360^{\circ}$
+        \end{itemize}
+
+
+    \section{}
+      $0 \leq \theta < \frac{\pi}{2}$とする。
+      $xy$平面上に直線$L_1 : y = (\tan \theta)x $、
+      円$C_1:x^2 + y^2 = 1$がある。
+      直線$L_2 : y = (\tan\theta_0)x$が直線$L_1$と垂直に交わっている。
+      \subsection{}
+        $\theta_0$を$\theta$を用いて表せ。
+      \subsection{}
+        直線$L_2$と円$C_1$との交点を全て求めよ。
+
+    \section{}
+      $0 \leq \theta < 2\pi$とする。以下の式を満たす$\theta$の範囲を求めよ。
+      \begin{enumerate}
+        \item $\cos\theta > \frac{1}{2}$
+        \item $0 \leq \tan\theta \leq \sqrt{3} $
+        \item $|\sin\theta| > \frac{1}{2}$
+      \end{enumerate}
+
+
+    \section{}
+      関数$f$が全ての実数$x$に対して$f(-x) = f(x)$を満たしているとき、$f$は偶関数であるといい、
+      $f(-x) = -f(x)$を満たすとき、$f$は奇関数であるという。
+      これは整数の偶奇と似たような性質持っていて、いわば「関数の偶奇性」ともいえる。
+      \subsection{}
+        三角関数を含まない関数\footnote{関数の式に$\sin,\cos,\tan$を含まない関数}で、
+        偶関数になるものと奇関数になるものをそれぞれ例を書け。
+      \subsection{}
+        二つの関数$f,g$がある。関数$h(x) = f(x) \times g(x)$とする。
+        $k(x) = f(x) + g(x)$とする。
+        それぞれの場合について問題に答えよ。
+        \begin{enumerate}
+          \item $f,g$がともに偶関数であるとき、$h$は偶関数であることを証明せよ。
+          \item $f$が偶関数で$g$が奇関数であるとき、$h$は奇関数であることを証明せよ。
+          \item $f,g$がともに奇関数であるとき、$h$は偶関数であることを証明せよ。
+          \item $f,g$がともに偶関数であるとき、$k$は偶関数であることを証明せよ。
+          \item $f,g$がともに奇関数であるとき、$k$は奇関数であることを証明せよ。
+        \end{enumerate}
+      \subsection{}
+        $f$が偶関数かつ奇関数であることと、$f \equiv 0$であることが同値であることを示せ。
+
+    \section{}
+      関数$f$が、ある実数$S$が存在し、すべての$x$に対して、
+      \[f(x + S) = f(x)\]
+      を満たしているとする。
+      このとき、$f$を周期関数といい、上記の式を満たす$S$のうち正の数で最小のものが存在するならば、それを$T$とおき、$T$を$f$の(基本)周期という。
+      たとえば$\sin x, \cos x$は周期$2\pi$の周期関数である。
+      高校数学ではほとんど目立たない周期関数だが、
+      応用の面でいうと「フーリエ級数展開」という数学の技術の基礎的な道具として出現する。
+      このフーリエ級数展開は
+      「大抵の関数は、$\cos, \sin$を何倍かしたものをたくさん合計したもので近似できる」
+      という内容のものである。
+      音響解析などで扱われる技術の数学的な土台となっている。
+      \subsection{}
+        以下の関数について、それぞれ周期関数である。周期を答えよ。
+        \begin{enumerate}
+          \item $f(x) = \tan x$
+          \item $f(x) = \sin(x + \frac{\pi}{3})$
+          \item $f(x) = \sin x + \cos x$
+          \item $f(x) = \sin 2x$
+        \end{enumerate}
+
+      \subsection{}
+        $f,g$をともに共通の定義域と値域を持つ周期$T$の周期関数とする。
+        $h(x) = f(x)g(x),\,\, k(x) = f(x) + g(x)$とする。
+        $h,k$はそれぞれ周期関数であることを証明せよ。\footnote{一方で、周期が異なる周期関数どうしの和は周期関数になるとは限らないことが知られています。$f(x) = \sin x + \sin\sqrt{2}x$などがその例です。\href{http://blog.livedoor.jp/seven_triton/archives/51624657.html}{ここ} を参照。}
+
+
+        今回は少し解答が書きにくいと感じるかもしれません。一つの解答例として問59の(2)-1. の解答を書きます。参考にしてください。
+        \begin{proof}
+          $h$が偶関数であることを確かめたいので、$h(-x)$を計算する。
+          \begin{align*}
+            h(-x) &= f(-x)\times g(-x)\\
+            \intertext{$f,g$はそれぞれ偶関数だから}
+            &= f(x) \times g(x)\\
+            &= h(x)
+          \end{align*}
+          従って$h$は偶関数。
+        \end{proof}
+
+        また、別の例として問60(2)において、$f(x) = \sin x, g(x) = \cos x$だったとして、$h,k$がそれぞれ周期関数になる証明を書きます。
+        \begin{proof}
+          $f(x) = \sin x, g(x) = \cos x$より、
+          \[h(x) = (\sin x) (\cos x), \quad k(x) = \sin x + \cos x \]
+          である。
+          $f,g$の周期は$2\pi$である。そこで、次を計算する。
+          \begin{align*}
+            h(x + 2\pi) &= \sin(x + 2\pi)\cos(x + 2\pi)\\
+            &= (\sin x)(\cos x)\\
+            &= h(x)
+          \end{align*}
+          また、
+          \begin{align*}
+            k(x + 2\pi) &= \sin(x + 2\pi) + \cos(x + 2\pi)\\
+            &= \sin x + \cos x\\
+            &= k(x)
+          \end{align*}
+          以上により、$h,k$はそれぞれ周期関数である。
+        \end{proof}
+        問60(2)はこれを一般の$f,g$に対して証明を書いてみてください。
+
+
+    \section{}
+      $x$についての多項式$P(x) = x^3 + (a - 1)x^2 -(a + 2)x -6a + 8$
+      について考える。
+      \subsection{}
+        $P(x)$を$(x-3)$で割った時の余りを求めよ
+      \subsection{}
+        $P(x)$を因数分解せよ。
+      \subsection{}
+        方程式$P(x) = 0$の異なる解の個数が三つであるとき、$a$の値の範囲を求めよ。
+      \subsection{}
+        方程式$P(x) = 0$の異なる解の個数が二つであるとき、$a$の値の範囲を求めよ。
+      \subsection{}
+        方程式$P(x) = 0$の複素数解を持つとき、$a$の値の範囲を求めよ。
+      \subsection{}
+        これ以降の問題では、$a$は(5)で求めた範囲であるとする。
+        この時の方程式$P(x) = 0$の複素数解をそれぞれ$\alpha, \beta$とする。
+        2次方程式の解と係数の関係を用いて$\alpha + \beta, \,\, \alpha\beta$
+        の値を$a$を用いて表せ。
+      \subsection{}
+        $\alpha^2 + \beta^2$および$\alpha^2 \beta^2$の値を$a$を用いて表せ。
+      \subsection{}
+        二次方程式$4x^2 - kx + 5k = 0$の解が$\alpha^2 + \beta^2$および$\alpha^2 \beta^2$
+        であるという。
+        このとき、$a,k$の値をそれぞれ求めよ。ただし、$a$の範囲に注意すること。
+
+
+    \section{}
+      2次方程式$ax^2 + bx + c = 0$がある。
+      ただし、$a,b,c > 0$で、実数解をもつとする。
+      この方程式の二つの解を$\alpha, \beta$とおき、$\alpha < \beta$であるとする\footnote{どっちが大きくても小さくても構わないので、今は$\alpha$が小さいということにした。}。
+      このとき、
+      \[
+        \frac{c}{b} < |\alpha|, |\beta| < \frac{b}{a}
+      \]
+      であることを証明したい。
+      この不等式は、$|\alpha|, |\beta|$ともに$\frac{c}{b}$より大きく、$\frac{b}{a}$より小さいことを意味している。
+      以下の問いに答えよ。
+      \subsection{}
+        $\alpha + \beta, \,\, \alpha\beta$を$a,b,c$を用いて表せ。
+      \subsection{}
+        $\alpha + \beta$が負の値であることを示せ。
+      \subsection{}
+        $\alpha, \beta$の符号はそれぞれ何か。
+      \subsection{}
+        $|\alpha| \ge |\beta|$を示せ。
+      \subsection{}
+        $|\alpha + \beta| = |\alpha| + |\beta|$であることを証明せよ。
+      \subsection{}
+        $|\alpha| , |\beta| < |\alpha| + |\beta|$であることより、
+        $|\alpha| , |\beta| < \frac{b}{a}$であることを証明せよ。
+      \subsection{}
+        2次方程式$ax^2 + bx + c = 0$は異なる二つの実数解をもつから判別式より
+        $b^2 - 4ac \ge 0$を満たしている。
+        この判別式の不等式より
+        \[\frac{c}{a} > \frac{c^2}{b^2}\]
+        が成立することを証明せよ。
+      \subsection{}
+        さて、これから$\frac{c}{b} < |\alpha|, |\beta|$を証明していくが、
+        $|\beta|$のほうが$|\alpha|$より小さいので、
+        \[|\beta| > \frac{c}{b}\]を示せば十分であることが分かる。
+        さて、この示したい不等式の両辺を二乗することにより、
+        \[|\alpha||\beta| > \frac{c^2}{b^2}\]
+        が成り立つことを証明せよ。
+      \subsection{}
+        $\frac{c}{b} < |\alpha|, |\beta|$を証明せよ。
+
+
+\section{絶対値が入った三角関数}
+  \subsection{準備}
+    \definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+    \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+      \begin{axis}[
+        x=1.0cm,y=1.0cm,
+        axis lines=middle,
+        ymajorgrids=true,
+        xmajorgrids=true,
+        xmin=-3.233552068848453,
+        xmax=3.6825013122526937,
+        ymin=-0.35286168967455894,
+        ymax=3.387821095581891,
+        xtick={-3.0,-2.5,...,3.5},
+        ytick={-0.0,0.5,...,3.0},]
+        \clip(-3.233552068848453,-0.35286168967455894) rectangle (3.6825013122526937,3.387821095581891);
+        \draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-3.233552068848453:3.6825013122526937] plot(\x,{2.0*abs((\x))});
+        \draw[line width=2.pt,color=ccqqqq,smooth,samples=100,domain=-3.233552068848453:3.6825013122526937] plot(\x,{abs((\x)^(2.0)-1.0)});
+        \begin{scriptsize}
+          \draw[color=qqwuqq] (-1.6157969736169675,3.3487303590800144) node {$f$};
+          \draw[color=ccqqqq] (-2.012718298097555,3.3487303590800144) node {$g$};
+        \end{scriptsize}
+      \end{axis}
+    \end{tikzpicture}
+
+  \subsection{2次関数の練習問題}
+    \href{https://youtu.be/7HIfdNOrA2M}{この動画を参考にしてください。}
+    かきかけ。
+
+
+  \subsection{}
+    上から順に$f_1,f_2,f_3$
+
+    \definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+      \begin{axis}[
+        x=0.7cm,y=0.7cm,
+        axis lines=middle,
+        ymajorgrids=true,
+        xmajorgrids=true,
+        xmin=-6.096834292408174,
+        xmax=6.792519769625389,
+        ymin=-3.4988186468635183,
+        ymax=3.472640680601588,
+        xtick={-6.0,-5.0,...,6.0},
+        ytick={-3.0,-2.0,...,3.0},]
+        \clip(-6.096834292408174,-3.4988186468635183) rectangle (6.792519769625389,3.472640680601588);
+        \draw[line width=2.pt,color=ccqqqq,smooth,samples=100,domain=-6.096834292408174:6.792519769625389] plot(\x,{sin(((\x))*180/pi)});
+        \begin{scriptsize}
+          \draw[color=ccqqqq] (-6.007169220672288,0.17184522732429905) node {$g$};
+        \end{scriptsize}
+      \end{axis}
+    \end{tikzpicture}
+
+    \definecolor{qqqqff}{rgb}{0.,0.,1.}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+      \begin{axis}[
+        x=0.7cm,y=0.7cm,
+        axis lines=middle,
+        ymajorgrids=true,
+        xmajorgrids=true,
+        xmin=-5.419251648040402,
+        xmax=6.298342953808292,
+        ymin=-3.071890634848335,
+        ymax=3.265799662847216,
+        xtick={-5.0,-4.0,...,6.0},
+        ytick={-3.0,-2.0,...,3.0},]
+        \clip(-5.419251648040402,-3.071890634848335) rectangle (6.298342953808292,3.265799662847216);
+        \draw[line width=2.pt,color=qqqqff,smooth,samples=100,domain=-5.419251648040402:6.298342953808292] plot(\x,{abs(sin(((\x))*180/pi))});
+          \begin{scriptsize}
+            \draw[color=qqqqff] (-5.337737946462324,0.7235910948809139) node {$h$};
+          \end{scriptsize}
+      \end{axis}
+    \end{tikzpicture}
+
+    \definecolor{zzttff}{rgb}{0.6,0.2,1.}
+    \definecolor{ffvvqq}{rgb}{1.,0.3333333333333333,0.}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7cm,y=0.7cm]
+      \begin{axis}[
+      x=0.7cm,y=0.7cm,
+      axis lines=middle,
+      ymajorgrids=true,
+      xmajorgrids=true,
+      xmin=-6.6349690060700315,
+      xmax=6.594418371044555,
+      ymin=-1.8973610707197122,
+      ymax=2.062455559164932,
+      xtick={-6.0,-5.0,...,6.0},
+      ytick={-1.0,0.0,...,2.0},]
+      \clip(-6.6349690060700315,-1.8973610707197122) rectangle (6.594418371044555,2.062455559164932);
+      \draw[line width=2.pt,color=ffvvqq,smooth,samples=100,domain=-6.6349690060700315:6.594418371044555] plot(\x,{sin((abs((\x)))*180/pi)});
+      \draw[line width=2.pt,color=zzttff,smooth,samples=100,domain=-6.6349690060700315:6.594418371044555] plot(\x,{sin((abs((\x)))*180/pi)});
+        \begin{scriptsize}
+          \draw[color=ffvvqq] (-6.490975674074227,0.145544326970775) node {$p$};
+        \end{scriptsize}
+      \end{axis}
+    \end{tikzpicture}
+
+  \subsection{}
+    \begin{enumerate}
+      \item  以下のようなグラフになる。
+
+        \definecolor{zzttqq}{rgb}{0.6,0.2,0.}
+        \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.6cm,y=0.6cm]
+          \begin{axis}[
+          x=0.6cm,y=0.6cm,
+          axis lines=middle,
+          ymajorgrids=true,
+          xmajorgrids=true,
+          xmin=-10.152112459705553,
+          xmax=10.298344564541685,
+          ymin=-0.8716348731015182,
+          ymax=3.3114131545854293,
+          xtick={-10.0,-8.0,...,10.0},
+          ytick={-0.0,2.0,...,2.0},]
+          \clip(-10.152112459705553,-0.8716348731015182) rectangle (10.298344564541685,3.3114131545854293);
+          \draw[line width=2.pt,color=zzttqq,smooth,samples=100,domain=-10.152112459705553:10.298344564541685] plot(\x,{abs(sin(((\x))*180/pi))+sin((abs((\x)))*180/pi)});
+            \begin{scriptsize}
+              \draw[color=zzttqq] (-9.90422813213892,-0.45333007033282346) node {$s$};
+            \end{scriptsize}
+          \end{axis}
+        \end{tikzpicture}
+      \item  周期関数でではない。
+      \item  偶関数である。\begin{align*}
+        f_2(-x) + f_3(x) &= |\sin(-x)| + \sin |-x|\\
+        &= |-\sin x| + \sin|-x|\\
+        &= |\sin x|+\sin |x|\\
+        &= f_2(x) + f_3(x)
+        \end{align*}
+        となるので、これは偶関数。\footnote{絶対値の定義より、
+        $|-\sin x|=|\sin x|,|-x|=|x|$が成立する。}
+      \item  グラフより明らか。最大値は$2$,最小値は$0$
+      \item  グラフより明らか。$-2\pi\leq x \leq-\pi, x=0, \pi \leq x \leq \pi$. $x=0$も求める範囲に含まれていることに注意。
+      \item 下図の4つの点の座標を求めればよい。
+
+        \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+        \definecolor{zzttqq}{rgb}{0.6,0.2,0.}
+        \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+          \begin{axis}[
+          x=1.0cm,y=1.0cm,
+          axis lines=middle,
+          ymajorgrids=true,
+          xmajorgrids=true,
+          xmin=-4.4507729256729816,
+          xmax=4.163207457267522,
+          ymin=-0.9026204140473475,
+          ymax=3.2804276136396,
+          xtick={-4.0,-2.0,...,4.0},
+          ytick={-0.0,2.0,...,2.0},]
+          \clip(-4.4507729256729816,-0.9026204140473475) rectangle (4.163207457267522,3.2804276136396);
+          \draw[line width=2.pt,color=zzttqq,smooth,samples=100,domain=-4.4507729256729816:4.163207457267522] plot(\x,{abs(sin(((\x))*180/pi))+sin((abs((\x)))*180/pi)});
+          \draw [line width=0.8pt,domain=-4.4507729256729816:4.163207457267522] plot(\x,{(--1.-0.*\x)/1.});
+            \begin{scriptsize}
+              \draw[color=zzttqq] (-4.202888598106348,-0.48431561127865264) node {$s$};
+              \draw[color=black] (-4.202888598106348,1.529744550200248) node {$t$};
+              \draw [fill=uuuuuu] (0.5235987755995776,1.0000000000022147) circle (2.0pt);
+              \draw[color=uuuuuu] (0.9716967398471199,1.405802386416931) node {$C$};
+              \draw [fill=uuuuuu] (-0.523598775779615,1.0000000003140488) circle (2.0pt);
+              \draw[color=uuuuuu] (-0.2987104389318752,1.4987590092544187) node {$D$};
+              \draw [fill=uuuuuu] (-2.6179938778516547,1.0000000002422094) circle (2.0pt);
+              \draw[color=uuuuuu] (-2.4057272232482574,1.4987590092544187) node {$E$};
+              \draw [fill=uuuuuu] (2.6179938779901852,1.0000000000022675) circle (2.0pt);
+              \draw[color=uuuuuu] (2.830829196596869,1.4987590092544187) node {$F$};
+            \end{scriptsize}
+          \end{axis}
+        \end{tikzpicture}
+
+        右側二つの点、すなわち図でいうと$C,F$の座標が求まればよい。
+        これらは、$x$座標が$0\leq x\leq \pi$の範囲であるから、
+        \begin{align*}
+          f_2(x) + f_3(x) &= |\sin x| + \sin |x|\\
+          &= \sin x + \sin x\\
+          &=2\sin x
+        \end{align*}
+        である。つまり、
+        \[2\sin x =1\]
+        を$0\leq x\leq \pi$の範囲で解けばよい。
+        すると、
+        \[x = \frac{\pi}{6},\frac{5}{6}\pi\]
+        となる。グラフの対称性より求める解は
+        \[x = \pm\frac{\pi}{6},\pm\frac{5}{6}\pi\]
+    \end{enumerate}
+
+  \subsection{}
+    \begin{enumerate}
+      \item  以下のようなグラフになる。
+
+        \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+        \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.45cm,y=0.45cm]
+          \begin{axis}[
+          x=0.45cm,y=0.45cm,
+          axis lines=middle,
+          ymajorgrids=true,
+          xmajorgrids=true,
+          xmin=-13.312637636180188,
+          xmax=13.056057708720415,
+          ymin=-1.9251432652597247,
+          ymax=4.581820333364423,
+          xtick={-12.0,-10.0,...,12.0},
+          ytick={-0.0,2.0,...,4.0},]
+          \clip(-13.312637636180188,-1.9251432652597247) rectangle (13.056057708720415,4.581820333364423);
+          \draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-13.312637636180188:13.056057708720415] plot(\x,{sin(((\x))*180/pi)+abs(sin(((\x))*180/pi))+sin((abs((\x)))*180/pi)});
+          \begin{scriptsize}
+            \draw[color=qqwuqq] (-12.987289456248982,0.4917289285149588) node {$f_1$};
+          \end{scriptsize}
+          \end{axis}
+        \end{tikzpicture}
+      \item  周期関数ではない。
+      \item  偶関数でも奇関数でもない。
+      \item グラフより明らか。最大値は$3$,最小値は$-1$
+      \item グラフより明らか。最大値は$3$,最小値は$-1$
+      \item 最大値は$1$,最小値は$0$
+      \item 4個
+    \end{enumerate}
+
+\section{加法定理}
+      教科書に載っている加法定理の証明を参考にせよ。
+
+\section{}
+  \begin{enumerate}
+    \item $\frac{\sqrt{3}-1}{2\sqrt{2}}$
+    \item $\frac{1+\sqrt{3}}{2\sqrt{2}}$
+    \item $2 - \sqrt{3}$
+  \end{enumerate}
+
+\section{}
+  \begin{align*}
+    \tan(\alpha + \beta) &= \frac{\cos(\alpha + \beta)}{\sin(\alpha + \beta)}\\
+    &= \frac{\cos\alpha\sin\beta + \sin\alpha\cos\beta}{\cos\alpha\cos\beta - \sin\alpha\sin\beta}\\
+    &= \frac{\cos\alpha\sin\beta + \sin\alpha\cos\beta}{\cos\alpha\cos\beta - \sin\alpha\sin\beta} \times \left(\frac{\frac{1}{\cos\alpha\cos\beta}}{\frac{1}{\cos\alpha\cos\beta}}\right)\\
+    &= \frac{\frac{\cos\alpha\sin\beta}{\cos\alpha\cos\beta} + \frac{\sin\alpha\cos\beta}{\cos\alpha\cos\beta}}{1 - \frac{\sin\alpha\cos\beta}{\cos\alpha\cos\beta}}\\
+    &= \frac{\tan\alpha + \tan\beta}{1 - \tan\alpha\tan\beta}
+  \end{align*}
+
+  $\tan(\alpha - \beta)$も同様。
+
+\section{}
+  $\frac{\pi}{24} + \frac{\pi}{24} = \frac{\pi}{12}$であるから、
+  \[
+    \tan\frac{\pi}{12} = \tan\left( \frac{\pi}{24} + \frac{\pi}{24} \right) = \frac{\tan\frac{\pi}{24} + \tan\frac{\pi}{24}}{1 - \tan\frac{\pi}{24}\tan\frac{\pi}{24}}
+  \]
+  $x = \tan\frac{\pi}{24}$とおけば、上の式は
+  \[
+    2 - \sqrt{3} = \frac{x + x}{1 - x^2}
+  \]
+  となる。これを整理すると、
+  \[
+    (-2 + \sqrt{3})x^2 -2x +2 - \sqrt{3} = 0
+  \]
+  解の公式を使えば、
+  \[
+    x = \frac{1 \pm \sqrt{8-4\sqrt{3}}}{-2 + \sqrt{3}}
+  \]
+  となる。分子の二重根号は次のようにして外す。
+  \begin{align*}
+    x &= 1 \pm \sqrt{8-4\sqrt{3}}\\
+    &= 1 \pm \sqrt{2}\sqrt{4-2\sqrt{3}}\\
+    &= 1 \pm \sqrt{2}\sqrt{3 -2\sqrt{3} + 1}\\
+    &= 1 \pm \sqrt{2}\sqrt{ (\sqrt{3} - 1)^2 }\\
+    &= 1 \pm \sqrt{2}(\sqrt{3} - 1)\\
+  \end{align*}
+  有理化をする。
+  $+\sqrt{2}\cdots$の方は、有理化すると
+  \[
+    x = -(\sqrt{3} + \sqrt{2} + \sqrt{6} + 2)
+  \]
+  となる。しかし、$x > 0$より不適切。
+  $-\sqrt{2}\cdots$の方は、有理化すると
+  \[
+    x = \sqrt{6} + \sqrt{2} - \sqrt{3} - 2
+  \]
+  となる。これが求める値。
+
+\section{}
+  $\frac{1}{\sqrt{2}} = \sin\frac{\pi}{4} = \cos\frac{\pi}{4}$なので、
+  \[
+    y = \frac{1}{\sqrt{2}}(\cos\theta - \sin\theta) = \cos\frac{\pi}{4}\cos\theta - \sin\frac{\pi}{4}\sin\theta = \cos\left( \frac{\pi}{4} + \theta\right)
+  \]
+  なので、このグラフを描けばよい。
+
+\section{}
+  $y$を消去すると
+  \begin{align*}
+    \sin2\theta &= \sin\theta\\
+    \sin2\theta - \sin\theta &= 0 \\
+    2\sin\theta\cos\theta - \sin\theta &= 0 \\
+    (2\cos\theta - 1)\sin\theta &= 0 \\
+  \end{align*}
+  と変形できる。したがって、
+  \[
+    \sin\theta = 0 ,\quad \text{または}\quad \cos\theta = \frac{1}{2}
+  \]
+  であることが分かる。$-\pi \leq \theta \leq \pi$の範囲で、これらを満たす$\theta$は
+  \[
+    \theta = -\pi,0,\pi,-\frac{\pi}{3},\frac{\pi}{3}
+  \]
+  である。$\theta$がそれぞれの値の時、$y$の値は
+  \[
+    y = 0,0,0,-\frac{\sqrt{3}}{2},\frac{\sqrt{3}}{2}
+  \]
+  である。したがって、求める解は
+  \[
+    (x,y) = (-\pi,0),(0,0),(\pi,0),\left(-\frac{\pi}{3},-\frac{\sqrt{3}}{2}\right),\left(\frac{\pi}{3},\frac{\sqrt{3}}{2}\right)
+  \]
+  である。
+
+  参考に$y=\sin2\theta,y=\sin\theta$を同時に図示したものを示す。
+  \begin{center}
+    \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+    \definecolor{ccffcc}{rgb}{0.8,1.,0.8}
+    \definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+    \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+      \begin{axis}[
+        x=1.0cm,y=1.0cm,
+        axis lines=middle,
+        ymajorgrids=true,
+        xmajorgrids=true,
+        xmin=-3.4918756627376215,
+        xmax=3.312505332737335,
+        ymin=-1.9263356676727217,
+        ymax=1.7539469229232831,
+        xtick={-3.0,-2.5,...,3.0},
+        ytick={-1.5,-1.0,...,1.5},]
+        \clip(-3.4918756627376215,-1.9263356676727217) rectangle (3.312505332737335,1.7539469229232831);
+        \draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-3.4918756627376215:3.312505332737335] plot(\x,{sin((2.0*(\x))*180/pi)});
+        \draw[line width=2.pt,color=ccqqqq,smooth,samples=100,domain=-3.4918756627376215:3.312505332737335] plot(\x,{sin(((\x))*180/pi)});
+        \draw[line width=2.pt,color=ccffcc,fill=ccffcc,fill opacity=0.25](-3.1427813334045585,1.7539469229232831)--(-3.1427813334045585,-1.9263356676727217)--(3.140916594590575,-1.9263356676727217)--(3.140916594590575,1.7539469229232831);
+        \draw[line width=2.pt,dash pattern=on 1pt off 1pt,color=ccffcc,fill=ccffcc,fill opacity=0.25](-3.1427813334045585,1.7539469229232831)--(-3.1427813334045585,-1.9263356676727217)--(3.140916594590575,-1.9263356676727217)--(3.140916594590575,1.7539469229232831);
+        \begin{scriptsize}
+          \draw[color=qqwuqq] (-3.444540838421274,-0.6394201315720287) node {$f$};
+          \draw[color=ccqqqq] (-3.444540838421274,0.2836089425967442) node {$g$};
+          \draw [fill=uuuuuu] (-3.1415926535895458,4.949603091327993E-13) circle (2.0pt);
+          \draw[color=uuuuuu] (-3.1013633621277545,0.10018649837089827) node {$A$};
+          \draw [fill=uuuuuu] (-1.0471975511239147,-0.8660254038571217) circle (2.0pt);
+          \draw[color=uuuuuu] (-1.0067973861293769,-0.7695908984419839) node {$B$};
+          \draw [fill=uuuuuu] (-7.542221170119033E-10,-1.5084442340238067E-9) circle (2.0pt);
+          \draw[color=uuuuuu] (0.0404856018698122,0.10018649837089827) node {$C$};
+          \draw [fill=uuuuuu] (1.0471975511961251,0.8660254037842023) circle (2.0pt);
+          \draw[color=uuuuuu] (1.087768589869001,0.964047042144237) node {$D$};
+          \draw [fill=uuuuuu] (3.141592653589793,0.) circle (2.0pt);
+          \draw[color=uuuuuu] (3.182334565867379,0.10018649837089827) node {$E$};
+        \end{scriptsize}
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
+
+\section{}
+  \begin{enumerate}
+    \item $t = \sin x + \cos x$とおくとき、両辺を二乗すれば、
+    $t^2 = \sin^2x + 2\sin x \cos x + \cos^2x = 1 + 2\sin x \cos x$
+    が得られるので、$2\sin x \cos x = \frac{1}{2}(t^2 - 1)$となる。
+    したがって、$y = t + \frac{1}{2}(t^2 - 1)$である。
+    \item 計算は省略するが三角関数の合成を行えば、$t = \sqrt{2}\sin(\theta + \frac{\pi}{4})$となる。
+    したがって、$t$の範囲は$-\sqrt{2} \leq t \leq \sqrt{2}$である。
+    $y$を平方完成すると、$y = \frac{1}{2}(t +1)^2 - \frac{3}{2}$となる。
+    したがって、$t = -1$のとき、$y$は最小値$-\frac{3}{2}$をとり、
+    $t= \sqrt{2}$のとき、$y$は最大値$\sqrt{2} + \frac{1}{2}$をとる。(最大値を求める計算は省略した)
+
+    したがって、求める範囲は$-\frac{3}{2} \leq y \leq \sqrt{2} + \frac{1}{2}$である。
+  \end{enumerate}
+
+\section{}
+  $\tan\theta = \tan\left(\frac{\theta}{2} + \frac{\theta}{2}\right)$であるから、加法定理を用いて
+  \begin{align*}
+    \tan\theta &= \tan\left(\frac{\theta}{2} + \frac{\theta}{2}\right)\\
+    &= \frac{\tan\frac{\theta}{2} + \tan\frac{\theta}{2}}{1 - \tan\frac{\theta}{2}\tan\frac{\theta}{2}}\\
+    &= \frac{2t}{1 - t^2}
+  \end{align*}
+  である。
+
+  $\cos\theta = \cos\left(\frac{\theta}{2} + \frac{\theta}{2}\right)$であるから、加法定理を用いて
+  \begin{align*}
+    \cos\theta &= \cos\left(\frac{\theta}{2} + \frac{\theta}{2}\right)\\
+    &= \cos^2 \frac{\theta}{2} - \sin^2 \frac{\theta}{2}\\
+    &= \cos^2 \frac{\theta}{2} - (1 - \cos^2 \frac{\theta}{2})\\
+    &= 2\cos^2 \frac{\theta}{2} - 1
+  \end{align*}
+  となる。ところで、
+  \[
+    \tan^2 x = \frac{1}{\cos^2x}-1
+  \]
+  という公式があるので\footnote{この公式を自力で導くことはできますか?}、これを変形して、
+  \[
+    \cos^2x = \frac{1}{\tan^2x + 1}
+  \]
+  である。これを用いれば、
+  \begin{align*}
+    \cos\theta &= 2\cos^2 \frac{\theta}{2} - 1\\
+    &= 2 \frac{1}{\tan^2\frac{\theta}{2} + 1} - 1\\
+    &= \frac{2}{t^2 + 1} - 1\\
+    &= \frac{1 - t^2}{t^2 + 1}
+  \end{align*}
+
+  $\tan\theta = \frac{\sin\theta}{\cos\theta}$なので、
+  $\sin\theta = \cos\theta\tan\theta$である。
+  したがって、
+  \[
+    \sin\theta = \frac{1 - t^2}{1 + t^2}\times \frac{2t}{1 - t^2} = \frac{2t}{1 + t^2}
+  \]
+
+  \subsection{補足：有理関数という言葉について}
+    ここでは「有理関数」という言葉について補足説明をしますが、
+    数学３や大学向けの話が含まれているので、単に読み物として読んでもらって大丈夫です。
+
+    関数$f(x)$が
+    \[
+      f(x) = \frac{P(x)}{Q(x)}
+    \]
+    という形で表され、しかも$P(x),Q(x)$がともに「多項式」であるような場合、
+    $f(x)$は「有理関数」という。
+    たとえば、
+    \[
+      2x -1, \quad \frac{x^2}{1 + x^4}
+    \]
+    ようなものが有理関数である。
+
+    この問題で計算したように、$t = \tan\frac{\theta}{2}$とおけば、
+    三角関数は有理関数に変換することができる。
+    例えば、問70で出てきた$y = \sin x + \cos x +\sin x\cos x$は
+    $t = \tan\frac{x}{2}$とおけば、
+    \[
+      y = -1  + \frac{2(t+1)^2}{(t^2 + 1)^2}
+    \]
+    という式に変形することができる。
+    一見、余計複雑な式になったように思えるが、コンピュータなどで数値計算を行う場合は便利である。
+    $t$に値を代入して、$-1  + \frac{2(t+1)^2}{(t^2 + 1)^2}$
+    を計算させる(多項式の計算をパソコンに行わせる)ことと、
+    $x$に値を代入して$\sin x + \cos x +\sin x\cos x$を
+    計算させる(三角関数の計算をパソコンに行わせる)ことでは、
+    パソコンにとっては後者のほうが難しいことが多い。
+
+    また、今後習う「積分」という計算において、「三角関数を積分する」
+    ことより「有理関数を積分する」事の方がはるかに簡単であることが多い。
+    そのため、この変形は有用なのである。
+
+\section{}
+  $t = 2x$と$x$軸がなす角を$\theta$とすると、$y = 2x$は$y = (\tan\theta)x$と書くことができる。
+  求める直線と$y =2x$のとのなす角が$45^\circ$なので、求める直線の傾きは
+  $\tan(\theta + 45^\circ)$もしくは$\tan(\theta - 45^\circ)$である。
+  それぞれを加法定理を用いて計算すると、
+  \[
+    \tan(\theta + 45^\circ) = -3,\quad \tan(\theta - 45^\circ) = \frac{1}{3}
+  \]
+  であることが分かる。
+
+\section{}
+  \begin{enumerate}
+    \item 加法定理より、
+    \begin{align*}
+      \sin\left( x + \frac{\pi}{3} \right) &= \frac{1}{2}\sin x + \frac{\sqrt{3}}{2}\cos x\\
+      \sin\left( x + \frac{2\pi}{3} \right) &= -\frac{1}{2}\sin x + \frac{\sqrt{3}}{2}\cos x
+    \end{align*}
+    である。したがって、
+    \[
+      y = \sin x + \sqrt{3}\cos x
+    \]
+    と変形できる。三角関数の合成をすれば、
+    \[
+      y = 2 \sin \left(x + \frac{\pi}{3}\right)
+    \]
+    となる。したがって、$y$の最大値は$2$,最小値は$-2$.
+    \item \[y = -\sin^2 x + \sin x +1\]
+    と変形できる。そこで、$t = \sin x$とおく。
+    このとき、$t$の取りえる値の範囲は$-1 \leq t \leq 1$である。
+    平方完成をすると、
+    \begin{align*}
+      y &= -t^2 + t + 1\\
+      &= -\left(t - \frac{1}{2}\right)^2 + \frac{3}{2}
+    \end{align*}
+    である。したがって、最大値は$\frac{3}{2}$,最小値は$-1$.
+    \item $\cos(x - \frac{\pi}{6})$に加法定理を用いて、式を整理すれば、
+    \[
+      y = 2\sin x + \sqrt{3}\cos x
+    \]
+    となる。三角関数の合成より、
+    \[
+      y = \sqrt{7}\sin(x + \alpha)
+    \]
+    となる。ただし、ここで$\alpha$は
+    \[
+      \sin\alpha = \frac{\sqrt{3}}{\sqrt{7}},\quad \cos\alpha = \frac{2}{\sqrt{7}}
+    \]
+    を満たす角度である。
+    以上により、$y$の最大値は$\sqrt{7}$,最小値は$-\sqrt{7}$.
+  \end{enumerate}
+
+\section{}
+  \begin{enumerate}
+    \item 分母と分子に$a^x$を掛ければよい。
+    \begin{align*}
+      \frac{a^x - a^{-x}}{a^x + a^{-x}} \times \frac{a^x}{a^x} &=
+      \frac{a^{2x} - a^{0}}{a^{2x} + a^0}\\
+      &= \frac{5 - 1}{5 + 1}\\
+      &= \frac{2}{3}
+    \end{align*}
+    \item 分母と分子に$a^x$を掛ければよい。
+    \begin{align*}
+      \frac{a^{3x} - a^{-3x}}{a^x + a^{-x}} \times \frac{a^x}{a^x} &=
+      \frac{a^{4x} - a^{-2x}}{a^{2x} + a^{0}}\\
+      &= \frac{(a^{2x})^2 - (a^{2x})^{-1}}{a^{2x} + 1}\\
+      &= \frac{5^2 - 5^{-1}}{5 + 1}\\
+      &= \frac{62}{15}
+    \end{align*}
+  \end{enumerate}
+
+\section{}
+  \begin{enumerate}
+    \item
+    \begin{align*}
+      (\frac{2}{3})^4\div 2^{-3}\times 3^5 &= \frac{2^4}{3^4}\div \frac{1}{2^3}\times 3^5\\
+      & = \frac{2^4 \times 2^3 \times 3^5}{3^4}\\
+      &= 2^7 \times 3\\
+      &=384
+    \end{align*}
+    \item 7
+    \item \begin{align*}
+      (2\times 3^2)^{\frac{3}{2}}\div 2^{-\frac{4}{3}}\div ^3\sqrt{3} &= 2^{\frac{3}{2}}\times 3^3 \times 2^{\frac{4}{3}}\times 3^{-\frac{1}{3}}\\
+      &= 2^{\frac{17}{6}}\times 3^{\frac{8}{3}}
+    \end{align*}
+  \end{enumerate}
+
+\section{}
+  \subsection{}
+    順に$4,0,25,-1,-\frac{1}{2}$
+  \subsection{}
+    $\log_{10}2 = 0.301029, \log_{10}\pi = 0.4971,\log_{10}3=0.47712125471966$として計算しよう。
+    \href{https://keisan.casio.jp/}{https://keisan.casio.jp/}
+    というサイトで対数や三角関数をはじめとする様々な複雑な計算ができます。\footnote{URLをタップすればサイトにアクセスできます。}
+    \begin{enumerate}
+      \item $\log_{10}2^{2020} = 2020\log_{10}2$である。よって、
+      $2020 \times 0.301029 =608.080$である。$10$を$608$乗したものよりも
+      おおきいので、これは$609$桁の数。
+      \item $\log_{10}\pi^{510} = 510\log_{10}\pi = 510 \times 0.4971 = 253.54$である。
+      よってこれは$254$桁の数。
+      \item $\log_{10}3^{10^{5}} = 10^{5}\log_{10}3 = 47712.12$である。
+      よってこれは$47713$桁の数。
+    \end{enumerate}
+
+\section{}
+  \subsection{}
+    まずは右辺に加法定理を適用しよう。
+    \begin{align*}
+      \sqrt{3}\cos\bra{\theta - \frac{\pi}{3}} &= \sqrt{3}\cos\theta\cos\frac{\pi}{3} + \sqrt{3}\sin\theta\sin\frac{\pi}{3}\\
+      &=\frac{\sqrt{3}}{2}\cos\theta + \frac{3}{2}\sin\theta
+    \end{align*}
+    したがって、元の不等式は
+    \begin{align*}
+      \sin\theta > \sqrt{3}\cos\bra{\theta - \frac{\pi}{3}}\\
+      \frac{\sqrt{3}}{2}\cos\theta + \frac{1}{2}\sin\theta < 0
+    \end{align*}
+    となる。次のこの左辺の三角関数を合成すると、
+    \[
+      \sin\bra{\theta + \frac{\pi}{3}} < 0
+    \]
+    を得る。よって、
+    \[
+      \pi < \theta + \frac{\pi}{3} < 2\pi
+    \]
+    だから、求める$\theta$の範囲は
+    \[
+      \frac{2}{3}\pi < \theta < \frac{5}{3}\pi
+    \]
+
+  \subsection{}
+    仮定の式を2乗しよう。
+    \begin{align*}
+      \sin\theta + \cos\theta &= \frac{7}{5}\\
+      \bra{\sin\theta + \cos\theta}^2 &= \bra{\frac{7}{5}}^2\\
+      \sin^2\theta + 2\sin\theta\cos\theta + \cos^2\theta &= \frac{49}{25}\\
+      1 + 2\sin\theta\cos\theta &= \frac{49}{25}\\
+      2\sin\theta\cos\theta &= \frac{24}{25}\\
+      \sin\theta\cos\theta &= \frac{12}{25}
+    \end{align*}
+
+\section{}
+  \begin{enumerate}
+    \item \begin{align*}
+      OP &= \sqrt{\bra{2\cos\theta}^2 + \bra{2\sin\theta}^2}\\
+      &= \sqrt{4\cos^2\theta + 4\sin^2\theta}\\
+      &= \sqrt{4}\\
+      &= 2
+  \end{align*}
+  一方、
+  \begin{align*}
+    PQ &= \sqrt{\bra{2\cos\theta + \cos 2\theta - 2\cos\theta}^2 +\bra{2\sin\theta + \sin 2\theta - 2\sin\theta}^2}\\
+    &= \sqrt{\cos^2 2\theta + \sin^2 2\theta}\\
+    &= 1
+  \end{align*}
+  \item まずは$OQ$の長さを求めよう。1.と同様の方法で計算をすると、
+  \[
+    OQ = \sqrt{5  + 4(\cos\theta\cos2\theta + \sin\theta\sin2\theta)}
+  \]
+  となる。$\cos$の加法定理を適用すれば、
+  \[
+    OQ = \sqrt{5 + 4\cos\theta}
+  \]
+  となる。すなわち、$5 + 4\cos\theta$の最大値を求めればよい。
+  $\theta = \frac{\pi}{2}$のとき最大になる。このとき、
+  \begin{align*}
+    OQ &= \sqrt{5 + 4\cos\frac{\pi}{2}}\\
+    &=  \sqrt{5 + 4\times 1}\\
+    &= 3
+  \end{align*}
+  \end{enumerate}
+
+\section{}
+  \begin{enumerate}
+    \item 代入してそれぞれ計算する。計算は省略する。
+    \[
+      f(0) = -1,\quad f\bra{\frac{\pi}{3}} = 2 + \sqrt{3}
+    \]
+    \item 二倍角の定理より、
+    \[
+      \cos 2\theta = \cos\theta\cos\theta - \sin\theta\sin\theta
+    \]
+    である。すなわち、
+    \[
+      \cos 2\theta = 2\cos^2\theta - 1
+    \]
+    である。これを$\cos^2\theta $について整理すれば、
+    \[
+      \cos^2\theta = \frac{\cos2\theta +1}{2}
+    \]
+    となる。これが答え。
+    \item $\sin2\theta = 2\sin\theta\cos\theta$であることに注意せよ。
+    \begin{align*}
+      f(\theta) &= 3\sin^2\theta + 4\sin \theta\cos\theta - \cos^2 \theta\\
+      &= 3(1- \cos^2\theta)+ 4\sin \theta\cos\theta - \cos^2 \theta\\
+      &=3 - 4\cos^2\theta + 4\sin\theta\cos\theta\\
+      &=3 - 4\times \bra{\frac{\cos2\theta + 1}{2}} + 2 \times 2\sin\theta\cos\theta\\
+      &=3 -2(\cos2\theta + 1) + 2\sin2\theta\\
+      &=1 -2\cos2\theta + 2\sin2\theta
+    \end{align*}
+    \item $f(\theta)$をさらに変形しよう。
+    \begin{align*}
+      f(\theta) &= 1 -2\cos2\theta + 2\sin2\theta\\
+      &= 1 - 2(\cos2\theta - \sin2\theta)\\
+      &= 1 - 2\sqrt{2}\bra{\frac{1}{\sqrt{2}}\cos2\theta - \frac{1}{\sqrt{2}}\sin2\theta}\\
+      &= 1 - 2\sqrt{2}\sin\bra{2\theta - \frac{\pi}{4}}
+    \end{align*}
+    さて、$\theta$の範囲は$0 \leq \theta \leq \pi$なので、
+    $-\frac{\pi}{4} \leq 2\theta -\frac{\pi}{4} \leq \frac{7}{4}\pi$である。
+    したがって、
+    \[
+      -1 \leq \sin\bra{2\theta - \frac{\pi}{4}} \leq 1
+    \]
+    この両辺を$-2\sqrt{2}$倍して$1$を加えれば、
+    \[
+      1 - 2\sqrt{2} \leq f(\theta) \leq 1 + 2\sqrt{2}
+    \]
+    が得られる。したがって、$f(\theta)$の最大値は$1 + 2\sqrt{2}$
+  \end{enumerate}
+
+\section{}
+  半径$1$の円の扇形を考えたとき、その扇形の弧の長さと中心角を対応させている。
+  \begin{enumerate}
+    \item 中心角が$72^{\circ}$の扇形の弧の長さは
+    \[2\pi \times \frac{72^{\circ}}{360^{\circ}} = \frac{2}{5}\pi\]
+    である。したがって、$72^{\circ}$は$\frac{2}{5}\pi \,\,$(rad)
+    \item 弧の長さ$1$の扇形の中心角は
+    \[2\pi \times \frac{x^{\circ}}{360^{\circ}} = 1\]
+    より、
+    \[x^{\circ} = \frac{180^{\circ}}{\pi}\]
+    したがって、$1$radは$\bra{\frac{180}{\pi}}^{\circ}$
+  \end{enumerate}
+
+\section{}
+  おおよそ以下のような形になります。
+
+  \definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
+  \definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+  \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=0.5cm]
+    \begin{axis}[
+      x=0.5cm,y=0.5cm,
+      axis lines=middle,
+      ymajorgrids=true,
+      xmajorgrids=true,
+      xmin=-8.682485079123248,
+      xmax=9.312942207884932,
+      ymin=-1.2251817919286134,
+      ymax=9.129263881076946,
+      xtick={-8.0,-7.0,...,9.0},
+      ytick={-1.0,0.0,...,9.0},]
+      \clip(-8.682485079123248,-1.2251817919286134) rectangle (9.312942207884932,9.129263881076946);
+      \draw[line width=2.pt,color=ccqqqq,smooth,samples=100,domain=-8.682485079123248:9.312942207884932] plot(\x,{2.0*cos((3.0*(\x)-4.0*3.141592653589793/3.0)*180/pi)+5.0});
+      \begin{scriptsize}
+        \draw[color=ccqqqq] (-8.549308928988127,5.558478355579049) node {$f$};
+        \draw [fill=xdxdff] (0.3504012036433424,3.0000160484931246) circle (2.5pt);
+        \draw[color=xdxdff] (0.4733752426662976,3.3111308220489026) node {$A$};
+      \end{scriptsize}
+    \end{axis}
+  \end{tikzpicture}
+
+\section{}
+  $\sin\bra{\theta - \frac{\pi}{4}} = t$とおく。
+  すると、問題の不等式は
+  \[t^2 +2t + 1 \leq \frac{9}{4}\]
+  である。左辺を因数分解して
+  \[(t + 1)^2 \leq \frac{4}{9}\]
+  である。したがって、
+  \[-\frac{3}{2} \leq t + 1 \leq \frac{3}{2}\]
+  すべての辺から$1$を引いて
+  \[-\frac{5}{2} \leq t \leq \frac{1}{2}\]
+  である。しかし、$t$は$-1 \leq t \leq 1$であるから、
+  \[-1 \leq t \leq \frac{1}{2}\]
+  であれば、問題の不等式は成立する。
+  これはつまり、
+  \[-1 \leq \sin\bra{\theta - \frac{\pi}{4}} \leq \frac{1}{2}\]
+  である。したがって、
+  \[0 \leq \theta - \frac{\pi}{4} \leq \frac{\pi}{6}\]
+  または
+  \[\frac{5}{6}\pi \leq \theta - \frac{\pi}{4} \leq  \frac{13}{6}\pi\]
+  である。それぞれの不等式を計算すると、
+  \[\frac{\pi}{4} \leq \theta \leq \frac{5}{12}\pi, \quad \frac{13}{12}\pi \leq \theta \leq \frac{29}{12}\pi\]
+  である。しかし、後者は$\theta$の範囲を超えている。
+  よって求めるべき$\theta$の範囲は
+  \[\frac{\pi}{4} \leq \theta \leq \frac{5}{12}\pi, \quad \frac{13}{12}\pi \leq \theta \leq 2\pi\]
+
+\section{}
+  $f(\theta)$を加法定理を用いて展開しよう。すると、
+  \begin{align*}
+    f(\theta) &= \bra{\frac{1}{\sqrt{2}}\sin\theta - \frac{1}{\sqrt{2}}\cos\theta}^2 + 2\bra{\frac{1}{\sqrt{2}}\sin\theta + \frac{1}{\sqrt{2}}\cos\theta} - 2\\
+    &= \frac{1}{2}\bra{\sin^2\theta + \cos^2\theta} -\sin\theta\cos\theta + \sqrt{2}\bra{\sin\theta + \cos\theta} - 2\\
+    &= -\sin\theta\cos\theta + \sqrt{2}\bra{\sin\theta + \cos\theta} - \frac{3}{2}
+  \end{align*}
+  である。そこで、$t = \sin\theta + \cos\theta$とおく。
+  $t$の取りえる範囲は三角関数の合成をすれば求まる。実際に計算してみよう。
+  \begin{align*}
+    t &= \sin\theta + \cos\theta\\
+    &= \sqrt{2}\bra{\frac{1}{\sqrt{2}}\sin\theta + \frac{1}{\sqrt{2}}\cos\theta}\\
+    &= \sqrt{2}\sin\bra{\theta + \frac{\pi}{4}}
+  \end{align*}
+  である。よって、
+  \[-\sqrt{2} \leq t \leq \sqrt{2}\]
+  である。さて、$t$を使って$f(\theta)$をさらに変形しよう。
+  $t$を二乗すると、
+  \[t^2 = \sin^2\theta + 2\sin\theta\cos\theta + \cos^2\theta\]
+  なので、
+  \[\sin\theta\cos\theta = \frac{t^2 - 1}{2}\]
+  である。よって
+  \begin{align*}
+    f(\theta) &= -\sin\theta\cos\theta + \sqrt{2}\bra{\sin\theta + \cos\theta} - \frac{3}{2}\\
+    &= -\frac{t^2 - 1}{2} + \sqrt{2}t - \frac{3}{2}\\
+    &= -\frac{1}{2}t^2 + \sqrt{2}t -1\\
+    &= -\frac{1}{2}\bra{t^2 -2\sqrt{2}t - 2}\\
+    &= -\frac{1}{2}(t - \sqrt{2})^2
+  \end{align*}
+  と計算できる。さてこれにより、$f(\theta) = 0$を満たすのは、
+  \[t = \sqrt{2}\]
+  の場合であることが分かる。すなわち、
+  \[\sqrt{2} = t = \sin\theta + \cos\theta = \sqrt{2}\sin\bra{\theta + \frac{\pi}{4}}\]
+  のことであるから、
+  \[\sqrt{2} = \sqrt{2}\sin\bra{\theta + \frac{\pi}{4}}\]
+  である。即ち、
+  \[1 = \sin\bra{\theta + \frac{\pi}{4}}\]
+  を解けばよい。よって、求める値は
+  \[\theta = \frac{\pi}{4}\]
+  である。
+
+\section{}
+  $\bra{\frac{1}{4}}^x = 2^{-2x}, \bra{\frac{1}{2}}^2 = 2^{-x}$であることに注意する。
+  \begin{align*}
+    2^{-2x} - 2^{-x} \leq 2\\
+    2^{-2x} - 2^{-x} - 2 \leq 0\\
+    (2^{-x} - 2)(2^{-x} + 1) \leq 0\\
+    -1 \leq 2^{-x} \leq 2
+  \end{align*}
+  よって、$-1 \leq x $.
+
+\section{}
+  \begin{enumerate}
+    \item $\log_2 6 + \log_2 3 - 1 = \log_2 2 + \log_2 3 + \log_2 3 - 1 = 1 + 2\log_2 3 - 1 = 2\log_2 3$
+    \item $\log_2 6 + \log_2 x - 1 = 0 \Leftrightarrow \log_2 x = \log_2 3^{-1} \Leftrightarrow x = \frac{1}{3}$
+    \item 真数条件より$x - 4 > 0 \Leftrightarrow x > 4$である。一方、$\log_2 (x - 4) < 3 \Leftrightarrow x - 4 < 8 \Leftrightarrow x < 12$である。よって、$4 < x < 12$が求める範囲。
+    \item $\log_5 x = 2 \Leftrightarrow x = 25$
+    \item $\log_5 x^2 = 4 \Leftrightarrow \log_5 x = 2 \Leftrightarrow x = 25$
+    \item $(\log_5 x)^2 = 9 \Leftrightarrow\log_5 x = \pm 3 \Leftrightarrow x= 125,\frac{1}{125}$
+    \item $(\log_2 3) \times (\log_3 8) = \log_2 3 \times \frac{\log_2 8}{\log_2 3} = \log_2 8 = 3$
+  \end{enumerate}
+
+\section{}
+  上から順番に対応している。
+  \begin{prob*}
+    \begin{enumerate}
+      \item $-2$
+      \item $16$
+    \end{enumerate}
+  \end{prob*}
+  \begin{prob*}
+    \begin{enumerate}
+      \item $+\infty$もしくは$-\infty$.右極限と左極限で答えが異なるためどちらでも正解とする。
+      \item $f(x) = - \frac{1}{|x|}$,$f(x) = \log x$,$f(x) = \tan (x - \frac{\pi}{2})$など
+    \end{enumerate}
+  \end{prob*}
+  \begin{prob*}
+    \begin{enumerate}
+      \item $+\infty$
+      \item $-\infty$
+      \item $+\infty$
+    \end{enumerate}
+  \end{prob*}
+  \begin{prob*}
+    \begin{enumerate}
+      \item $0$
+      \item $-1$
+      \item $1$
+      \item $0$
+      \item 正の無限大に発散する、または負の無限大に発散する。右極限と左極限で異なるためどちらでも正解とする。
+      \item 負の無限大に発散する
+      \item $2$.定数関数なので、$x$が何であろうと常に$2$.
+      \item $0$.$\sin x - \cos\bra{\frac{\pi}{2} - x}$を変形すると$0$になる。
+      \item 正の無限大に発散する。
+    \end{enumerate}
+  \end{prob*}
+  \begin{prob*}
+    \begin{enumerate}
+      \item $+\infty$
+      \item $1$
+      \item $-\infty$
+    \end{enumerate}
+  \end{prob*}
+
+\section{}
+  \begin{enumerate}
+    \item $+\infty$
+    \item $-\infty$
+    \item $1$
+    \item $0$
+    \item $0$
+    \item $0$
+  \end{enumerate}
+
+\section{}
+  \begin{prob*}
+    準備中(描画するための方法を勉強中です)
+%    \begin{tikzpicture}[x = 1cm,y=1cm]
+%      \draw
+%    \end{tikzpicture}
+  \end{prob*}
+  \begin{prob*}
+    $f(x) = |x|$の$x =0$における右微分係数と左微分係数を調べよう。
+    \footnote{右微分係数とは、微分係数の右極限のことである。}
+    まず、右微分係数は次のようになる。
+    \begin{align*}
+      \lim_{h \to 0+0}\frac{f(0 + h) - f(0)}{h} &= \lim_{h \to 0+0}\frac{\abs{0 + h} - \abs{0}}{h}\\
+      &=\lim_{h \to 0+0}\frac{\abs{h}}{h}\\
+      &=\lim_{h \to 0+0}\frac{h}{h}\\
+      &=1
+    \end{align*}
+    である。
+    いっぽう、左微分係数は次のようになる。
+    \begin{align*}
+      \lim_{h \to 0-0}\frac{f(0 + h) - f(0)}{h} &= \lim_{h \to 0-0}\frac{\abs{0 + h} - \abs{0}}{h}\\
+      &=\lim_{h \to 0-0}\frac{\abs{h}}{h}\\
+      &=\lim_{h \to 0-0}\frac{-h}{h}\\
+      &=-1
+    \end{align*}
+    である。
+  \end{prob*}
+
+\section{}
+  \subsection{}
+    計算の途中で$\lim$を消してしまわないように注意しよう。
+    \begin{enumerate}
+      \item $f(x) = 2x$の導関数を定義通りに求める。
+      \begin{align*}
+        \lim_{h \to 0}\frac{2(x + h) - 2x}{h} &= \lim_{h \to 0}2\\
+        &=2
+      \end{align*}
+      ゆえに、$f^{\prime}(x) = 2$
+      \item \begin{align*}
+        \lim_{h \to 0}\frac{3(x + h)^2 + 1 - 3x^2 - 1}{h} &= \lim_{h \to 0}\frac{6xh + h^2}{h}\\
+        &=\lim_{h \to 0}6x + h\\
+        &=6x
+      \end{align*}
+      ゆえに、$f^\prime(x) = 6x$
+      \item \begin{align*}
+        \lim_{h \to 0}\frac{(x+h)^3 + (x + h) - x^3 -x}{h} &=\lim_{h \to 0}\frac{3x^2h + 3xh^2 +h^3 +h}{h}\\
+        &=\lim_{h \to 0}3x^2 + 3xh + h^2 + 1\\
+        &=3x^2 + 1
+      \end{align*}
+      ゆえに、$f^\prime(x) = 3x^2 + 1$
+      \item \begin{align*}
+        \lim_{h \to 0}\frac{a(x + h)^2 + b(x + h) + c -ax^2-bx-c}{h} &= \lim_{h \to 0}\frac{2axh + ah^2 + bh}{h}\\
+        &= \lim_{h \to 0}2ax + ah + b\\
+        &=2ax + b
+      \end{align*}
+      ゆえに、$f^\prime(x) = 2ax + b$
+      \item \begin{align*}
+        \lim_{h \to 0}\frac{(x+h+2)^2 - (x +2)^2}{h} &= \lim_{h \to 0}\frac{(x+h+2 - x - 2)(x+h+2 + x + 2)}{h}\\
+        &=\lim_{h \to 0}\frac{h(2x + h + 4)}{h}\\
+        &=\lim_{h \to 0}2x + h + 4\\
+        &= 2x + 4
+      \end{align*}
+      ゆえに、$f^\prime(x) = 2x + 4$
+      \item \begin{align*}
+        \lim_{h \to 0}\frac{f(x + h) - f(x)}{h} = \lim_{h \to 0}\frac{2 - 2}{h} = 0
+      \end{align*}
+      よって、$f^\prime(x) = 0$
+      \item \begin{align*}
+        &\lim_{h \to 0} \frac{\frac{1}{100}(x + h)^{100} -\frac{1}{100}x^{100}}{h}\\
+        =& \lim_{h \to 0} \frac{1}{100} \frac{x^{100} + {}_{100}\mathrm{C}_1 x^{99}h + {}_{100}\mathrm{C}_2 x^{98}h^{2} + \cdots + {}_{100}\mathrm{C}_{99} xh^{99} + h^{100} - x^{100}}{h}\\
+        =& \lim_{h \to 0} \frac{1}{100} \frac{{}_{100}\mathrm{C}_1 x^{99}h + {}_{100}\mathrm{C}_2 x^{98}h^{2} + \cdots + {}_{100}\mathrm{C}_{99} xh^{99} + h^{100}}{h}\\
+        =& \lim_{h \to 0} \frac{1}{100}\bra{{}_{100}\mathrm{C}_1 x^{99} + {}_{100}\mathrm{C}_2 x^{98}h + \cdots + {}_{100}\mathrm{C}_{99} xh^{98} + h^{99}}\\
+        =&\frac{1}{100}{}_{100}\mathrm{C}_1 x^{99}\\
+        =& x^{99}
+      \end{align*}
+    \end{enumerate}
+  \subsection{}
+    傾きが$a$で点$(p,q)$を通る直線の式は$y = a(x - p) + q$であったことを思い出そう。
+    1.から7.の全ての場合において
+    \[
+      y= f^\prime(1)(x - 1) + f(1)
+    \]
+    を計算したものが答えになる。
+    \begin{enumerate}
+      \item $y = 2x$.(もともとの$f(x)$が既に直線なので、計算するまでもなく$y=2x$が答えだと分かる)
+      \item $y = f^\prime(1)(x - 1) + f(1) = 6(x - 1) + 4 = 6x - 2$
+      \item $y =(3+1)(x - 1)+ 2 = 4x - 4 + 2 = 4x - 2$
+      \item $y =(2a+b)(x - 1) + a + b + c = (2a + b)x -a + c$
+      \item $y = (2 + 4)(x - 1) + 9 = 6x - 6 + 9 = 6x + 3$
+      \item $y = 2$
+      \item $y = 1(x -1)+\frac{1}{100} = x - \frac{99}{100}$
+    \end{enumerate}
+
+\section{}
+  \begin{enumerate}
+    \item $V^\prime = 4\pi r^2$
+    \item $s^\prime = v + gt$
+    \item $V^\prime = ab$
+  \end{enumerate}
+
+\section{}
+  \begin{enumerate}
+    \item $f^\prime(x) = x^2 - 5x + 6$
+    \item $x=2,3$
+    \item $f(2)=\frac{11}{3},f(3) =\frac{7}{2}$
+    \item 省略。また習ってから
+    \item 省略。また習ってから
+  \end{enumerate}
+
+\section{}
+  解答略。また習ってから
+
+\section{}
+  解答略。また習ってから
+
+\section{}
+  $2^{10} = 1024 > 1000$であるから、この両辺に底を$10$として対数を取る。
+  \begin{align*}
+    \log_{10} 2^{10} &> \log_{10} 1000\\
+    10 \log_{10} 2 &> 3\\
+    \log_{10}2 &> 0.3
+  \end{align*}
+
+\section{}
+  \begin{enumerate}
+    \item 略
+    \item $0 \leq t \leq 2$. $0 = \log_{\frac{1}{2}}1, \frac{1}{4} = \log_{\frac{1}{2}}\frac{1}{4}$から求められる。
+    \item $\frac{1}{2}\log_{\frac{1}{2}}x^2 = \log_{\frac{1}{2}}x$であることに注意すれば、
+    $y = t^2 -t +1$
+    \item 3.で求めた式を平方完成すると、$y = (t - \frac{1}{2})^2 + \frac{3}{4}$である。
+    2.より、$t$の取りえる範囲は$0 \leq t \leq 2$である。
+    したがって、$t= 2$のときすなわち、$x = \frac{1}{4}$のとき最大でその値は$3$.
+    $t = \frac{1}{2}$のとき、すなわち$x = 1$のとき最小でその値は$\frac{3}{4}$.
+  \end{enumerate}
+
+\section{}
+  \begin{enumerate}
+    \item $f(-1) = -1 +a -b +c$
+    \item $f^\prime(x) = 3x^2 + 2ax +b$
+    \item $f^\prime(-1) = 3 -2a + b$
+    \item $f(2) = 8 + 4a + 2b +c, f^\prime(2) = 12 + 4a +b$
+    \item \begin{align*}
+      y &= f^\prime(2)(x - 2)+ f(2)\\
+      &= (12 + 4a + b)(x - 2) + f(2)\\
+      &= (12 + 4a + b)(x - 2) + 8 + 4a + 2b  + c\\
+      &= (12 + 4a + b)x -24 -8a -2b + 8 +4a +2b +c\\
+      &= (12 + 4a + b)x -16 -4a + c
+      \end{align*}
+      したがって、求める直線の式は$y = (12 + 4a + b)x -16 -4a + c$
+    \item ここまでで計算した情報を整理しながら問題を解く。
+    まずは点$P$を通る接線について考えよう。
+    点$P$を通る接線は以下のようにして$a,b,c$を用いて表すことができる。
+    \begin{align*}
+      y &= f^\prime(-1)(x - (-1)) + f(-1)\\
+      &= (3 -2a + b)(x + 1) + (-1 +a -b +c)\\
+      &= (3 -2a + b)x + 3 -2a + b -1 + a - b + c\\
+      &= (3 -2a + b)x + 2 -a + c
+    \end{align*}
+    仮定より、この直線は$y = x + 3$であるから、次の二つの式が成立する。
+    \[
+      \begin{cases}
+        3 -2a + b = 1\\
+        2 -a + c =3
+      \end{cases}
+    \]
+    一方、点$Q$で曲線$y = f(x)$に接する接線は5.で求めたように、
+    $y = (12 + 4a + b)x -16 -4a + c$であった。
+    これが、点$P(-1,2)$を通るので
+    \begin{align*}
+      &2 = (12 + 4a + b)(-1) -16 -4a + c\\
+      \Leftrightarrow &8a + b -c = -30
+    \end{align*}
+    がなりたつ。
+    以上により、連立方程式
+    \[
+      \begin{cases}
+        3 -2a + b = 1\\
+        2 -a + c =3\\
+        8a + b -c = -30
+      \end{cases}
+    \]
+    を解けば$a,b,c$の値が求められる。
+    すると結局$a = -3,b = -8,c = -2$となる。
+  \end{enumerate}
+
+\section{}
+  極値になるところでは$f^{\prime}(x) = 0$になることに注意しよう。
+  $f(-1) = 12,f^{\prime}(-1) = 0,f(1)=4,f^{\prime}(1) = 0$
+  であることより次の連立方程式を得る。
+  \[
+    \begin{cases}
+      3a -2b + c = 0\\
+      -a + b - c + d = 12\\
+      3a + 2b + c = 0\\
+      a+ b+ c+ d = 4
+    \end{cases}
+  \]
+  これを解いて、$a=2,b=0,c=-6,d=8$である。よって
+  $f(x) = 2x^3 -6x + 8$
+
+\section{}
+  \begin{enumerate}
+    \item 省略
+    \item $0 \leq p <1,p=2$
+  \end{enumerate}
+
+\section{}
+  \begin{enumerate}
+    \item 省略
+    \item $f^{\prime}(x) = 6x^2 + 2x$だから、$x = t$における$y = f(x)$の
+    接線の傾きは$f^{\prime}(t) = 6t^2 + 2t$である。
+    よって、$y = (6t^2 + 2t)(x - t) + 2t^3 + t^2 -3$が求める直線の式
+    \item 2.で求めた直線の式が原点をとおるので、$(x,y) = (0,0)$を代入すると
+    $t = 1$となる。これを2.に代入すると$y = 4x$を得る。したがって、$m > 4$
+  \end{enumerate}
+
+\section{}
+  以下で、$C$は積分定数
+  \begin{enumerate}
+    \item $\frac{1}{3}x^3 + C$
+    \item $x^3 + C$
+    \item $\frac{1}{20} x^4 + C$
+  \end{enumerate}
+
+\section{}
+\begin{enumerate}
+  \item \begin{align*}
+    \int_1^2 (4x - 3)^2 dx &= \int_1^2 (16x^2 -24x + 9)dx\\
+    &= \left[ \frac{16}{3}x^3 -12x^2 +9x\right]_1^2\\
+    &= (\frac{16}{3}\times 8 -12 \times 4 + 9\times 2) - (\frac{16}{3} -12 + 9)\\
+    &= \frac{31}{3}
+  \end{align*}
+  \item \begin{align*}
+    &\int_1^3 (3x^2 -4x +1) dx - 2\int_1^2(x^2 -2x -1)dx\\
+    &=[x^3 -2x^2 + x]_1^3 - 2[\frac{1}{3}x^3 - x^2 - x]_1^2\\
+    &=\frac{46}{3}
+  \end{align*}
+  \item \begin{align*}
+    \int_{-1}^1 (x^3 + x) dx = 0
+  \end{align*}
+  \item \begin{align*}
+    \int_3^{-2}(x^2 - 2x) dx &= [\frac{1}{3}x^3 - x^2]_3^{-2}\\
+    &= -\frac{20}{3}
+  \end{align*}
+\end{enumerate}
+
+\section{}
+  \begin{align*}
+    \int_{-2}^3 f(x) dx &= \int_{-2}^0 f(x) dx + \int_0^3 f(x) dx\\
+    &= \left[ -\frac{1}{3}x^3 \right]_{-2}^0 + \left[ \frac{1}{3}x^3 \right]_0^3 \\
+    &= \frac{19}{3}
+  \end{align*}
+
+\section{}
+  被積分関数\footnote{積分の記号$\int$と$dx$に挟まれた関数を「被積分関数」という}
+  である$|x^2 -5x +6|$について考える。
+  \[
+    |x^2 -5x +6| = |(x - 2)(x - 3)| =\begin{cases}
+      -x^2 +5x -6 \quad (\text{if}\;\; 2\leq x \leq 3)\\
+      x^2 -5x +6  \quad (\text{if}\;\; x<2, 3<x)
+  \end{cases}
+  \]
+  よって、
+  \begin{align*}
+    &\int_{-3}^4 |x^2 -5x +6| dx \\
+    &= \int_{-3}^2 (x^2 -5x +6) dx + \int_{2}^3 (-x^2 +5x -6) dx + \int_3^4 (x^2 -5x +6) dx\\
+    &= \frac{105}{2}
+  \end{align*}
+
+\section{}
+  \begin{enumerate}
+    \item $f(x) = |x^2 -2x| + |x+1| + |x-1| = |x(x -2)| + |x+1| + |x-1|$であるから、$x$の値について場合分けしよう。
+    \begin{itemize}
+      \item $x < -1$のとき、$f(x) = (x^2 -2x) -(x+1) -(x-1) = x^2-4x$
+      \item $-1\leq x<0$のとき、$f(x) = (x^2 -2x) +(x+1) -(x-1) =x^2 -2x$
+      \item $0\leq x<1$のとき、$f(x) = -(x^2-2x) +(x+1) -(x-1) =-x^2+2x-2$
+      \item $1\leq x<2$のとき、$f(x) = -(x^2-2x) +(x+1) +(x-1) = -x^2+4x$
+      \item $2\leq x$のとき、$f(x) = (x^2-2x) +(x+1) +(x-1) = x^2$
+    \end{itemize}
+    書きなおすと次のようになる。
+    \[
+      f(x) =\begin{cases}
+        x^2 -4x & (\text{if}\quad x < -1)\\
+        x^2 -2x & (\text{if}\quad -1\leq x<0)\\
+        -x^2+2x-2 & (\text{if}\quad 0\leq x<1)\\
+        -x^2+4x & (\text{if}\quad 1\leq x<2)\\
+        x^2 & (\text{if}\quad 2\leq x)
+    \end{cases}
+    \]
+    \item 各範囲ごとに被積分関数が変化することに注意。
+    \begin{align*}
+      &\int_{-2}^2 f(x) dx\\
+      &= \int_{-2}^{-1} (x^2 -4x) dx + \int_{-1}^{0} (x^2 -2x) dx + \int_{0}^{1} (-x^2+2x-2) dx +\int_{1}^{2} (-x^2+4x) dx\\
+      &= (\frac{7}{3} + 6) + (\frac{1}{3} + 1) + (-\frac{1}{3} - 1) + (-\frac{7}{3} + 6)\\
+      &=12
+    \end{align*}
+  \end{enumerate}
+
+\section{}
+  三次方程式$x^3 -x + a =0$を，連立方程式
+  \[
+    \begin{cases}
+      y = x^3 -x\\
+      y = -a
+    \end{cases}
+  \]
+  の解と捉える．$f(x) = x^3 -x$とおく．
+  $f^{\prime}(x) = 3x^2 - 1$だから，
+  $f^{\prime}(x) = 0$を満たすのは$x = \pm\frac{1}{\sqrt{3}}$のとき．
+  よって，$f(x)$の極大値は$f(-\frac{1}{\sqrt{3}}) = \frac{2}{3\sqrt{3}}$であり，
+  $f(x)$の極小値は$f(\frac{1}{\sqrt{3}}) = -\frac{2}{3\sqrt{3}}$である．
+  \footnote{増減表を書く工程を省略しています}
+  したがって，$y = f(x)$のグラフは次のようになる．
+  \definecolor{ffxfqq}{rgb}{1.,0.4980392156862745,0.}
+  \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+  \begin{center}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+      \begin{axis}[
+      x=3.5cm,y=3.5cm,
+      axis lines=middle,
+      ymajorgrids=true,
+      xmajorgrids=true,
+      xmin=-1.4897960268735306,
+      xmax=1.4113322493774605,
+      ymin=-0.6324109094708331,
+      ymax=0.6864784028322021,
+      xtick={-1.4000000000000001,-1.2000000000000002,...,1.4000000000000001},
+      ytick={-0.6000000000000001,-0.4000000000000001,...,0.6000000000000001},]
+        \clip(-1.4897960268735306,-0.6324109094708331) rectangle (1.4113322493774605,0.6864784028322021);
+        \draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-1.4897960268735306:1.4113322493774605] plot(\x,{(\x)^(3.0)-(\x)});
+        \draw[line width=4.pt] (-1.4255644045211102,0.5794256989115012) -- (-0.9973535888383072,0.5794256989115012);
+        \draw [line width=2.pt,color=ffxfqq,domain=-1.4897960268735306:1.4113322493774605] plot(\x,{(--0.1-0.*\x)/1.});
+        \begin{scriptsize}
+          \draw[color=qqwuqq] (-1.2028947803660526,-0.6035066794122439) node {$f$};
+          \draw [fill=black] (-1.2157411048365367,0.5794256989115012) circle (2.5pt);
+          \draw[color=black] (-1.1879074018171543,0.6297404697542306) node {$a = -0.1$};
+          \draw[color=ffxfqq] (-1.4726675942462186,0.08591273383706993) node {$g$};
+        \end{scriptsize}
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
+
+
+  したがって，
+  \begin{itemize}
+    \item $a = \pm\frac{2}{3\sqrt{3}}$のとき，解の個数は二つ．
+    \item $-\frac{2}{3\sqrt{3}} < a < \frac{2}{3\sqrt{3}}$のとき，解の個数は三つ．
+    \item $a < -\frac{2}{3\sqrt{3}}, \; \frac{2}{3\sqrt{3}} < a$のとき，解の個数は一つ．
+  \end{itemize}
+
+\section{}
+  「極値がただ一つ存在する」とは，「$f^{\prime}(x) = 0$を満たす$x$がただ一つ」
+  ということである．
+  つまり今回の場合だと，$3x^2 -2x +a = 0$を満たす$x$が一つだけということである．
+  二次方程式の解の判別式を用いると，$(-2)^2 - 4\times 3\times a = 0$であればよいので，
+  $a = \frac{1}{3}$.
+
+\section{}
+  $\frac{d}{dx}\int_{-1}^x f(t) dt = f(x)$だから，問題文の両辺を微分する．
+  \begin{align*}
+    \frac{d}{dx}\int_{-1}^x f(t) dt &= \frac{d}{dx}(x^3 - x)\\
+    \Leftrightarrow\qquad f(x) &= 3x^2 -1
+  \end{align*}
+
+\section{}
+  以下の図の領域の面積を求める．
+  \definecolor{qqffqq}{rgb}{0.,1.,0.}
+  \definecolor{ffqqqq}{rgb}{1.,0.,0.}
+  \definecolor{qqqqff}{rgb}{0.,0.,1.}
+  \begin{center}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+    \begin{axis}[
+    x=1.0cm,y=1.0cm,
+    axis lines=middle,
+    ymajorgrids=true,
+    xmajorgrids=true,
+    xmin=-4.4616158657930525,
+    xmax=5.323057303779558,
+    ymin=-7.106177872478542,
+    ymax=5.236798257124191,
+    xtick={-4.0,-3.0,...,5.0},
+    ytick={-6.0,-4.0,...,4.0},]
+    \clip(-4.4616158657930525,-7.106177872478542) rectangle (5.323057303779558,5.236798257124191);
+    \draw [samples=50,rotate around={0.:(0.5,-6.25)},xshift=0.5cm,yshift=-6.25cm,line width=2.pt,color=qqqqff,domain=-5.0:5.0)] plot (\x,{(\x)^2/2/0.5});
+    \draw [samples=50,rotate around={-180.:(0.5,4.5)},xshift=0.5cm,yshift=4.5cm,line width=2.pt,color=ffqqqq,domain=-3.5:3.5)] plot (\x,{(\x)^2/2/0.25});
+    \draw[line width=0.pt,color=qqffqq,fill=qqffqq,fill opacity=0.25](0.5087461439511863,4.499847032873048)--(0.4697334314722195,4.498167835694073)--(0.43072071899325265,4.490400750193969)--(0.3917080065142857,4.476545697503865)--(0.35269529403531885,4.456602677623761)--(0.313682581556352,4.430571611684782)--(0.2746698690773851,4.398452657424676)--(0.2356571565984182,4.360245735974569)--(0.19664444411945134,4.315950847334461)--(0.15763173164048447,4.26556791263548)--(0.11861901916151757,4.209097089615371)--(0.0796063066825507,4.146538299405261)--(0.04059359420358381,4.077891542005151)--(0.0015808817246169306,4.003156738546166)--(-0.03743183075434995,3.922334046766055)--(-0.07644454323331683,3.835423308927069)--(-0.11545725571228371,3.7424247616358284)--(-0.15446996819125058,3.643338168285714)--(-0.19348268067021748,3.5381635288767264)--(-0.23249539314918435,3.426901001146611)--(-0.27150810562815125,3.309550427357621)--(-0.3105208181071181,3.186111965247504)--(-0.349533530586085,3.0565856148162593)--(-0.38854624306505187,2.920971218326141)--(-0.42755895554401874,2.7792687757771484)--(-0.46657166802298566,2.6314784449070285)--(-0.5055843805019525,2.4776000679780346)--(-0.5445970929809194,2.3176338027279133)--(-0.5836098054598863,2.151579491418918)--(-0.6226225179388531,1.9794374495265412)--(-0.66163523041782,1.801207046099798)--(-0.7006479428967869,1.6168889120896737)--(-0.7396606553757538,1.426483047496168)--(-0.7786733678547207,1.229988821368296)--(-0.8176860803336876,1.0274068646570425)--(-0.837192436573171,0.9238327901604649)--(-0.8566987928126545,0.8187368618869152)--(-0.8762051490521379,0.7121187643609006)--(-0.8957115052916214,0.6039788130579139)--(-0.9152178615311047,0.4943166925024624)--(-0.9347242177705882,0.3831327181700388)--(-0.9542305740100716,0.270426890060643)--(-0.9737369302495551,0.15619889269878245)--(-0.9932432864890386,0.04044904155994976)--(-1.012749642728522,-0.0768229788313478)--(-1.0322559989680054,-0.19561716847511018)--(-1.0517623552074888,-0.3159325809448592)--(-1.0712687114469723,-0.4377704781425658)--(-1.0907750676864558,-0.56113086006823)--(-1.110281423925939,-0.6860124648198809)--(-1.1297877801654226,-0.8124165542994893)--(-1.149294136404906,-0.9403424975560698)--(-1.1688004926443896,-1.0697902945896225)--(-1.1883068488838728,-1.2007599454001472)--(-1.2078132051233563,-1.3332520809386295)--(-1.2273195613628398,-1.4672654393030986)--(-1.2468259176023233,-1.602801282395525)--(-1.2663322738418068,-1.7398596102159092)--(-1.28583863008129,-1.8784391608622801)--(-1.3053449863207736,-2.018541196236608)--(-1.324851342560257,-2.160165085387909)--(-1.3443576987997405,-2.3033108283161816)--(-1.3638640550392238,-2.447978425021426)--(-1.3833704112787073,-2.5941685064546283)--(-1.3929272379710063,-2.66653729322174)--(-1.3638640550392238,-2.7760104733222457)--(-1.324851342560257,-2.9199177740899898)--(-1.28583863008129,-3.0607801054018187)--(-1.2468259176023233,-3.198599360110689)--(-1.2078132051233563,-3.3333742763146295)--(-1.1688004926443896,-3.4651048540136404)--(-1.1297877801654226,-3.5937917241587067)--(-1.0907750676864558,-3.7194348867498292)--(-1.0517623552074888,-3.842033710836022)--(-1.012749642728522,-3.9615888273682702)--(-0.9737369302495551,-4.07809960539559)--(-0.9347242177705882,-4.191566675868963)--(-0.8957115052916214,-4.301989407837408)--(-0.8566987928126545,-4.4093684322519096)--(-0.8176860803336876,-4.51370311816148)--(-0.7786733678547207,-4.614994727468092)--(-0.7396606553757538,-4.71324136731879)--(-0.7006479428967869,-4.808444299615542)--(-0.66163523041782,-4.900603524358351)--(-0.6226225179388531,-4.98971841059623)--(-0.5836098054598863,-5.0757895892801645)--(-0.5445970929809194,-5.158817060410154)--(-0.5055843805019525,-5.238800193035216)--(-0.46657166802298566,-5.315738987155346)--(-0.42755895554401874,-5.389634073721533)--(-0.38854624306505187,-5.460486083684761)--(-0.349533530586085,-5.528293124192074)--(-0.3105208181071181,-5.593056457145443)--(-0.27150810562815125,-5.6547748206428965)--(-0.23249539314918435,-5.713450738488376)--(-0.19348268067021748,-5.769081686877942)--(-0.15446996819125058,-5.821668927713563)--(-0.11545725571228371,-5.871212460995239)--(-0.07644454323331683,-5.9177122867229714)--(-0.03743183075434995,-5.961167142994789)--(0.0015808817246169306,-6.001578291712661)--(0.04059359420358381,-6.0389457328765905)--(0.0796063066825507,-6.073269466486575)--(0.11861901916151757,-6.104548230640645)--(0.15763173164048447,-6.13278454914274)--(0.19664444411945134,-6.157975898188922)--(0.2356571565984182,-6.180122277779187)--(0.2746698690773851,-6.1992262117174795)--(0.313682581556352,-6.2152864381018285)--(0.35269529403531885,-6.228301695030261)--(0.3917080065142857,-6.23827324440475)--(0.43072071899325265,-6.245199824323324)--(0.4697334314722195,-6.2490839585899245)--(0.5087461439511863,-6.24992312340061)--(0.5477588564301533,-6.2477185806573505)--(0.5867715689091202,-6.242470330360147)--(0.6257842813880871,-6.2341783725090005)--(0.6647969938670539,-6.222841445201937)--(0.7038097063460208,-6.208462072242901)--(0.7428224188249877,-6.191037729827951)--(0.7818351313039545,-6.170568417957084)--(0.8208478437829214,-6.147056660434245)--(0.8598605562618883,-6.12049993345549)--(0.8988732687408552,-6.090899498922791)--(0.937885981219822,-6.058255356836149)--(0.976898693698789,-6.0225675071955616)--(1.0159114061777559,-5.98383595000103)--(1.0549241186567226,-5.9420594233505835)--(1.0939368311356896,-5.897239189146193)--(1.1329495436146564,-5.849375247387857)--(1.1719622560936234,-5.798466336173607)--(1.2109749685725903,-5.744514979307383)--(1.249987681051557,-5.687518652985244)--(1.289000393530524,-5.627478619109162)--(1.3280131060094909,-5.564394877679135)--(1.3670258184884578,-5.498266166793193)--(1.4060385309674246,-5.4290937483533055)--(1.4450512434463916,-5.356877622359475)--(1.4840639559253583,-5.281618419762686)--(1.5230766684043253,-5.203314247709981)--(1.562089380883292,-5.121966368103332)--(1.601102093362259,-5.0375741499917535)--(1.640114805841226,-4.95013822432623)--(1.6791275183201928,-4.859658591106763)--(1.7181402307991598,-4.766134619382367)--(1.7571529432781265,-4.669566309153041)--(1.7961656557570935,-4.569954291369769)--(1.8351783682360603,-4.467298566032555)--(1.8741910807150273,-4.361599133141396)--(1.913203793193994,-4.252854730794321)--(1.952216505672961,-4.141067251844288)--(1.9912292181519278,-4.026235434389326)--(2.0302419306308948,-3.908359909380419)--(2.0692546431098617,-3.7874400458665822)--(2.1082673555888287,-3.6634758438478157)--(2.1472800680677953,-3.536468565226091)--(2.1862927805467622,-3.406416948099436)--(2.225305493025729,-3.2733209924678515)--(2.264318205504696,-3.1371813292823227)--(2.3033309179836627,-2.9979973275918645)--(2.3423436304626297,-2.8557702492984474)--(2.3813563429415967,-2.710498201549115)--(2.39292531386679,-2.6665161107940363)--(2.3929253138667907,-2.6665161107940363)--(2.3813563429415967,-2.579003599518673)--(2.361849986702113,-2.4329706248808547)--(2.3423436304626297,-2.2884601349709937)--(2.3228372742231462,-2.145471498838105)--(2.3033309179836627,-2.004004716482189)--(2.2838245617441797,-1.8640604188542298)--(2.264318205504696,-1.7256373440522574)--(2.2448118492652127,-1.5887367539782427)--(2.225305493025729,-1.4533580176812)--(2.2057991367862457,-1.3195011351611294)--(2.1862927805467622,-1.1871667373690167)--(2.1667864243072787,-1.0563541933538758)--(2.1472800680677953,-0.9270635031157071)--(2.1277737118283118,-0.7992946666545104)--(2.1082673555888287,-0.6730476839702859)--(2.0887609993493452,-0.5483231860140191)--(2.0692546431098617,-0.42512054183472425)--(2.0497482868703782,-0.3034397514324016)--(2.0302419306308948,-0.18328081480705102)--(2.0107355743914113,-0.06464373195867257)--(1.9912292181519278,0.05247086616174831)--(1.9717228619124445,0.16806361050519708)--(1.952216505672961,0.2821345010716737)--(1.9327101494334775,0.39468322238568554)--(1.913203793193994,0.5057100899227253)--(1.8936974369545108,0.6152147882073)--(1.8741910807150273,0.7231976327149028)--(1.8546847244755438,0.8296586234455334)--(1.8351783682360603,0.9345974449236992)--(1.7961656557570935,1.1399092110736218)--(1.7571529432781265,1.3391329311646702)--(1.7181402307991598,1.5322686051968448)--(1.6791275183201928,1.7193165486456383)--(1.640114805841226,1.900276446035558)--(1.601102093362259,2.0751482973666038)--(1.562089380883292,2.243932418114268)--(1.5230766684043253,2.406628177327566)--(1.4840639559253583,2.5632362059574825)--(1.4450512434463916,2.7137563462662717)--(1.4060385309674246,2.8581882827784404)--(1.3670258184884578,2.9965324887072278)--(1.3280131060094909,3.1287886485771415)--(1.289000393530524,3.2549567623881814)--(1.249987681051557,3.3750369878780937)--(1.2109749685725903,3.489029167309132)--(1.1719622560936234,3.5969334584190427)--(1.1329495436146564,3.69874970347008)--(1.0939368311356896,3.794478060199989)--(1.0549241186567226,3.884118370871024)--(1.0159114061777559,3.9676708720898053)--(0.976898693698789,4.04513524838084)--(0.937885981219822,4.116511736350746)--(0.8988732687408552,4.181800257130651)--(0.8598605562618883,4.241000731851683)--(0.8208478437829214,4.294113318251587)--(0.7818351313039545,4.3411379374614905)--(0.7428224188249877,4.3820745106125205)--(0.7038097063460208,4.416923195442422)--(0.6647969938670539,4.445683913082323)--(0.6257842813880871,4.468356663532224)--(0.5867715689091202,4.48494136792325)--(0.5477588564301533,4.49543818399315)--(0.5087461439511863,4.499847032873048);
+    \draw[line width=0.pt,color=qqffqq,fill=qqffqq,fill opacity=0.25](0.5087461439511863,4.499847032873048)--(0.4697334314722195,4.498167835694073)--(0.43072071899325265,4.490400750193969)--(0.3917080065142857,4.476545697503865)--(0.35269529403531885,4.456602677623761)--(0.313682581556352,4.430571611684782)--(0.2746698690773851,4.398452657424676)--(0.2356571565984182,4.360245735974569)--(0.19664444411945134,4.315950847334461)--(0.15763173164048447,4.26556791263548)--(0.11861901916151757,4.209097089615371)--(0.0796063066825507,4.146538299405261)--(0.04059359420358381,4.077891542005151)--(0.0015808817246169306,4.003156738546166)--(-0.03743183075434995,3.922334046766055)--(-0.07644454323331683,3.835423308927069)--(-0.11545725571228371,3.7424247616358284)--(-0.15446996819125058,3.643338168285714)--(-0.19348268067021748,3.5381635288767264)--(-0.23249539314918435,3.426901001146611)--(-0.27150810562815125,3.309550427357621)--(-0.3105208181071181,3.186111965247504)--(-0.349533530586085,3.0565856148162593)--(-0.38854624306505187,2.920971218326141)--(-0.42755895554401874,2.7792687757771484)--(-0.46657166802298566,2.6314784449070285)--(-0.5055843805019525,2.4776000679780346)--(-0.5445970929809194,2.3176338027279133)--(-0.5836098054598863,2.151579491418918)--(-0.6226225179388531,1.9794374495265412)--(-0.66163523041782,1.801207046099798)--(-0.7006479428967869,1.6168889120896737)--(-0.7396606553757538,1.426483047496168)--(-0.7786733678547207,1.229988821368296)--(-0.8176860803336876,1.0274068646570425)--(-0.837192436573171,0.9238327901604649)--(-0.8566987928126545,0.8187368618869152)--(-0.8762051490521379,0.7121187643609006)--(-0.8957115052916214,0.6039788130579139)--(-0.9152178615311047,0.4943166925024624)--(-0.9347242177705882,0.3831327181700388)--(-0.9542305740100716,0.270426890060643)--(-0.9737369302495551,0.15619889269878245)--(-0.9932432864890386,0.04044904155994976)--(-1.012749642728522,-0.0768229788313478)--(-1.0322559989680054,-0.19561716847511018)--(-1.0517623552074888,-0.3159325809448592)--(-1.0712687114469723,-0.4377704781425658)--(-1.0907750676864558,-0.56113086006823)--(-1.110281423925939,-0.6860124648198809)--(-1.1297877801654226,-0.8124165542994893)--(-1.149294136404906,-0.9403424975560698)--(-1.1688004926443896,-1.0697902945896225)--(-1.1883068488838728,-1.2007599454001472)--(-1.2078132051233563,-1.3332520809386295)--(-1.2273195613628398,-1.4672654393030986)--(-1.2468259176023233,-1.602801282395525)--(-1.2663322738418068,-1.7398596102159092)--(-1.28583863008129,-1.8784391608622801)--(-1.3053449863207736,-2.018541196236608)--(-1.324851342560257,-2.160165085387909)--(-1.3443576987997405,-2.3033108283161816)--(-1.3638640550392238,-2.447978425021426)--(-1.3833704112787073,-2.5941685064546283)--(-1.3929272379710063,-2.66653729322174)--(-1.3638640550392238,-2.7760104733222457)--(-1.324851342560257,-2.9199177740899898)--(-1.28583863008129,-3.0607801054018187)--(-1.2468259176023233,-3.198599360110689)--(-1.2078132051233563,-3.3333742763146295)--(-1.1688004926443896,-3.4651048540136404)--(-1.1297877801654226,-3.5937917241587067)--(-1.0907750676864558,-3.7194348867498292)--(-1.0517623552074888,-3.842033710836022)--(-1.012749642728522,-3.9615888273682702)--(-0.9737369302495551,-4.07809960539559)--(-0.9347242177705882,-4.191566675868963)--(-0.8957115052916214,-4.301989407837408)--(-0.8566987928126545,-4.4093684322519096)--(-0.8176860803336876,-4.51370311816148)--(-0.7786733678547207,-4.614994727468092)--(-0.7396606553757538,-4.71324136731879)--(-0.7006479428967869,-4.808444299615542)--(-0.66163523041782,-4.900603524358351)--(-0.6226225179388531,-4.98971841059623)--(-0.5836098054598863,-5.0757895892801645)--(-0.5445970929809194,-5.158817060410154)--(-0.5055843805019525,-5.238800193035216)--(-0.46657166802298566,-5.315738987155346)--(-0.42755895554401874,-5.389634073721533)--(-0.38854624306505187,-5.460486083684761)--(-0.349533530586085,-5.528293124192074)--(-0.3105208181071181,-5.593056457145443)--(-0.27150810562815125,-5.6547748206428965)--(-0.23249539314918435,-5.713450738488376)--(-0.19348268067021748,-5.769081686877942)--(-0.15446996819125058,-5.821668927713563)--(-0.11545725571228371,-5.871212460995239)--(-0.07644454323331683,-5.9177122867229714)--(-0.03743183075434995,-5.961167142994789)--(0.0015808817246169306,-6.001578291712661)--(0.04059359420358381,-6.0389457328765905)--(0.0796063066825507,-6.073269466486575)--(0.11861901916151757,-6.104548230640645)--(0.15763173164048447,-6.13278454914274)--(0.19664444411945134,-6.157975898188922)--(0.2356571565984182,-6.180122277779187)--(0.2746698690773851,-6.1992262117174795)--(0.313682581556352,-6.2152864381018285)--(0.35269529403531885,-6.228301695030261)--(0.3917080065142857,-6.23827324440475)--(0.43072071899325265,-6.245199824323324)--(0.4697334314722195,-6.2490839585899245)--(0.5087461439511863,-6.24992312340061)--(0.5477588564301533,-6.2477185806573505)--(0.5867715689091202,-6.242470330360147)--(0.6257842813880871,-6.2341783725090005)--(0.6647969938670539,-6.222841445201937)--(0.7038097063460208,-6.208462072242901)--(0.7428224188249877,-6.191037729827951)--(0.7818351313039545,-6.170568417957084)--(0.8208478437829214,-6.147056660434245)--(0.8598605562618883,-6.12049993345549)--(0.8988732687408552,-6.090899498922791)--(0.937885981219822,-6.058255356836149)--(0.976898693698789,-6.0225675071955616)--(1.0159114061777559,-5.98383595000103)--(1.0549241186567226,-5.9420594233505835)--(1.0939368311356896,-5.897239189146193)--(1.1329495436146564,-5.849375247387857)--(1.1719622560936234,-5.798466336173607)--(1.2109749685725903,-5.744514979307383)--(1.249987681051557,-5.687518652985244)--(1.289000393530524,-5.627478619109162)--(1.3280131060094909,-5.564394877679135)--(1.3670258184884578,-5.498266166793193)--(1.4060385309674246,-5.4290937483533055)--(1.4450512434463916,-5.356877622359475)--(1.4840639559253583,-5.281618419762686)--(1.5230766684043253,-5.203314247709981)--(1.562089380883292,-5.121966368103332)--(1.601102093362259,-5.0375741499917535)--(1.640114805841226,-4.95013822432623)--(1.6791275183201928,-4.859658591106763)--(1.7181402307991598,-4.766134619382367)--(1.7571529432781265,-4.669566309153041)--(1.7961656557570935,-4.569954291369769)--(1.8351783682360603,-4.467298566032555)--(1.8741910807150273,-4.361599133141396)--(1.913203793193994,-4.252854730794321)--(1.952216505672961,-4.141067251844288)--(1.9912292181519278,-4.026235434389326)--(2.0302419306308948,-3.908359909380419)--(2.0692546431098617,-3.7874400458665822)--(2.1082673555888287,-3.6634758438478157)--(2.1472800680677953,-3.536468565226091)--(2.1862927805467622,-3.406416948099436)--(2.225305493025729,-3.2733209924678515)--(2.264318205504696,-3.1371813292823227)--(2.3033309179836627,-2.9979973275918645)--(2.3423436304626297,-2.8557702492984474)--(2.3813563429415967,-2.710498201549115)--(2.39292531386679,-2.6665161107940363)--(2.3929253138667907,-2.6665161107940363)--(2.3813563429415967,-2.579003599518673)--(2.361849986702113,-2.4329706248808547)--(2.3423436304626297,-2.2884601349709937)--(2.3228372742231462,-2.145471498838105)--(2.3033309179836627,-2.004004716482189)--(2.2838245617441797,-1.8640604188542298)--(2.264318205504696,-1.7256373440522574)--(2.2448118492652127,-1.5887367539782427)--(2.225305493025729,-1.4533580176812)--(2.2057991367862457,-1.3195011351611294)--(2.1862927805467622,-1.1871667373690167)--(2.1667864243072787,-1.0563541933538758)--(2.1472800680677953,-0.9270635031157071)--(2.1277737118283118,-0.7992946666545104)--(2.1082673555888287,-0.6730476839702859)--(2.0887609993493452,-0.5483231860140191)--(2.0692546431098617,-0.42512054183472425)--(2.0497482868703782,-0.3034397514324016)--(2.0302419306308948,-0.18328081480705102)--(2.0107355743914113,-0.06464373195867257)--(1.9912292181519278,0.05247086616174831)--(1.9717228619124445,0.16806361050519708)--(1.952216505672961,0.2821345010716737)--(1.9327101494334775,0.39468322238568554)--(1.913203793193994,0.5057100899227253)--(1.8936974369545108,0.6152147882073)--(1.8741910807150273,0.7231976327149028)--(1.8546847244755438,0.8296586234455334)--(1.8351783682360603,0.9345974449236992)--(1.7961656557570935,1.1399092110736218)--(1.7571529432781265,1.3391329311646702)--(1.7181402307991598,1.5322686051968448)--(1.6791275183201928,1.7193165486456383)--(1.640114805841226,1.900276446035558)--(1.601102093362259,2.0751482973666038)--(1.562089380883292,2.243932418114268)--(1.5230766684043253,2.406628177327566)--(1.4840639559253583,2.5632362059574825)--(1.4450512434463916,2.7137563462662717)--(1.4060385309674246,2.8581882827784404)--(1.3670258184884578,2.9965324887072278)--(1.3280131060094909,3.1287886485771415)--(1.289000393530524,3.2549567623881814)--(1.249987681051557,3.3750369878780937)--(1.2109749685725903,3.489029167309132)--(1.1719622560936234,3.5969334584190427)--(1.1329495436146564,3.69874970347008)--(1.0939368311356896,3.794478060199989)--(1.0549241186567226,3.884118370871024)--(1.0159114061777559,3.9676708720898053)--(0.976898693698789,4.04513524838084)--(0.937885981219822,4.116511736350746)--(0.8988732687408552,4.181800257130651)--(0.8598605562618883,4.241000731851683)--(0.8208478437829214,4.294113318251587)--(0.7818351313039545,4.3411379374614905)--(0.7428224188249877,4.3820745106125205)--(0.7038097063460208,4.416923195442422)--(0.6647969938670539,4.445683913082323)--(0.6257842813880871,4.468356663532224)--(0.5867715689091202,4.48494136792325)--(0.5477588564301533,4.49543818399315)--(0.5087461439511863,4.499847032873048);
+    \begin{scriptsize}
+    \draw[color=qqqqff] (-0.06560328236187979,-5.069690186103552) node {$h$};
+    \draw[color=ffqqqq] (0.44084978024539817,4.192710661571531) node {$p$};
+    \end{scriptsize}
+    \end{axis}
+    \end{tikzpicture}
+  \end{center}
+
+  そこでまずは二つの放物線の交点の$x$座標を求める必要がある．
+  そこで，方程式
+  \[
+    (x + 2)(x - 3) = -2(x+1)(x-2)
+  \]
+  を解く．方程式の解は$x = \frac{3 \pm \sqrt{129}}{6}$である．
+  しかし，これでは計算が余りにも複雑になるので，方程式の解を$\alpha, \beta$とおく．
+  ただし，$\alpha < \beta$とする．
+  面積を求めるので，二つの関数の差を定積分する．積分範囲は
+  $\alpha$から$\beta$までである．
+  \begin{align*}
+    & \int_{\alpha}^{\beta} (-2(x+1)(x-2) - (x + 2)(x - 3)) dx\\
+    =& \int_{\alpha}^{\beta} (-3x^2 +3x +10) dx\\
+    =& \left[-x^3 + \frac{3}{2}x^2  + 10x\right]_{\alpha}^{\beta}\\
+    =& (-\beta^3 + \frac{3}{2}\beta^2  + 10\beta) - (-\alpha^3 + \frac{3}{2}\alpha^2  + 10\alpha)\\
+    =& (\alpha^3 -\beta^3) + \frac{3}{2}(\beta^2 - \alpha^2) +10(\beta - \alpha)\\
+    =& (\alpha - \beta)(\alpha^2 + \alpha\beta + \beta^2) + \frac{3}{2}(\beta - \alpha)(\beta + \alpha) +10(\beta - \alpha)
+  \end{align*}
+
+  $\alpha,\beta$の値を上の式に代入すればよいが，それでは計算の煩雑さが解決されていないので別の方法を試みる．
+  定積分の結果は$\alpha$と$\beta$により対称式のような形になっているので，
+  解と係数の関係を用いる．
+  $\alpha, \beta$はそもそも方程式$(x + 2)(x - 3) = -2(x+1)(x-2)$の解であった．
+  この方程式は両辺を展開して整理すると$3x^2 - 3x -10 =0$である．
+  したがって，解と係数の関係より
+  \[
+    \begin{cases}
+      \alpha + \beta = 1\\
+      \alpha\beta = -\frac{10}{3}
+    \end{cases}
+  \]
+  である．この二つのふたつから
+  $\alpha^2 + \alpha\beta + \beta^2, \beta - \alpha$
+  のそれぞれ値を求める．
+  \begin{itemize}
+    \item $\alpha < \beta$としているので，$\beta - \alpha > 0$である．
+    \begin{align*}
+      &\beta - \alpha\\
+      =& \sqrt{(\beta - \alpha)^2}\\
+      =&\sqrt{\beta^2 -2\beta\alpha + \alpha^2}\\
+      =&\sqrt{\beta^2 +2\beta\alpha + \alpha^2 -2\beta\alpha -2\beta\alpha}\\
+      =&\sqrt{(\beta + \alpha)^2 - 4\alpha\beta}\\
+      =&\sqrt{1^2 -4 \times \left(-\frac{10}{3} \right)}\\
+      =&\sqrt{\frac{43}{3}}
+    \end{align*}
+    \item $\alpha^2 + \alpha\beta + \beta^2 = (\alpha + \beta)^2 - \alpha\beta$だから,
+    \[
+      \alpha^2 + \alpha\beta + \beta^2 = 1^2 - \left(-\frac{10}{3}\right) = \frac{13}{3}
+    \]
+    以上により求める値は次のようになる．
+    \begin{align*}
+      & \int_{\alpha}^{\beta} (-2(x+1)(x-2) - (x + 2)(x - 3)) dx\\
+      =& (\alpha - \beta)(\alpha^2 + \alpha\beta + \beta^2) + \frac{3}{2}(\beta - \alpha)(\beta + \alpha) +10(\beta - \alpha)\\
+      =& -\sqrt{\frac{43}{3}} \times \frac{13}{3} + \frac{3}{2}\times\sqrt{\frac{43}{3}}\times 1 +10 \times \sqrt{\frac{43}{3}}\\
+      =& \frac{95}{6}\sqrt{\frac{43}{3}}
+    \end{align*}
+  \end{itemize}
+
+\section{}
+  求める面積の領域は次のようなものである．(濃い紫色の部分)
+  直線$y = \frac{5}{3}x$と放物線$y = -2x^2 + 2$の交点の$x$座標は
+  $x = \frac{2}{3}$である．
+  直線$x = \frac{2}{3}$で領域が二つに分かれ，積分が異なることに注意しよう．
+  図のように，左側を「あ」，右側を「い」とすることにする．
+
+  \begin{center}
+    \definecolor{ffqqqq}{rgb}{1.,0.,0.}
+    \definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
+    \definecolor{qqffff}{rgb}{0.,1.,1.}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+    \begin{axis}[
+    x=3.0cm,y=3.0cm,
+    axis lines=middle,
+    ymajorgrids=true,
+    xmajorgrids=true,
+    xmin=-0.29289187801128186,
+    xmax=1.7574053451202212,
+    ymin=-0.57219431984107,
+    ymax=2.0869067184866745,
+    xtick={-0.2,0.0,...,1.6},
+    ytick={-0.4,-0.2,...,2.0},]
+    \clip(-0.29289187801128186,-0.57219431984107) rectangle (1.7574053451202212,2.0869067184866745);
+    \draw[line width=0.pt,color=qqffff,fill=qqffff,fill opacity=0.25](-6.497373404615607E-4,2.0869067184866745)--(-6.497373404615607E-4,-0.57219431984107)--(1.0003371224375448,-0.57219431984107)--(1.0003371224375448,2.0869067184866745);
+    \draw[line width=0.pt,color=qqffff,fill=qqffff,fill opacity=0.25](-6.497373404615607E-4,2.0869067184866745)--(-6.497373404615607E-4,-0.57219431984107)--(1.0003371224375448,-0.57219431984107)--(1.0003371224375448,2.0869067184866745);
+    \draw[line width=0.pt,color=xdxdff,fill=xdxdff,fill opacity=0.25](1.2521439652539537,2.0869067184866745)--(5.639074005475271E-8,2.791831406908874E-8)--(1.7574053451202212,2.791831406908874E-8)--(1.7574053451202212,2.0869067184866745);
+    \draw[line width=0.pt,color=xdxdff,fill=xdxdff,fill opacity=0.25](1.2521439652539537,2.0869067184866745)--(5.639074005475271E-8,2.791831406908874E-8)--(1.7574053451202212,2.791831406908874E-8)--(1.7574053451202212,2.0869067184866745);
+    \draw[line width=0.pt,color=ffqqqq,fill=ffqqqq,fill opacity=0.25](0.0034581200133328807,1.9999760831912696)--(-0.004730628453421465,1.999955243650756)--(-0.01291937692017581,1.9996661831672768)--(-0.021108125386930156,1.9991088932452998)--(-0.029296873853684503,1.9982833823803574)--(-0.037485622320438845,1.9971896590679816)--(-0.04567437078719319,1.995827706317108)--(-0.05386311925394754,1.9941975326232686)--(-0.062051867720701884,1.9922991294909318)--(-0.07024061618745622,1.9901325139111614)--(-0.07842936465421058,1.9876976688928931)--(-0.08661811312096492,1.9849946029316594)--(-0.09480686158771927,1.9820233160274603)--(-0.10299561005447361,1.9787838081802953)--(-0.11118435852122796,1.975276079390165)--(-0.1193731069879823,1.9715001211615366)--(-0.12756185545473664,1.967455941989943)--(-0.135750603921491,1.9631435503709158)--(-0.14393935238824535,1.9585629293133908)--(-0.1521281008549997,1.9537140788173681)--(-0.16031684932175402,1.948597015873912)--(-0.16850559778850838,1.9432117234919581)--(-0.17669434625526273,1.937558218662571)--(-0.18488309472201706,1.9316364758991538)--(-0.1930718431887714,1.9254465291838354)--(-0.20126059165552576,1.918988344534487)--(-0.20944934012228011,1.9122619559332377)--(-0.21763808858903444,1.905267329397958)--(-0.2258268370557888,1.898004481919713)--(-0.23401558552254315,1.8904734134985024)--(-0.2422043339892975,1.8826741241343263)--(-0.25039308245605185,1.8746066138271844)--(-0.2585818309228062,1.8662708655860127)--(-0.2667705793895605,1.8576669133929398)--(-0.2749593278563149,1.8487947402569014)--(-0.2831480763230692,1.8396543291868328)--(-0.29133682478982353,1.8302457141648631)--(-0.2995255732565779,1.8205688612088635)--(-0.3077143217233323,1.8106237873098983)--(-0.3159030701900866,1.8004104924679676)--(-0.3159030701900866,-0.57219431984107)--(1.1438333592500476,-0.57219431984107)--(1.1416941568921868,-0.57219431984107)--(1.1335054084254326,-0.5696690398824159)--(1.1253166599586781,-0.5326752788517618)--(1.117127911491924,-0.4959495688534291)--(1.1089391630251695,-0.4594921817444485)--(1.100750414558415,-0.4233028456677893)--(1.0925616660916608,-0.3873821043375129)--(1.0843729176249064,-0.3517291421825271)--(1.0761841691581522,-0.3163447747739242)--(1.0679954206913977,-0.2812284583976426)--(1.0598066722246435,-0.24638046491071314)--(1.051617923757889,-0.211800522456105)--(1.0434291752911347,-0.17748890289084898)--(1.0352404268243804,-0.1434454702864297)--(1.027051678357626,-0.10967036057136252)--(1.0188629298908718,-0.07616330188861668)--(1.0106741814241174,-0.042924566095222945)--(1.002485432957363,-0.009954153191181318)--(0.9942966844906087,0.02274820868053896)--(0.9861079360238543,0.055182247662907136)--(0.9779191875571,0.08734809968443857)--(0.9697304390903456,0.11924576474513329)--(0.9615416906235913,0.1508751069164759)--(0.953352942156837,0.18223639805549718)--(0.9451641936900825,0.21332923037665097)--(0.9369754452233282,0.2441540116654834)--(0.9287866967565739,0.2747106059934791)--(0.9205979482898196,0.3049988774321227)--(0.9124091998230652,0.3350189619099296)--(0.9042204513563109,0.36477072349838435)--(0.8960317028895565,0.39425443405451777)--(0.8878429544228021,0.4234698217212991)--(0.8796542059560478,0.4524170224272437)--(0.8714654574892935,0.48109590024383614)--(0.8632767090225392,0.509506591099592)--(0.8550879605557847,0.537649094994511)--(0.8468992120890304,0.5655234119285932)--(0.8387104636222761,0.5931295419018388)--(0.8305217151555218,0.6204673489857323)--(0.8223329666887674,0.647536969108789)--(0.8141442182220131,0.674338402271009)--(0.8059554697552587,0.7008715125438769)--(0.7977667212885043,0.7271365717844235)--(0.78957797282175,0.753133308135618)--(0.7813892243549957,0.7788617215974603)--(0.7732004758882414,0.8043220840269814)--(0.7650117274214869,0.8295141235671503)--(0.7568229789547326,0.8544379761464824)--(0.7486342304879783,0.8790936417649778)--(0.740445482021224,0.9034809844941212)--(0.7322567335544696,0.9276001402624278)--(0.7240679850877153,0.9514511090698976)--(0.7158792366209609,0.9750338229522731)--(0.7076904881542065,0.9983483498738118)--(0.6995017396874522,1.021394621870256)--(0.6913129912206979,1.0441727069058637)--(0.6831242427539436,1.066682537016377)--(0.6749354942871891,1.0889241801660534)--(0.6667467458204348,1.1108975683906355)--(0.6585579973536805,1.132602701690123)--(0.6503692488869262,1.154039648028774)--(0.6421805004201718,1.175208407406588)--(0.6339917519534175,1.1961089118593078)--(0.6258030034866631,1.216741229351191)--(0.6176142550199087,1.2371052919179795)--(0.6094255065531544,1.2572010995596736)--(0.6012367580864001,1.2770287202405313)--(0.5930480096196458,1.2965880859962942)--(0.5848592611528913,1.3158792647912205)--(0.576670512686137,1.3349022566253101)--(0.5684817642193827,1.3536569935343052)--(0.5602930157526284,1.372143475518206)--(0.552104267285874,1.39036177054127)--(0.5439155188191197,1.4083118106392398)--(0.5357267703523653,1.4259936637763726)--(0.5275380218856109,1.443407261988411)--(0.5193492734188566,1.4605526732396128)--(0.5111605249521023,1.4774298295657202)--(0.502971776485348,1.494038798930991)--(0.4947830280185936,1.510379513371167)--(0.48659427955183926,1.5264520068683776)--(0.4784055310850849,1.5422562794226227)--(0.47021678261833055,1.557792365016031)--(0.4620280341515762,1.5730601956843449)--(0.45383928568482185,1.5880598054096933)--(0.4456505372180675,1.602791194192076)--(0.43746178875131314,1.6172543620314932)--(0.4292730402845588,1.6314493089279447)--(0.4210842918178045,1.6453760348814308)--(0.4128955433510501,1.6590345398919513)--(0.4047067948842958,1.6724248239595063)--(0.39651804641754146,1.6855468870840955)--(0.3883292979507871,1.6984007292657193)--(0.38014054948403275,1.7109863165222488)--(0.37195180101727837,1.7233037168179413)--(0.36376305255052405,1.7353528961706683)--(0.3555743040837697,1.747133820598301)--(0.34738555561701534,1.758646558065097)--(0.339196807150261,1.7698910406067982)--(0.3310080586835067,1.780867336187663)--(0.3228193102167523,1.7915753768434335)--(0.314630561749998,1.8020152135473027)--(0.30644181328324366,1.8121868293082062)--(0.2982530648164893,1.8220902241261443)--(0.29006431634973495,1.8317253810100524)--(0.2818755678829806,1.8410923339420593)--(0.2736868194162263,1.8501910489400362)--(0.2654980709494719,1.8590215429950476)--(0.2573093224827176,1.8675838330981578)--(0.24912057401596324,1.875877885267238)--(0.2409318255492089,1.8839037164933525)--(0.23274307708245456,1.8916613267765017)--(0.2245543286157002,1.8991506991256206)--(0.21636558014894586,1.9063718675228387)--(0.20817683168219153,1.913324814977091)--(0.19998808321543718,1.9200095414883778)--(0.19179933474868283,1.9264260300656344)--(0.18361058628192847,1.9325742976999256)--(0.17542183781517415,1.9384543613823157)--(0.1672330893484198,1.944066187130676)--(0.15904434088166544,1.9494097919360702)--(0.1508555924149111,1.9544851842940314)--(0.14266684394815676,1.9592923472134949)--(0.1344780954814024,1.9638312806944604)--(0.12628934701464806,1.9681020017279927)--(0.11810059854789372,1.972104493323027)--(0.10991185008113938,1.9758387724706281)--(0.10172310161438503,1.9793048221797314)--(0.09353435314763069,1.982502650945869)--(0.08534560468087633,1.9854322587690412)--(0.077156856214122,1.9880936371537155)--(0.06896810774736764,1.9904868030909566)--(0.0607793592806133,1.9926117395896996)--(0.052590610813858955,1.9944684551454774)--(0.04440186234710461,1.9960569497582894)--(0.03621311388035026,1.997377223428136)--(0.028024365413595917,1.9984292676594846)--(0.01983561694684157,1.9992130994434)--(0.011646868480087226,1.9997287017888175)--(0.0034581200133328807,1.9999760831912696);
+    \draw[line width=0.pt,color=ffqqqq,fill=ffqqqq,fill opacity=0.25](1.1438333592500476,-0.57219431984107)--(1.1498829053589412,-0.57219431984107)--(1.1580716538256957,-0.57219431984107)--(1.1662604022924499,-0.57219431984107)--(1.1744491507592043,-0.57219431984107)--(1.1826378992259585,-0.57219431984107)--(1.190826647692713,-0.57219431984107)--(1.1990153961594674,-0.57219431984107)--(1.2072041446262216,-0.57219431984107)--(1.215392893092976,-0.57219431984107)--(1.2235816415597303,-0.57219431984107)--(1.2317703900264847,-0.57219431984107)--(1.2399591384932391,-0.57219431984107)--(1.2481478869599933,-0.57219431984107)--(1.2563366354267478,-0.57219431984107)--(1.264525383893502,-0.57219431984107)--(1.2727141323602564,-0.57219431984107)--(1.2809028808270106,-0.57219431984107)--(1.289091629293765,-0.57219431984107)--(1.2972803777605195,-0.57219431984107)--(1.3054691262272737,-0.57219431984107)--(1.3136578746940282,-0.57219431984107)--(1.3218466231607824,-0.57219431984107)--(1.3300353716275368,-0.57219431984107)--(1.3382241200942913,-0.57219431984107)--(1.3464128685610455,-0.57219431984107)--(1.3546016170278,-0.57219431984107)--(1.3627903654945541,-0.57219431984107)--(1.3709791139613086,-0.57219431984107)--(1.379167862428063,-0.57219431984107)--(1.3873566108948172,-0.57219431984107)--(1.3955453593615716,-0.57219431984107)--(1.4037341078283259,-0.57219431984107)--(1.4119228562950803,-0.57219431984107)--(1.4201116047618347,-0.57219431984107)--(1.428300353228589,-0.57219431984107)--(1.4364891016953434,-0.57219431984107)--(1.4446778501620976,-0.57219431984107)--(1.452866598628852,-0.57219431984107)--(1.4610553470956062,-0.57219431984107)--(1.4692440955623607,-0.57219431984107)--(1.4774328440291151,-0.57219431984107)--(1.4856215924958693,-0.57219431984107)--(1.4938103409626238,-0.57219431984107)--(1.501999089429378,-0.57219431984107)--(1.5101878378961324,-0.57219431984107)--(1.5183765863628869,-0.57219431984107)--(1.526565334829641,-0.57219431984107)--(1.5347540832963955,-0.57219431984107)--(1.5429428317631497,-0.57219431984107)--(1.5511315802299042,-0.57219431984107)--(1.5593203286966586,-0.57219431984107)--(1.5675090771634128,-0.57219431984107)--(1.5756978256301672,-0.57219431984107)--(1.5838865740969215,-0.57219431984107)--(1.592075322563676,-0.57219431984107)--(1.6002640710304303,-0.57219431984107)--(1.6084528194971845,-0.57219431984107)--(1.616641567963939,-0.57219431984107)--(1.6248303164306932,-0.57219431984107)--(1.6330190648974476,-0.57219431984107)--(1.6412078133642019,-0.57219431984107)--(1.6493965618309563,-0.57219431984107)--(1.6575853102977107,-0.57219431984107)--(1.665774058764465,-0.57219431984107)--(1.6739628072312194,-0.57219431984107)--(1.6821515556979736,-0.57219431984107)--(1.690340304164728,-0.57219431984107)--(1.6985290526314825,-0.57219431984107)--(1.7067178010982367,-0.57219431984107)--(1.7149065495649911,-0.57219431984107)--(1.7230952980317453,-0.57219431984107)--(1.7312840464984998,-0.57219431984107)--(1.7394727949652542,-0.57219431984107)--(1.7476615434320084,-0.57219431984107)--(1.7558502918987628,-0.57219431984107)--(1.764039040365517,-0.57219431984107)--(1.7722277888322715,-0.57219431984107)--(1.780416537299026,-0.57219431984107)--(1.780416537299026,-0.57219431984107);
+    \draw [line width=2.pt,color=ffqqqq] (0.6666666666666666,-0.57219431984107) -- (0.6666666666666666,2.0869067184866745);
+    \draw (0.43426179483894817,0.3765301712205876) node[anchor=north west] {\textbf{あ}};
+    \draw (0.7219016970740075,0.3720760656287488) node[anchor=north west] {い};
+    \begin{scriptsize}
+    \draw[color=ffqqqq] (0.7034927433309638,2.057955032139722) node {$eq1$};
+    \end{scriptsize}
+    \end{axis}
+    \end{tikzpicture}
+  \end{center}
+
+  \begin{itemize}
+    \item 「あ」の面積．これは三角形である．
+    直線と放物線の交点の$x$座標は$\frac{5}{3}$だから，
+    $y$座標は$y = \frac{2}{3} \times \frac{5}{3} = \frac{10}{9}$である．
+    よって，求める面積は$\frac{1}{2} \times \frac{2}{3} \times \frac{10}{9} = \frac{10}{27}$
+    \item 「い」の面積．
+    \[
+      \int_{\frac{2}{3}}^{1} (-2x^2 + 2) dx = \frac{43}{81}
+    \]
+  \end{itemize}
+  以上により，領域の面積は$\frac{10}{27} + \frac{43}{81} = \frac{73}{81}$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.main-content {
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-content li {
+    margin-bottom: 10px;
+}
+
+.content-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; /* Vertically align items in the middle */
+    justify-content: space-between; /* Distribute space between items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.content-item-text {
+    flex-grow: 1; /* Allow text content to take up available space */
+    margin-right: 15px; /* Space between text and button */
+}
+
+.content-item h4 {
+    margin-top: 0;
+    margin-bottom: 5px; /* Reduce margin for tighter spacing */
+    color: #333; /* Darker color for filename */
+    font-weight: bold; /* Make filename bold */
+}
+
+.content-item p {
+    margin-bottom: 0; /* Remove bottom margin for tighter spacing */
+    line-height: 1.6;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #007bff; /* More distinct blue */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+}
+
+footer a {
+    color: #fff; /* Make footer links white for better contrast */
+    text-decoration: underline; /* Add underline for clarity as links */
+}
