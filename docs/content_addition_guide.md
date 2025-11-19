@@ -12,6 +12,7 @@
     <h4>[ファイル名またはタイトル]</h4>
     <p>[説明のプレースホルダー | Description placeholder]</p>
   </div>
+  <!-- ページに応じて以下のいずれか、または両方を配置します -->
   <!-- 閲覧ボタン (ブラウザで開く) -->
   <a href="[ファイルのパスまたは外部URL]" class="view-button" target="_blank">閲覧 | View</a>
   <!-- ダウンロードボタン (ファイルをダウンロード) -->
@@ -29,19 +30,23 @@
     *   `href`: ファイルへのパス（例: `score/your_new_score.pdf`）を指定します。
     *   `download`: ファイルをダウンロードさせるための属性です。
     *   `class="download-button"`: ダウンロードボタンとして表示するためのクラスです。
-    *   `style="margin-left: 10px;"`: 閲覧ボタンとの間にスペースを設けます。
+    *   `style="margin-left: 10px;"`: 閲覧ボタンとの間にスペースを設ける場合に使用します。
 
 ## 2. 楽譜 (`scores.html`) および数学ドキュメント (`math.html`) の追加方法
 
+コンテンツの種類によって、表示するボタンが異なります。
+
+### 楽譜 (`scores.html`) の場合
+
+楽譜ページでは、**ダウンロードボタンのみ**を配置します。
+
 1.  **ファイルを配置する:**
     *   新しい楽譜のPDFファイルは `score/` ディレクトリに配置します。
-    *   新しい数学ドキュメントのPDFファイルは `math/questions_by_me/` または `math/study_output/` ディレクトリに配置します。
 
 2.  **HTMLファイルを編集する:**
-    *   `scores.html` または `math.html` を開きます。
-    *   適切なセクションに、上記の「基本構造」に従って新しい `div.content-item` ブロックを追加します。
-    *   **閲覧ボタンとダウンロードボタンの両方を追加します。**
-    *   両方の `href` 属性には、配置したファイルのパスを正確に記述します（例: `score/your_new_score.pdf`）。
+    *   `scores.html` を開きます。
+    *   適切なセクションに、以下の構造に従って新しい `div.content-item` ブロックを追加します。
+    *   `href` 属性には、配置したファイルのパスを正確に記述します（例: `score/your_new_score.pdf`）。
     *   `<h4>` タグ内にファイル名を記述します。
     *   `<p>` タグ内に説明を記述します。
 
@@ -52,8 +57,32 @@
         <h4>新しい楽譜.pdf | New Score.pdf</h4>
         <p>これは新しく追加された楽譜の説明です。 | This is a description of the newly added score.</p>
       </div>
-      <a href="score/新しい楽譜.pdf" class="view-button" target="_blank">閲覧 | View</a>
-      <a href="score/新しい楽譜.pdf" download class="download-button" style="margin-left: 10px;">ダウンロード | Download</a>
+      <a href="score/新しい楽譜.pdf" download class="download-button">ダウンロード | Download</a>
+    </div>
+    ```
+
+### 数学ドキュメント (`math.html`) の場合
+
+数学ドキュメントページでは、**閲覧ボタンのみ**を配置します。
+
+1.  **ファイルを配置する:**
+    *   新しい数学ドキュメントのPDFファイルは `math/questions_by_me/` または `math/study_output/` ディレクトリに配置します。
+
+2.  **HTMLファイルを編集する:**
+    *   `math.html` を開きます。
+    *   適切なセクションに、以下の構造に従って新しい `div.content-item` ブロックを追加します。
+    *   `href` 属性には、配置したファイルのパスを正確に記述します（例: `math/your_new_doc.pdf`）。
+    *   `<h4>` タグ内にファイル名を記述します。
+    *   `<p>` タグ内に説明を記述します。
+
+    **例 (math.html):**
+    ```html
+    <div class="content-item">
+      <div class="content-item-text">
+        <h4>新しい数学ドキュメント.pdf | New Math Document.pdf</h4>
+        <p>これは新しく追加された数学ドキュメントの説明です。 | This is a description of the newly added math document.</p>
+      </div>
+      <a href="math/新しい数学ドキュメント.pdf" class="view-button" target="_blank">閲覧 | View</a>
     </div>
     ```
 
