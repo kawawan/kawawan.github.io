@@ -156,6 +156,10 @@ header nav {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
 }
 
+.support-section p a {
+    margin: 5px; /* Add margin around each button */
+}
+
 footer {
     padding: 20px;
     margin-top: 20px;
