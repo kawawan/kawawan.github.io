@@ -112,6 +112,22 @@ header nav {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
+.view-button {
+    display: inline-block;
+    background-color: #28a745; /* Light green for view button */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.view-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
 /* Specific styles for Tipping Buttons */
 .bmc-button {
     background-color: #FFEB80; /* Lighter Buy Me a Coffee yellow */

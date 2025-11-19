@@ -12,17 +12,24 @@
     <h4>[ファイル名またはタイトル]</h4>
     <p>[説明のプレースホルダー | Description placeholder]</p>
   </div>
-  <a href="[ファイルのパスまたは外部URL]" [download属性] class="download-button">[ダウンロード | Download] または [詳細を見る | View Details]</a>
+  <!-- 閲覧ボタン (ブラウザで開く) -->
+  <a href="[ファイルのパスまたは外部URL]" class="view-button" target="_blank">閲覧 | View</a>
+  <!-- ダウンロードボタン (ファイルをダウンロード) -->
+  <a href="[ファイルのパス]" download class="download-button" style="margin-left: 10px;">ダウンロード | Download</a>
 </div>
 ```
 
 -   `<h4>`: ファイル名またはコンテンツのタイトルを日本語と英語で記述します。
 -   `<p>`: コンテンツの簡単な説明を日本語と英語で記述します。
--   `<a>`:
+-   `<a>` (閲覧ボタン):
     *   `href`: ファイルへのパス（例: `score/your_new_score.pdf`）または外部サイトのURLを指定します。
-    *   `download`: ダウンロード可能なファイルの場合にこの属性を追加します。
-    *   `class="download-button"`: ボタンとして表示するためのクラスです。
-    *   リンクテキスト: 「ダウンロード | Download」または「詳細を見る | View Details」など、用途に合わせて日本語と英語で記述します。
+    *   `class="view-button"`: 閲覧ボタンとして表示するためのクラスです。
+    *   `target="_blank"`: 新しいタブで開くようにします。
+-   `<a>` (ダウンロードボタン):
+    *   `href`: ファイルへのパス（例: `score/your_new_score.pdf`）を指定します。
+    *   `download`: ファイルをダウンロードさせるための属性です。
+    *   `class="download-button"`: ダウンロードボタンとして表示するためのクラスです。
+    *   `style="margin-left: 10px;"`: 閲覧ボタンとの間にスペースを設けます。
 
 ## 2. 楽譜 (`scores.html`) および数学ドキュメント (`math.html`) の追加方法
 
@@ -32,11 +39,11 @@
 
 2.  **HTMLファイルを編集する:**
     *   `scores.html` または `math.html` を開きます。
-    *   適切なセクション（例: `math.html` の「自作問題 | My Questions」または「学習記録 | Study Output」）に、上記の「基本構造」に従って新しい `div.content-item` ブロックを追加します。
-    *   `href` 属性には、配置したファイルのパスを正確に記述します（例: `score/your_new_score.pdf`）。
+    *   適切なセクションに、上記の「基本構造」に従って新しい `div.content-item` ブロックを追加します。
+    *   **閲覧ボタンとダウンロードボタンの両方を追加します。**
+    *   両方の `href` 属性には、配置したファイルのパスを正確に記述します（例: `score/your_new_score.pdf`）。
     *   `<h4>` タグ内にファイル名を記述します。
     *   `<p>` タグ内に説明を記述します。
-    *   `download` 属性を `<a>` タグに追加します。
 
     **例 (scores.html):**
     ```html
@@ -45,7 +52,8 @@
         <h4>新しい楽譜.pdf | New Score.pdf</h4>
         <p>これは新しく追加された楽譜の説明です。 | This is a description of the newly added score.</p>
       </div>
-      <a href="score/新しい楽譜.pdf" download class="download-button">ダウンロード | Download</a>
+      <a href="score/新しい楽譜.pdf" class="view-button" target="_blank">閲覧 | View</a>
+      <a href="score/新しい楽譜.pdf" download class="download-button" style="margin-left: 10px;">ダウンロード | Download</a>
     </div>
     ```
 
