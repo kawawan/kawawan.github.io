@@ -112,15 +112,60 @@ header nav {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
+/* Specific styles for Tipping Buttons */
+.bmc-button {
+    background-color: #FFEB80; /* Lighter Buy Me a Coffee yellow */
+    color: #333; /* Dark text for contrast */
+}
+
+.bmc-button:hover {
+    background-color: #FFDD00; /* Original yellow on hover */
+}
+
+.kofi-button {
+    background-color: #F8A8A8; /* Lighter Ko-fi pink */
+    color: #fff; /* White text for contrast */
+}
+
+.kofi-button:hover {
+    background-color: #F16060; /* Original pink on hover */
+}
+
+.support-section {
+    background-color: #e9ecef; /* Light gray background */
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
+}
+
 footer {
     padding: 20px;
     margin-top: 20px;
     color: #fff;
-    background-color: #333;
+    background-color: #333; /* Revert footer background to dark gray */
     text-align: center;
 }
 
 footer a {
     color: #fff; /* Make footer links white for better contrast */
     text-decoration: underline; /* Add underline for clarity as links */
+    background-color: transparent; /* Ensure footer links themselves have no background */
+}
+
+/* Override button background for links within the footer */
+footer .bmc-button,
+footer .kofi-button {
+    background-color: transparent;
+    color: #fff; /* Ensure text color remains white */
+    padding: 0; /* Remove padding to make it look like a regular link */
+    border-radius: 0; /* Remove border-radius */
+    font-weight: normal; /* Remove bold font weight */
+}
+
+footer .bmc-button:hover,
+footer .kofi-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+    text-decoration: underline; /* Keep underline on hover */
 }
